@@ -23,8 +23,13 @@
         border: 0.25rem solid rgba(255, 255, 255, 0.3);
       }
 
-      /* For bigger screen than large */
-      @media(min-width: 991.98px) {
+      .real-content {
+        word-break: break-all;
+        width: 100vw;
+      }
+
+      /* For bigger screen than Medium */
+      @media(min-width: 768px) {
         .navbar-brand {
           position: fixed;
           top: 120px;
@@ -38,7 +43,7 @@
 
           padding-top: 95px;
           height: 100vh;
-          width: 20rem;
+          width: 18rem;
           
           display: flex;
           flex-direction: column;
@@ -48,13 +53,13 @@
 
         .real-content {
           position: absolute;
-          width: calc(100vh - 20rem);
+          width: calc(100vw - 18rem);
           top: 0;
-          left: 20rem;
+          left: 18rem;
         }
 
         .img-profile {
-          width: 11rem;
+          width: 10rem;
           height: auto;
         }
 
@@ -74,15 +79,14 @@
           width: 100%;
           bottom: 100px;
           margin: auto;
-          
         }
       }
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark" id="sidebar">
+  <nav class="navbar navbar-expand-md navbar-dark" id="sidebar">
     <a class="navbar-brand" href="/">
-      <span class="d-none d-lg-block">
+      <span class="d-none d-md-block">
         <img class="img-profile rounded-circle" src="https://avatars1.githubusercontent.com/u/22078468?s=460&u=da94b722018010d3d57ce08421b701a899d1c05b&v=4" alt="profile">
       </span>
       <span class="name">Yunbin Chang</span>
@@ -92,78 +96,29 @@
     </button>
 
     <div class="collapse navbar-collapse flex-column-c sidebar-list" id="sideNavBar">
-      <div class="d-block d-lg-none w-75 mx-auto" style="text-align: center;">
+      <div class="d-block d-md-none w-75 mx-auto" style="text-align: center;">
         <img class="img-profile rounded-circle" src="https://avatars1.githubusercontent.com/u/22078468?s=460&u=da94b722018010d3d57ce08421b701a899d1c05b&v=4" alt="profile">
         <hr class="w-100">
       </div>
 
       <ul class="navbar-nav flex-column w-75 mx-auto">
         <li class="nav-item">
-            <a class="nav-link">Home</a>
+            <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link">Blog</a>
+            <a class="nav-link" href="https://techbless.github.io">Blog</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container-fluid real-content m-3">
-    <div class="row">
-      hello
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>world
+  <div class="container-fluid real-content">
+    <div class="row" id="skills">
+      <h1>SKILLS</h1><br><br><br>
+      <p>What Skills do I have? Acutually, This is a secret.. I am a Wizard.</p>
     </div>
   </div>
 
