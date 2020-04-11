@@ -90,6 +90,15 @@ ul.skill-list > li::before {
     word-break: break-all;
 }
 
+/* For smaller screen than Large */
+@media(max-width: 1200px) {
+    .real-content,
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 
 /* For smaller screen than Medium */
 @media(max-width: 768px) {
