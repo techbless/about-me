@@ -8,35 +8,51 @@
 
     <style>
       #sidebar {
-        background-image: linear-gradient(25deg, #0e3c57, #495b9c);
+        background-image: linear-gradient(205deg, #495b9c, #0e3c57);
       }
-
+      
       .sidebar-list {
         margin-top: 20px;
         text-align: center;
       }
-
+      
       .img-profile {
         display: block;
         width: 7rem;
         height: 7rem;
         margin: auto;
-        border: 0.25rem solid rgba(255, 255, 255, 0.3);
+        border: 0.15rem solid rgba(231, 232, 255, 0.3);
       }
-
+      
       .real-content {
-        word-break:keep-all;
         width: 100vw;
+        word-break: keep-all;
       }
 
+      /* For smaller screen than Medium */
+      @media(max-width: 768px) {
+        .px-smaller-md {
+          padding-left: calc(3rem - 15px);
+          padding-right: calc(3rem - 15px);
+        }
+
+        .pt-smaller-md {
+          padding-top: 2rem;
+        }
+      }
+      
       /* For bigger screen than Medium */
       @media(min-width: 768px) {
+        html, body {
+          background-color: #fefcfc;
+        }
+
         .navbar-brand {
           margin: auto;
         }
 
         #sidebar {
-          position: fixed;
+          position: relative;
           left: 0;
           top: 0;
 
@@ -89,6 +105,7 @@
       </span>
       <span class="name">Yunbin Chang</span>
     </a>
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideNavBar" aria-controls="sideNavBar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -114,9 +131,23 @@
   </nav>
 
   <div class="container-fluid real-content">
+    <div class="row py-5 px-smaller-md" style="background-color: #efefef;">
+      <div class="col-md-6 pl-md-5">
+        <h1>Yunbin Chang</h1>
+        <p>I'm a software engineer specialised in backend and also frontend development for scalable web apps. I have studied C.S Engineering more than 7years since 13years old. I have educated from Hansung University.</p>
+      </div>
+      <div class="col-md-6 pr-md-5 pt-smaller-md">
+        <h1>What I do</h1>
+        <p>I have various experience building software on some projects. You can find projects I was in, at below.
+          I am more focused on backend using TypeScript, Node.js, Express and interested in Scalable, Security and Authentication
+        </p>
+      </div>
+    </div>
     <div class="row" id="skills">
-      <h1>SKILLS</h1><br><br><br>
-      <p>What Skills do I have? Acutually, This is a secret.. I am a Wizard.</p>
+      <div class="col-md-12 px-5 py-5">
+        <h1>SKILLS</h1>
+        <p>What Skills do I have? Acutually, This is a secret.. I am a Wizard.</p>
+      </div>
     </div>
   </div>
 
