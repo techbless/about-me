@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Untitled</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <style>
       #sidebar {
@@ -23,14 +24,23 @@
         margin: auto;
         border: 0.15rem solid rgba(231, 232, 255, 0.3);
       }
+
+      .icon-skill {
+        font-size: 2.2em;
+        fill: #7a2a2a;
+      }
       
-      .real-content {
-        width: 100vw;
-        word-break: keep-all;
+      .icon-skill:hover {
+        font-size: 2.5em;
       }
 
       /* For smaller screen than Medium */
       @media(max-width: 768px) {
+        .real-content {
+          width: 100%;
+          word-break: keep-all;
+        }
+
         .px-smaller-md {
           padding-left: calc(3rem - 15px);
           padding-right: calc(3rem - 15px);
@@ -52,7 +62,7 @@
         }
 
         #sidebar {
-          position: relative;
+          position: fixed;
           left: 0;
           top: 0;
 
@@ -68,7 +78,7 @@
 
         .real-content {
           position: absolute;
-          width: calc(100vw - 18rem);
+          width: calc(100% - 18rem);
           top: 0;
           left: 18rem;
         }
@@ -143,14 +153,47 @@
         </p>
       </div>
     </div>
-    <div class="row" id="skills">
+    <div class="row" id="skills"">
       <div class="col-md-12 px-5 py-5">
-        <h1>SKILLS</h1>
-        <p>What Skills do I have? Acutually, This is a secret.. I am a Wizard.</p>
+        <h2>SKILLS</h2><br>
+
+        
+        <h5>Languages & Framework</h5>
+        <i class="devicon-typescript-plain colored icon-skill"></i>
+        <i class="devicon-javascript-plain colored icon-skill"></i>
+        <i class="devicon-nodejs-plain colored icon-skill"></i>
+        <i class="devicon-express-original colored icon-skill"></i>
+        <i class="devicon-mocha-plain colored icon-skill"></i>
+        <i class="devicon-react-original-wordmark colored icon-skill"></i>
+        
+        <i class="devicon-cplusplus-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-python-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-java-plain-wordmark colored icon-skill"></i>
+        
+        <i class="devicon-html5-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-css3-plain-wordmark colored icon-skill"></i>
+        <br><br>
+        
+        <h5>Database</h5>
+        <i class="devicon-mysql-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-sequelize-plain colored icon-skill"></i>
+        <i class="devicon-redis-plain-wordmark colored icon-skill"></i>
+        <br><br>
+        
+        <h5>Tools</h5>        
+        <i class="devicon-nginx-original colored icon-skill"></i>
+        <i class="devicon-docker-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-git-plain colored icon-skill"></i>
+        <br><br>
+        
+        <h5>Cloud</h5>
+        <i class="devicon-amazonwebservices-original colored icon-skill"></i>
+        <i class="devicon-heroku-original-wordmark colored icon-skill"></i>
+        <br><br>
       </div>
     </div>
   </div>
-
+  
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
