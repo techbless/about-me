@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Untitled</title>
+    <title>Yunbin Chang 😀</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
@@ -32,6 +32,27 @@
       
       .icon-skill:hover {
         font-size: 2.5em;
+      }
+
+      ul.skill-list, ul.sub-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ul.skill-list > li, ul.sub-list > li {
+        margin-top: 10px;
+      }
+
+      ul.sub-list > li {
+        padding-left: 40px;
+      }
+
+      ul.sub-list > li::before {
+        content: "✨ "
+      }
+
+      ul.skill-list > li::before {
+        content: "🛠 "
       }
 
       /* For smaller screen than Medium */
@@ -141,7 +162,7 @@
   </nav>
 
   <div class="container-fluid real-content">
-    <div class="row py-5 px-smaller-md" style="background-color: #efefef;">
+    <div class="row py-5 px-smaller-md" style="background-color: #efefef">
       <div class="col-md-6 pl-md-5">
         <h1>Yunbin Chang</h1>
         <p>I'm a software engineer specialised in backend and also frontend development for scalable web apps. I have studied C.S Engineering more than 7years since 13years old. I have educated from Hansung University.</p>
@@ -153,43 +174,68 @@
         </p>
       </div>
     </div>
-    <div class="row" id="skills"">
-      <div class="col-md-12 px-5 py-5">
+    <div class="row pt-md-5">
+      <div class="col-md-12 px-5 pt-smaller-md">
         <h2>SKILLS</h2><br>
-
         
-        <h5>Languages & Framework</h5>
-        <i class="devicon-typescript-plain colored icon-skill"></i>
+      </div>
+    </div>
+    <div class="row px-smaller-md" id="skills">
+      <div class="col-md-5 pl-md-5 pt-smaller-md">
+        <h5>Languages & Platform</h5>
+        <i class="devicon-typescript-plain colored icon-skill" title="typescript"></i>
         <i class="devicon-javascript-plain colored icon-skill"></i>
         <i class="devicon-nodejs-plain colored icon-skill"></i>
+        <i class="devicon-cplusplus-plain colored icon-skill"></i>
+        <i class="devicon-python-plain colored icon-skill"></i>
+        <i class="devicon-java-plain colored icon-skill"></i>
+        
+        <i class="devicon-html5-plain colored icon-skill"></i>
+        <i class="devicon-css3-plain colored icon-skill"></i>
+        <br><br>
+
+        <h5>Framework & Library</h5>
+        
         <i class="devicon-express-original colored icon-skill"></i>
         <i class="devicon-mocha-plain colored icon-skill"></i>
-        <i class="devicon-react-original-wordmark colored icon-skill"></i>
-        
-        <i class="devicon-cplusplus-plain-wordmark colored icon-skill"></i>
-        <i class="devicon-python-plain-wordmark colored icon-skill"></i>
-        <i class="devicon-java-plain-wordmark colored icon-skill"></i>
-        
-        <i class="devicon-html5-plain-wordmark colored icon-skill"></i>
-        <i class="devicon-css3-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-react-original colored icon-skill"></i>
+        <i class="devicon-sequelize-plain colored icon-skill"></i>
         <br><br>
         
         <h5>Database</h5>
-        <i class="devicon-mysql-plain-wordmark colored icon-skill"></i>
-        <i class="devicon-sequelize-plain colored icon-skill"></i>
-        <i class="devicon-redis-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-mysql-plain colored icon-skill"></i>
+        <i class="devicon-redis-plain colored icon-skill"></i>
         <br><br>
         
         <h5>Tools</h5>        
-        <i class="devicon-nginx-original colored icon-skill"></i>
-        <i class="devicon-docker-plain-wordmark colored icon-skill"></i>
+        <i class="devicon-docker-plain colored icon-skill"></i>
         <i class="devicon-git-plain colored icon-skill"></i>
+        <i class="devicon-nginx-original colored icon-skill"></i>
         <br><br>
         
         <h5>Cloud</h5>
         <i class="devicon-amazonwebservices-original colored icon-skill"></i>
-        <i class="devicon-heroku-original-wordmark colored icon-skill"></i>
+        <i class="devicon-heroku-original colored icon-skill"></i>
         <br><br>
+      </div>
+      <div class="col-md-7 pr-md-5 pt-smaller-md">
+        <ul class="skill-list">
+          <li>Various programming languages such as TypeScript, Java, Python, C++, JavaScript
+            <ul class="sub-list">
+              <li>Focused on TypeScript, Java</li>
+            </ul>
+          </li>
+          <li>Sever Programming using Node.js, Express, Spring Frameworks
+            <ul class="sub-list">
+              <li>Skills for Scalable, Authentication, Security etc.</li>
+            </ul>
+          </li>
+          <li>Web Front-end development using React.js</li>
+          <li>Cloud Services using AWS, Heroku</li>
+          <li>DBMS such as MYSQL, Redis</li>
+          <li>Web Server management using Nginx</li>
+          <li>Ubuntu, Mac OS, Windows</li>
+        </ul>
       </div>
     </div>
   </div>
