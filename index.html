@@ -17,6 +17,7 @@
       }
 
       .img-profile {
+        display: block;
         width: 7rem;
         height: 7rem;
         margin: auto;
@@ -24,14 +25,13 @@
       }
 
       .real-content {
-        word-break: break-all;
+        word-break:keep-all;
         width: 100vw;
       }
 
       /* For bigger screen than Medium */
       @media(min-width: 768px) {
         .navbar-brand {
-          padding-top: 100px;
           margin: auto;
         }
 
@@ -40,7 +40,7 @@
           left: 0;
           top: 0;
 
-          padding-top: 95px;
+          padding-top: 10vh;
           height: 100vh;
           width: 18rem;
           
@@ -74,6 +74,7 @@
         }
 
         .sidebar-list {
+          padding-top: 3vh;
           width: 100%;
           margin: auto;
         }
@@ -92,13 +93,13 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse flex-column-c sidebar-list pt-5" id="sideNavBar">
+    <div class="collapse navbar-collapse flex-column-c sidebar-list" id="sideNavBar">
       <div class="d-block d-md-none w-75 mx-auto" style="text-align: center;">
         <img class="img-profile rounded-circle" src="https://avatars1.githubusercontent.com/u/22078468?s=460&u=da94b722018010d3d57ce08421b701a899d1c05b&v=4" alt="profile">
         <hr class="w-100">
       </div>
 
-      <ul class="navbar-nav flex-column w-75 mx-auto py-3">
+      <ul class="navbar-nav flex-column w-75 mx-auto py-2">
         <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
         </li>
