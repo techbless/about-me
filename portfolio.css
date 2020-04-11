@@ -1,3 +1,8 @@
+html, body {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 300;
+}
+
 #sidebar {
     /* background-color: rgb(63, 105, 91); */
     
@@ -7,7 +12,6 @@
     background-size: cover;
 
 }
-
 
 #sidebar::after {
     content: '';
@@ -31,11 +35,11 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(204, 204, 204);
+    color: rgb(224, 224, 224);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(204, 204, 204, 0.514);
+    color: rgba(224, 224, 224, 0.5);
 }
 
 .sidebar-list {
@@ -83,6 +87,7 @@ ul.skill-list > li::before {
 
 .real-content {
     word-break: break-all;
+    margin-top: 1rem;
 }
 
 /* For smaller screen than Large */
@@ -100,6 +105,7 @@ ul.skill-list > li::before {
     .real-content {
         width: 100%;
         z-index: -5;
+        margin-top: 3rem;
     }
     .navbar hr {
         width: 50%;
