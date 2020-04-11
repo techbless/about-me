@@ -6,7 +6,7 @@ html, body {
 #sidebar {
     /* background-color: rgb(63, 105, 91); */
     
-    z-index: 0;
+    z-index: 1030;
     background-image: url('https://i.pinimg.com/originals/4f/7d/5c/4f7d5c4131c7c0dd18d5dd3fd038e0bf.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,8 +104,8 @@ ul.skill-list > li::before {
 @media(max-width: 768px) {
     .real-content {
         width: 100%;
+        z-index: -5;
     }
-
     .navbar hr {
         width: 50%;
     }
