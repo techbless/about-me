@@ -16,12 +16,12 @@
 }
 
 .icon-skill {
-    font-size: 2.2em;
+    font-size: 2.8em;
     fill: #7a2a2a;
 }
 
 .icon-skill:hover {
-    font-size: 2.5em;
+    font-size: 3.2em;
 }
 
 ul.skill-list, ul.sub-list {
@@ -90,6 +90,7 @@ ul.skill-list > li::before {
     .real-content {
         position: absolute;
         width: calc(100% - 18rem);
+        max-width: 1000px;
         top: 0;
         left: 18rem;
     }
