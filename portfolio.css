@@ -105,7 +105,7 @@ ul.skill-list > li::before {
     .real-content {
         width: 100%;
         z-index: -5;
-        margin-top: 3rem;
+        margin-top: 60px;
     }
     .navbar hr {
         width: 50%;
