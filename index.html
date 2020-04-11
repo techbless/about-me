@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script>
+      function hideNavbar(){
+          $('.navbar-collapse').collapse('hide');
+      };
+    </script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark" id="sidebar">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="sidebar">
     <a class="navbar-brand" href="/">
       <span class="d-none d-md-block">
         <img class="img-profile rounded-circle" src="https://avatars1.githubusercontent.com/u/22078468?s=460&u=da94b722018010d3d57ce08421b701a899d1c05b&v=4" alt="profile">
@@ -30,30 +35,30 @@
       <ul class="navbar-nav flex-column w-75 mx-auto py-2">
         <hr>
         <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
+            <a class="nav-link" href="#" onclick="hideNavbar();">HOME</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#skills">SKILLS</a>
+            <a class="nav-link" href="#skills" onclick="hideNavbar();">SKILLS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#education">EDUCATION</a>
+          <a class="nav-link" href="#education" onclick="hideNavbar();">EDUCATION</a>
         </li>
         <hr>
         <li class="nav-item">
-            <a class="nav-link" href="https://techbless.github.io">BLOG</a>
+            <a class="nav-link" href="https://techbless.github.io" onclick="hideNavbar();">BLOG</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="real-content px-3 px-md-5">
+  <div class="real-content px-3 px-md-5 pt-5">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 pt-4">
+        <div class="col-lg-6">
           <h1>Yunbin Chang</h1>
           <p>I'm a software engineer specialised in backend and also frontend development for scalable web apps. I have studied C.S Engineering more than 7years since 13years old. I have educated from Hansung University.</p>
         </div>
-        <div class="col-lg-6 pt-4">
+        <div class="col-lg-6 pt-smaller-md">
           <h1>What I do</h1>
           <p>I have various experience building software on some projects. You can find projects I was in, at below.
             I am more focused on backend using TypeScript, Node.js, Express and interested in Scalable, Security and Authentication

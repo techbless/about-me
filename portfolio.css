@@ -83,7 +83,6 @@ ul.skill-list > li::before {
 
 .real-content {
     word-break: break-all;
-    margin-top: 1rem;
 }
 
 /* For smaller screen than Large */
@@ -100,6 +99,7 @@ ul.skill-list > li::before {
 @media(max-width: 768px) {
     .real-content {
         width: 100%;
+        margin-top: 2rem;
     }
     .navbar hr {
         width: 50%;
