@@ -20,7 +20,7 @@ html, body {
     left: 0;
     right: 0;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.475;
     z-index: -1;
 }
 
@@ -122,6 +122,10 @@ ul.skill-list > li::before {
     .nav-toggler {
         position: absolute;
         right: 0;
+    }
+
+    .name {
+        font-size: 1.1em;
     }
 }
 
