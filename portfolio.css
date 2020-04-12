@@ -20,10 +20,13 @@ html, body {
     left: 0;
     right: 0;
     width: 100%;
-    opacity: 0.475;
+    opacity: 0.47;
     z-index: -1;
 }
 
+.nav-link {
+    padding: .3rem 1rem;
+}
 
 .navbar hr {
     border-color: rgb(204, 204, 204);
@@ -48,7 +51,7 @@ html, body {
     width: 7rem;
     height: 7rem;
     margin: auto;
-    box-shadow: 0 0 50px 5px rgba(130, 138, 58, 0.65);
+    box-shadow: 0 0 50px 5px rgba(157, 167, 74, 0.65);
     /* border: 0.25rem solid rgba(153, 153, 153, 0.74); */
 }
 
@@ -92,6 +95,10 @@ ul.skill-list > li::before {
     word-break: break-all;
 }
 
+.p-period {
+    font-size: 15px;
+}
+
 /* For smaller screen than Large */
 @media(max-width: 1200px) {
     .real-content,
@@ -117,11 +124,6 @@ ul.skill-list > li::before {
 
     .pt-smaller-md {
         padding-top: 2rem;
-    }
-
-    .nav-toggler {
-        position: absolute;
-        right: 0;
     }
 
     .name {
