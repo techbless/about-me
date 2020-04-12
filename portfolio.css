@@ -1,6 +1,7 @@
 html, body {
     font-family: 'Do Hyeon', sans-serif;
     font-weight: 300;
+    font-size: 1.1em;
 }
 
 #sidebar {
@@ -54,10 +55,15 @@ html, body {
 .icon-skill {
     font-size: 2.8em;
     fill: #7a2a2a;
+    opacity: 1;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .icon-skill:hover {
-    font-size: 3.2em;
+    opacity: 0.7;
+    color: black;
 }
 
 ul.skill-list, ul.sub-list {
@@ -70,7 +76,8 @@ ul.skill-list > li, ul.sub-list > li {
 }
 
 ul.sub-list > li {
-    padding-left: 1rem;
+    padding-left: 0.8rem;
+    padding-bottom: 0.3rem;
 }
 
 ul.sub-list > li::before {
@@ -97,6 +104,9 @@ ul.skill-list > li::before {
 
 /* For smaller screen than Medium */
 @media(max-width: 768px) {
+    html, body {
+        font-size: 1em;
+    }
     .real-content {
         width: 100%;
         margin-top: 2rem;
@@ -132,7 +142,7 @@ ul.skill-list > li::before {
 
         padding-top: 10vh;
         height: 100vh;
-        width: 18rem;
+        width: 17rem;
         
         display: flex;
         flex-direction: column;
@@ -142,10 +152,10 @@ ul.skill-list > li::before {
 
     .real-content {
         position: absolute;
-        width: calc(100% - 18rem);
-        max-width: 1000px;
+        width: calc(100% - 17rem);
+        max-width: 1150px;
         top: 0;
-        left: 18rem;
+        left: 17rem;
     }
 
     .img-profile {
