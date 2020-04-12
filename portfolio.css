@@ -148,7 +148,7 @@ ul.skill-list > li::before {
 
         padding-top: 10vh;
         height: 100vh;
-        width: 17rem;
+        width: 16rem;
         
         display: flex;
         flex-direction: column;
@@ -158,14 +158,14 @@ ul.skill-list > li::before {
 
     .real-content {
         position: absolute;
-        width: calc(100% - 17rem);
+        width: calc(100% - 16rem);
         max-width: 1150px;
         top: 0;
-        left: 17rem;
+        left: 16rem;
     }
 
     .img-profile {
-        width: 10rem;
+        width: 9.5rem;
         height: auto;
     }
 
