@@ -70,7 +70,7 @@ ul.skill-list > li, ul.sub-list > li {
 }
 
 ul.sub-list > li {
-    padding-left: 40px;
+    padding-left: 1rem;
 }
 
 ul.sub-list > li::before {
@@ -107,6 +107,11 @@ ul.skill-list > li::before {
 
     .pt-smaller-md {
         padding-top: 2rem;
+    }
+
+    .nav-toggler {
+        position: absolute;
+        right: 0;
     }
 }
 
