@@ -34,11 +34,11 @@ html, body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(224, 224, 224);
+    color: rgba(247, 247, 247, 0.904);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(224, 224, 224, 0.5);
+    color: rgba(224, 224, 224, 0.76);
 }
 
 .sidebar-list {
@@ -99,6 +99,16 @@ ul.skill-list > li::before {
     font-size: 15px;
 }
 
+::-webkit-scrollbar { width: 4.5px; } /*스크롤 바*/
+::-webkit-scrollbar-thumb { 
+    background: #a5b41ee7; 
+    border-radius: 5px;
+} /* 실질적 스크롤 바 */
+::-webkit-scrollbar-thumb:hover { background: #404040; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+::-webkit-scrollbar-thumb:active { background: #808080; } /* 실질적 스크롤 바를 클릭할 때 */
+::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */
+/* ::-webkit-scrollbar-track { background-color:#5D5D5D; } 스크롤 바 밑의 배경 */
+
 /* For smaller screen than Large */
 @media(max-width: 1200px) {
     .real-content,
@@ -135,6 +145,7 @@ ul.skill-list > li::before {
 @media(min-width: 768px) {
     html, body {
         background-color: #fefcfc;
+        min-height: 660px;
     }
 
     .navbar-brand {
@@ -154,6 +165,12 @@ ul.skill-list > li::before {
         flex-direction: column;
 
         text-align: center;
+        overflow-y: scroll;
+    }
+
+    #sidebar::after {
+        position: fixed;
+        width: 16rem;
     }
 
     .real-content {
