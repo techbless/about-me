@@ -1,6 +1,6 @@
 html, body {
     font-family: 'Do Hyeon', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 1.1em;
 }
 
@@ -99,7 +99,16 @@ ul.skill-list > li::before {
     font-size: 15px;
 }
 
-::-webkit-scrollbar { width: 4.5px; } /*스크롤 바*/
+::-moz-selection {
+  color: white;
+  background: #98d498;
+}
+
+::selection {
+  color: white;
+  background: #98d498;
+}
+::-webkit-scrollbar { width: 8px; } /*스크롤 바*/
 ::-webkit-scrollbar-thumb { 
     background: #a5b41ee7; 
     border-radius: 5px;
@@ -171,6 +180,7 @@ ul.skill-list > li::before {
     #sidebar::after {
         position: fixed;
         width: 16rem;
+        /* width: 16rem; */
     }
 
     .real-content {
