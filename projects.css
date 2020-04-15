@@ -13,6 +13,10 @@
     color: #0000008e;
 }
 
+.project-card > p {
+    color: rgb(0, 0, 0);
+}
+
 .year {
     padding-bottom: 10px;
     text-decoration: underline;

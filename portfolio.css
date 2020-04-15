@@ -1,7 +1,13 @@
 html, body {
-    font-family: 'Do Hyeon', sans-serif;
-    font-weight: 100;
+    /* font-family: 'Jua', sans-serif; */
+
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: 700;
     font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 700;
 }
 
 #sidebar {
@@ -101,12 +107,12 @@ ul.skill-list > li::before {
 
 ::-moz-selection {
   color: white;
-  background: #98d498;
+  background: #64bb64;
 }
 
 ::selection {
   color: white;
-  background: #98d498;
+  background: #64bb64;
 }
 
 ::-webkit-scrollbar { width: 8px; }
