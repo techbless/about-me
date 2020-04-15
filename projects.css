@@ -1,0 +1,40 @@
+.project-card {
+    margin-bottom: 50px;
+}
+
+.project-card > a,
+.extra-project > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.project-card > a:hover,
+.extra-project > a:hover {
+    color: #0000008e;
+}
+
+.year {
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.project-card > details {
+    color: rgb(35, 74, 124);
+}
+
+.project-card > details:hover {
+    color: rgba(35, 74, 124, 0.671);
+}
+
+/* For smaller screen than Large */
+@media(max-width: 1200px) {
+}
+
+
+/* For smaller screen than Medium */
+@media(max-width: 768px) {
+}
+
+/* For bigger screen than Medium */
+@media(min-width: 768px) {
+}

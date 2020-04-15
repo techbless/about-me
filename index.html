@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./projects.css">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <script>
       function hideNavbar(){
@@ -15,6 +16,7 @@
     </script>
 </head>
 <body>
+  <!-- Responsive NavBar(SideBar) -->
   <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="sidebar">
     <a class="navbar-brand" href="/">
       <span class="d-none d-md-block">
@@ -41,6 +43,9 @@
             <a class="nav-link" href="#skills" onclick="hideNavbar();">SKILLS</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="#projects" onclick="hideNavbar();">PROJECTS</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#education" onclick="hideNavbar();">EDUCATION</a>
         </li>
         <li class="nav-item">
@@ -65,7 +70,7 @@
             I pursue progressive tech and always care about performance.
           </p>
         </div>
-        <div class="col-lg-6 pt-smaller-md">
+        <div class="col-lg-6">
           <h1>What I do</h1>
           <p>
             I have various experience building software on some projects.
@@ -126,6 +131,116 @@
           </ul>
         </div>
       </div>
+      
+      <div class="row pt-5">
+        <div class="col-md-12">
+          <h2 id="projects">PROJECTS</h2>
+          <h5>Click titles for details</h5>                    
+          <br>
+        </div>
+      </div>
+      <h4 class="year">2019</h4>
+      <div class="row pb-3 d-flex justify-content-around">
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/hsu-mailer"><h5>Hansung Mailer</h5></a>
+          <hr>
+
+          <p>This service sends a notifications about new hs-point notices to Hansung University Students subscribing this service.</p>
+          <p>You can see real project at <a target="blank" href="https://techbless.live">here</a>.</p>
+        
+
+          <details>
+            <summary>Show Demo Image</summary>
+            <img width="100%" src="https://github.com/techbless/hsu-mailer/raw/master/imgs/web.png?raw=true" alt="web main">
+          </details>
+        </div>
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/where-is-my-pet"><h5>Where is my Pet?</h5></a>
+          <hr>
+
+          <p>It is a platform to share the recently discovered locations of missing pets.</p>
+
+          <details>
+            <summary>Show Demo Image</summary>
+            <img width="100%" src="https://github.com/techbless/where-is-my-pet/raw/master/images/clicked.png" alt="laon">   
+          </details>
+        </div>
+      </div>
+      <div class="row pb-3 d-flex justify-content-around">
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/qrwaiting"><h5>QR Waiting</h5></a>
+          <hr>
+          
+          <p>This Service provides a QR code for places which needs effective line system like famous restraunts.</p>
+          <p>This Project is now private repository.</p>
+
+        </div>
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/typescript-express-starter"><h5>TypeScript Express Starter</h5></a>
+          <hr>
+
+          <p>It is a template for helping you to save your time writing an annoying ignition codes using TypeScript, Node.js, Sequelize, Passport.</p>
+        </div>
+      </div>
+
+      <h4 class="year">2018</h4>
+      <div class="row pb-3 d-flex justify-content-around">
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/banana-or-not"><h5>Banana or Not</h5></a>
+          <hr>
+
+          <p>It is an image classifier to recognize banana in given images. In this case it classifies only banana, but many other things can be learned by this model.</p>
+          
+          <details>
+            <summary>Show Demo Image</summary>
+            <img width="100%" src="https://github.com/Yunbin-Chang/Banana_Image_Classifier/raw/master/result_example/result_ex.jpg" alt="banana result">
+          </details>
+
+        </div>
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/parabola-simulator"><h5>Parabola Simulator</h5></a>
+          <hr>
+
+          <p>This simulator draws a trail for object in the gravity fields on 3D graph from given thrown position and each x, y, z speed.</p>
+
+          <details>
+            <summary>Show Demo Image</summary>
+            <img width="100%" src="https://github.com/Yunbin-Chang/Ball-In-Gravity-Trailing/raw/master/example/draw.PNG" alt="parabola-simulator">
+          </details>
+
+        </div>
+      </div>
+
+      <h4 class="year">2017</h4>
+      <div class="row pb-3 d-flex justify-content-around">
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/kakaotalk-dictionary-chatbot"><h5>KakaoTalk Dictionary ChatBot</h5></a>
+          <hr>
+
+          <p>It is a kakaotalk chatbot server to search english word (Kor2Eng, Eng2Kor). providing simple and readble search history on chatroom.</p>
+          
+          <details>
+            <summary>Show Demo Image</summary>
+            <img width="100%" src="https://github.com/techbless/kakaotalk-dictionary-chatbot/blob/master/img/facebook-example.jpg?raw=true" alt="kakaotalk">
+          </details>
+        </div>
+        <div class="col-lg-6 project-card">
+          <a target="blank" href="https://github.com/techbless/audio-streaming"><h5>Audio Streaming</h5></a>
+          <hr>
+
+          <p>It is a service to broadcasting your voice or audio to listener on live streaming.</p>
+
+        </div>
+      </div>
+
+      <h4 class="year">Extra</h4>
+      <div class="row pb-3">
+        <div class="col-md-12 extra-project">
+          <a target="blank" href="https://github.com/techbless/audio-streaming"><h6>Translate Solidity Documentation</h6></a>
+          <p class="p-period">2018</p>
+          <hr>
+        </div>
+      </div>
 
       <div class="row pt-5">
         <div class="col-md-12">
@@ -145,22 +260,6 @@
           <hr>
           <h6>Eunseok Elementary School</h6>
           <p class="p-period">March 2007 - February 2013</p>
-        </div>
-      </div>
-
-      <div class="row pt-5">
-        <div class="col-md-12">
-          <h2 id="awards">AWARDS &<br>CERTIFICATIONS</h2><br>
-        </div>
-      </div>
-      <div class="row pb-3">
-        <div class="col-md-12">
-          <h6>Open Cloud Platform Service Development Hackathon</h6>
-          <p class="p-period">December 2019 - 과학기술 정보통신부(MSIT)</p>
-          <hr>
-          <h6>Linux Master lv.2</h6>
-          <p class="p-period">December 2017</p>
-          <hr>
         </div>
       </div>
 
