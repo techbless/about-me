@@ -1,13 +1,19 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
 html, body {
     /* font-family: 'Jua', sans-serif; */
-
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-weight: 700;
+    font-family: 'NanumSquare', sans-serif;
+    /* font-family: 'Do Hyeon', sans-serif; */
     font-size: 1.1em;
+    font-weight: 600;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+}
+
+p {
+    font-weight: 600;
 }
 
 #sidebar {
@@ -192,7 +198,7 @@ ul.skill-list > li::before {
     .real-content {
         position: absolute;
         width: calc(100% - 16rem);
-        max-width: 1300px;
+        max-width: 1150px;
         top: 0;
         left: 16rem;
     }
