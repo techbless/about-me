@@ -17,7 +17,7 @@ p {
 }
 
 #sidebar {
-    background-image: url('https://i.pinimg.com/originals/4f/7d/5c/4f7d5c4131c7c0dd18d5dd3fd038e0bf.jpg');
+    background-image: url('https://9to5mac.com/2018/10/30/ipad-pro-wallpapers-download/546-spash1-potassium-1024w-1366h2xipad/');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -32,7 +32,7 @@ p {
     left: 0;
     right: 0;
     width: 100%;
-    opacity: 0.47;
+    opacity: 0.27;
     z-index: -1;
 }
 
@@ -63,7 +63,7 @@ p {
     width: 7rem;
     height: 7rem;
     margin: auto;
-    box-shadow: 0 0 50px 5px rgba(157, 167, 74, 0.65);
+    box-shadow: 0 0 50px 5px rgba(255, 85, 42, 0.65);
     /* border: 0.25rem solid rgba(153, 153, 153, 0.74); */
 }
 
@@ -113,12 +113,12 @@ ul.skill-list > li::before {
 
 ::-moz-selection {
   color: white;
-  background: #64bb64;
+  background: rgba(31, 18, 143, 0.65);
 }
 
 ::selection {
   color: white;
-  background: #64bb64;
+  background: rgba(31, 18, 143, 0.65);
 }
 
 ::-webkit-scrollbar { width: 8px; }
@@ -126,7 +126,7 @@ ul.skill-list > li::before {
 ::-webkit-scrollbar-thumb:active { background: #808080; }
 ::-webkit-scrollbar-button { display: none; }
 ::-webkit-scrollbar-thumb { 
-    background: #a5b41ee7; 
+    background: rgba(255, 42, 42, 0.65); 
     border-radius: 5px;
 }
 
