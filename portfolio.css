@@ -6,6 +6,8 @@ html, body {
     /* font-family: 'Do Hyeon', sans-serif; */
     font-size: 1.1em;
     font-weight: 600;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,6 +60,10 @@ p {
     text-align: center;
 }
 
+.img-skills {
+    height: 54px;
+}
+
 .img-profile {
     display: block;
     width: 7rem;
@@ -96,7 +102,7 @@ ul.sub-list > li {
 }
 
 ul.sub-list > li::before {
-    content: "✨ "
+    content: "️✨ "
 }
 
 ul.skill-list > li::before {
@@ -125,10 +131,13 @@ ul.skill-list > li::before {
 ::-webkit-scrollbar-thumb:hover { background: #404040; }
 ::-webkit-scrollbar-thumb:active { background: #808080; }
 ::-webkit-scrollbar-button { display: none; }
-::-webkit-scrollbar-thumb { 
-    background: rgba(255, 42, 42, 0.65); 
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 42, 42, 0.65);
     border-radius: 5px;
 }
+
+
+
 
 /* For smaller screen than Large */
 @media(max-width: 1200px) {
@@ -165,7 +174,6 @@ ul.skill-list > li::before {
 /* For bigger screen than Medium */
 @media(min-width: 768px) {
     html, body {
-        background-color: #fefcfc;
         min-height: 660px;
     }
 
@@ -181,7 +189,7 @@ ul.skill-list > li::before {
         padding-top: 10vh;
         height: 100vh;
         width: 16rem;
-        
+
         display: flex;
         flex-direction: column;
 
@@ -198,7 +206,7 @@ ul.skill-list > li::before {
     .real-content {
         position: absolute;
         width: calc(100% - 16rem);
-        max-width: 1150px;
+        max-width: 1050px;
         top: 0;
         left: 16rem;
     }
