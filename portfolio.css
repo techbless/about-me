@@ -75,7 +75,7 @@ p {
   width: 7rem;
   height: 7rem;
   margin: auto;
-  box-shadow: 0 0 50px 5px rgba(255, 35, 35, 0.65);
+  box-shadow: 0 0 40px 0px #dee2e6;
   /* border: 0.25rem solid rgba(153, 153, 153, 0.74); */
 }
 
