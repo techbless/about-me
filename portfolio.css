@@ -25,7 +25,8 @@ p {
 }
 
 #sidebar {
-  background-image: url("https://9to5mac.com/2018/10/30/ipad-pro-wallpapers-download/546-spash1-potassium-1024w-1366h2xipad/");
+  background-image: url("https://i.pinimg.com/originals/14/71/aa/1471aa027b785f94e29ca2e4a20fa5a3.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -75,12 +76,12 @@ p {
   width: 7rem;
   height: 7rem;
   margin: auto;
-  box-shadow: 0 0 40px 0px #dee2e6;
+  box-shadow: 0 0 80px -25px #dee2e6;
   /* border: 0.25rem solid rgba(153, 153, 153, 0.74); */
 }
 
 .icon-skill {
-  font-size: 2.8em;
+  font-size: 2.5em;
   fill: #7a2a2a;
   opacity: 1;
 
@@ -102,11 +103,13 @@ ul.sub-list {
 ul.skill-list > li,
 ul.sub-list > li {
   margin-top: 10px;
+  font-size: 17px;
 }
 
 ul.sub-list > li {
   padding-left: 0.8rem;
   padding-bottom: 0.3rem;
+  font-size: 16.5px;
 }
 
 ul.sub-list > li::before {
@@ -168,6 +171,15 @@ ul.skill-list > li::before {
   .ref_img {
     max-width: 100%;
   }
+}
+
+details {
+  font-size: 14.5px;
+  color: rgb(0, 74, 229);
+}
+
+details:hover {
+  color: rgba(0, 74, 229, 0.671);
 }
 
 /* For smaller screen than Medium */
