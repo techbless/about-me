@@ -124,12 +124,41 @@ ul.skill-list > li::before {
   content: "🛠 ";
 }
 
+.award-card {
+  font-size: 1rem;
+}
+
+.award-title {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.award-img {
+  width: 100%;
+}
+
+.award-price {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
 .real-content {
   word-break: break-all;
 }
 
 .p-period {
   font-size: 15px;
+}
+
+.pc-award {
+  display: flex;
+}
+
+.mobile-award {
+  display: none;
 }
 
 ::-moz-selection {
@@ -174,6 +203,14 @@ ul.skill-list > li::before {
 
   .ref_img {
     max-width: 100%;
+  }
+
+  .pc-award {
+    display: none !important;
+  }
+
+  .mobile-award {
+    display: flex !important;
   }
 }
 
