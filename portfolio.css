@@ -113,7 +113,7 @@ ul.sub-list > li {
 ul.sub-list > li {
   padding-left: 0.8rem;
   padding-bottom: 0.3rem;
-  font-size: 16.5px;
+  font-size: 1rem;
 }
 
 ul.sub-list > li::before {
