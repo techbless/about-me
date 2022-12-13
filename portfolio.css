@@ -138,6 +138,8 @@ ul.skill-list > li::before {
 
 .award-img {
   width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .award-price {
