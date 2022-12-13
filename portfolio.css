@@ -67,6 +67,10 @@ p {
   text-align: center;
 }
 
+.skill-box > div > h6 {
+  padding-bottom: 5px;
+}
+
 .img-skills {
   height: 54px;
 }
