@@ -155,6 +155,10 @@ ul.skill-list > li::before {
   font-size: 15px;
 }
 
+.pc-certificate {
+  margin-top: 35px;
+}
+
 .pc-award {
   display: flex;
 }
