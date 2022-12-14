@@ -200,7 +200,7 @@ ul.skill-list > li::before {
 }
 
 /* For smaller screen than Large */
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
   .real-content,
   .container-fluid {
     padding-left: 0;
@@ -250,6 +250,13 @@ details:hover {
   .name {
     font-size: 1.1em;
   }
+  .pc-award {
+    display: flex !important;
+  }
+
+  .mobile-award {
+    display: none !important;
+  }
 }
 
 /* For bigger screen than Medium */
@@ -288,7 +295,7 @@ details:hover {
   .real-content {
     position: absolute;
     width: calc(100% - 16rem);
-    max-width: 1050px;
+    max-width: 1120px;
     top: 0;
     left: 16rem;
   }
@@ -313,5 +320,15 @@ details:hover {
     padding-top: 3vh;
     width: 100%;
     margin: auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .pc-award {
+    display: none !important;
+  }
+
+  .mobile-award {
+    display: flex !important;
   }
 }

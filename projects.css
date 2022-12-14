@@ -1,5 +1,14 @@
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 30px;
+}
+
 .project-card {
-  margin-bottom: 50px;
+  width: calc(50% - 15px);
+  box-shadow: 0 0px 7px rgb(0 0 0 / 7%);
+  padding: 35px;
 }
 
 .project-card > a,
@@ -16,7 +25,7 @@
 .project-card > p {
   color: rgb(0, 0, 0);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .year {
@@ -25,11 +34,24 @@
 }
 
 /* For smaller screen than Large */
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
+  .project-card {
+    width: 100%;
+    padding: 25px;
+  }
 }
 
 /* For smaller screen than Medium */
 @media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 660px) {
+  .project-card {
+    width: 100%;
+  }
 }
 
 /* For bigger screen than Medium */
