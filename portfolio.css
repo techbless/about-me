@@ -229,6 +229,12 @@ details:hover {
   color: rgba(0, 74, 229, 0.671);
 }
 
+.year-btn {
+  border: none;
+  background: #eee;
+  margin-bottom: 10px;
+}
+
 /* For smaller screen than Medium */
 @media (max-width: 768px) {
   html,
@@ -332,3 +338,4 @@ details:hover {
     display: flex !important;
   }
 }
+
