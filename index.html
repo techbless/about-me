@@ -244,16 +244,20 @@
             <p class="p-period">2019 - 과학기술 정보통신부(MSIT)</p>
             <details>
               <summary>자세히 보기</summary>
-              <iframe
+              <img
                 class="ref_img"
-                width="560"
-                height="315"
-                src="https://techbless.github.io/about-me/과기부보도.pdf"
-              ></iframe>
+                src="https://github.com/techbless/about-me/blob/master/oidc.jpg?raw=true"
+                alt=""
+              />
               <br />
+              <a href="https://techbless.github.io/about-me/과기부보도.pdf"
+                >국회 보도 자료1</a
+              >
+              <br />
+
               <a
                 href="https://www.nanet.go.kr/cmmn/file/fileViewer.do?menuName=bodo91384_&access_type=MOBILE&fileName=1576196517663.pdf&fileSavegbn=8&fileExt=&downYn=Y"
-                >국회 보도 자료</a
+                >국회 보도 자료2</a
               >
               <br />
               <a href="https://n.news.naver.com/article/298/0000294932?sid=123"
@@ -277,6 +281,12 @@
             <p class="p-period">August 2020 - 멘택(ManTech)</p>
             <details>
               <summary>자세히 보기</summary>
+              <img
+                class="ref_img"
+                src="https://github.com/techbless/about-me/blob/master/paasta.jpg?raw=true"
+                alt=""
+              />
+              <br />
               <a href="https://www.oidc.co.kr/oidc2020">관련 자료1</a>
               <a href="https://www.mantech.co.kr/2020oidc/">관련 자료2</a>
             </details>
@@ -301,25 +311,25 @@
           <div class="col-md-12">
             <h6>한성대학교 컴퓨터공학부</h6>
             <p class="p-period" style="margin-bottom: 15px">
-              2019 - 3학년 1학기 휴학, 현재 웹 개발자로 재직중
+              2019 - 현재 3학년, 현재 웹 개발자로 재직중
             </p>
             <p class="p-period" style="margin-bottom: 5px; font-weight: 800">
-              🥈 1학년 모든 학기 성적장학금
+              🥈 1학년 모든 학기 성적우수장학금
             </p>
             <p class="p-period" style="margin-bottom: 15px; font-weight: 800">
-              🥇 2학년 모든 학기 공과대학 수석
-            </p>
-            <p class="p-period" style="margin-bottom: 5px">
-              💰 1학년 1학기 우수한성역량장학금
+              🥇 2학년 모든 학기 성적최우수장학금
             </p>
             <p class="p-period" style="margin-bottom: 5px">
               💰 1학년 2학기 우수한성역량장학금
             </p>
             <p class="p-period" style="margin-bottom: 5px">
-              💰 2학년 1학기 최우수한성인재장학금
+              💰 2학년 1학기 우수한성역량장학금
             </p>
             <p class="p-period" style="margin-bottom: 5px">
-              💰 2학년 1학기 최우수한성인재장학금
+              💰 2학년 2학기 최우수한성인재장학금
+            </p>
+            <p class="p-period" style="margin-bottom: 5px">
+              💰 3학년 1학기 최우수한성인재장학금
             </p>
             <hr />
             <h6>동국대학교 사범대학 부속고등학교</h6>
@@ -393,56 +403,69 @@
         <div class="row pb-3">
           <div class="col-md-12">
             <button class="year-btn btn-all" onclick="showAll()">ALL</button>
-            <button class="year-btn btn-2022" onclick="showOnlyYearOf(2022)">2022</button>
-            <button class="year-btn btn-2021" onclick="showOnlyYearOf(2021)">2021</button>
-            <button class="year-btn btn-2020" onclick="showOnlyYearOf(2020)">2020</button>
-            <button class="year-btn btn-2019" onclick="showOnlyYearOf(2019)">2019</button>
-            <button class="year-btn btn-2018" onclick="showOnlyYearOf(2018)">2018</button>
-            <button class="year-btn btn-2017" onclick="showOnlyYearOf(2017)">2017</button>
-            <button class="year-btn btn-2016" onclick="showOnlyYearOf(2016)">2016</button>
+            <button class="year-btn btn-2022" onclick="showOnlyYearOf(2022)">
+              2022
+            </button>
+            <button class="year-btn btn-2021" onclick="showOnlyYearOf(2021)">
+              2021
+            </button>
+            <button class="year-btn btn-2020" onclick="showOnlyYearOf(2020)">
+              2020
+            </button>
+            <button class="year-btn btn-2019" onclick="showOnlyYearOf(2019)">
+              2019
+            </button>
+            <button class="year-btn btn-2018" onclick="showOnlyYearOf(2018)">
+              2018
+            </button>
+            <button class="year-btn btn-2017" onclick="showOnlyYearOf(2017)">
+              2017
+            </button>
+            <button class="year-btn btn-2016" onclick="showOnlyYearOf(2016)">
+              2016
+            </button>
           </div>
           <script>
             function resetYear() {
-              $('.y-2022').hide();
-              $('.y-2021').hide();
-              $('.y-2020').hide();
-              $('.y-2019').hide();
-              $('.y-2018').hide();
-              $('.y-2017').hide();
-              $('.y-2016').hide();
+              $(".y-2022").hide();
+              $(".y-2021").hide();
+              $(".y-2020").hide();
+              $(".y-2019").hide();
+              $(".y-2018").hide();
+              $(".y-2017").hide();
+              $(".y-2016").hide();
 
-              $('.btn-2022').css('background', '#eee');
-              $('.btn-2021').css('background', '#eee');
-              $('.btn-2020').css('background', '#eee');
-              $('.btn-2019').css('background', '#eee');
-              $('.btn-2018').css('background', '#eee');
-              $('.btn-2017').css('background', '#eee');
-              $('.btn-2016').css('background', '#eee');
-              $('.btn-all').css('background', '#eee');
+              $(".btn-2022").css("background", "#eee");
+              $(".btn-2021").css("background", "#eee");
+              $(".btn-2020").css("background", "#eee");
+              $(".btn-2019").css("background", "#eee");
+              $(".btn-2018").css("background", "#eee");
+              $(".btn-2017").css("background", "#eee");
+              $(".btn-2016").css("background", "#eee");
+              $(".btn-all").css("background", "#eee");
             }
 
             function showAll() {
               resetYear();
 
-              $('.y-2022').show();
-              $('.y-2021').show();
-              $('.y-2020').show();
-              $('.y-2019').show();
-              $('.y-2018').show();
-              $('.y-2017').show();
-              $('.y-2016').show();
+              $(".y-2022").show();
+              $(".y-2021").show();
+              $(".y-2020").show();
+              $(".y-2019").show();
+              $(".y-2018").show();
+              $(".y-2017").show();
+              $(".y-2016").show();
 
-              $('.btn-all').css('background', '#bbb');
+              $(".btn-all").css("background", "#bbb");
             }
 
             function showOnlyYearOf(year) {
               resetYear();
 
-              $(`.btn-${year}`).css('background', '#bbb');
+              $(`.btn-${year}`).css("background", "#bbb");
               $(`.y-${year}`).show();
             }
           </script>
-
         </div>
         <div class="project-cards">
           <div class="project-card y-2021">
