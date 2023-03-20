@@ -11,6 +11,10 @@ body {
   color: #333333;
 }
 
+* {
+  word-break: keep-all;
+}
+
 h1,
 h2,
 h3,
