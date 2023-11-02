@@ -72,7 +72,7 @@ p {
 }
 
 .skill-box > div > h6 {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .img-skills {
@@ -89,7 +89,7 @@ p {
 }
 
 .icon-skill {
-  font-size: 2.5em;
+  font-size: 1.7em;
   fill: #7a2a2a;
   opacity: 1;
 
@@ -121,7 +121,7 @@ ul.sub-list > li {
 }
 
 ul.sub-list > li::before {
-  content: "️✨ ";
+  content: "- ";
 }
 
 ul.skill-list > li::before {
