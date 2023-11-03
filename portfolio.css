@@ -344,3 +344,56 @@ details:hover {
     display: flex !important;
   }
 }
+
+
+/* Floating Button Container Style */
+.floating-button-container {
+  position: fixed; /* Fixed position */
+  bottom: 20px;    /* 20px from the bottom */
+  right: 20px;     /* 20px from the right */
+  z-index: 999;    /* Make sure it's above other items */
+}
+
+/* Style for the buttons inside the container */
+.floating-button-container a {
+  margin-left: 10px; /* Add space between the buttons */
+}
+
+/* First child (LinkedIn button) should not have left margin */
+.floating-button-container a:first-child {
+  margin-left: 0;
+}
+
+/* Optional: Add a transition for a nice hover effect */
+.floating-button-container a:hover {
+  transform: scale(1.05); /* Slightly increase size when hovered */
+  transition: transform 0.3s; /* Animation time */
+}
+
+
+@media (max-width: 768px) {
+  .floating-button-container {
+    right: 50%; /* Center the container */
+    transform: translateX(50%); /* Adjust for true center alignment */
+    bottom: 20px; /* Adjust the bottom position if needed */
+    display: flex; /* Use flexbox to keep buttons inline */
+    flex-direction: row; /* Align buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+  }
+
+  .floating-button-container a {
+    padding: .375rem .75rem; /* Smaller padding */
+    font-size: .875rem; /* Smaller font size */
+    margin: 0 5px; /* Maintain some space between buttons */
+    flex: 0 0 auto; /* Prevent buttons from growing or shrinking */
+  }
+}
+
+@media (min-width: 1414px) {
+  .floating-button-container {
+    position: fixed; /* Fixed position */
+    bottom: 20px;    /* 20px from the bottom */
+    left: 930px;     /* 20px from the right */
+    z-index: 999;    /* Make sure it's above other items */
+  }
+}
