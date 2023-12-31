@@ -106,6 +106,7 @@ ul.skill-list,
 ul.sub-list {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0 !important;
 }
 
 ul.skill-list > li,
@@ -113,6 +114,7 @@ ul.sub-list > li {
   margin-top: 10px;
   font-size: 17px;
 }
+
 
 ul.sub-list > li {
   padding-left: 0.8rem;
