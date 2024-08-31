@@ -195,19 +195,49 @@
           </div>
         </div>
         
-
         <div class="row pb-3">
           <div class="col-md-12">
             <img src="./aml.jpg" alt="USFK" style="padding-right: 10px; max-width: 45px; float: left; padding-top: 3px" />
             <h6>
+              Deepseers <br />
+              Vision Software Engineer
+            </h6>
+            <p class="p-period">2024년 2월 - 현재</p>
+            <p class="p-period" style="margin-bottom: 5px">
+              - 연구실 내 스타트업으로 전환하여 기존과 동일한 프로젝트 진행중
+            </p>
+            <p class="p-period" style="margin-bottom: 5px">- 맵핑 비전 검사, 카메라 및 조명 컨트롤 코드 개발</p>
+            <p class="p-period" style="margin-bottom: 5px">- 핸들러-비전 통신, 레시피 관리, 로트 관리등 데이터베이스 관련 개발</p>
+            <p class="p-period" style="margin-bottom: 5px">- 맵핑 비전 멀티샷 조명 티칭 및 검사 개발</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row pb-3">
+          <div class="col-md-12">
+            <img src="./hansung_university_aml_lab_logo.jpg" alt="USFK" style="padding-right: 10px; max-width: 45px; float: left; padding-top: 3px" />
+            <h6>
               Hansung University AML Lab. <br />
               Undergraduate Researcher
             </h6>
-            <p class="p-period">2023년 5월 - 현재</p>
+            <p class="p-period">2023년 5월 - 2024 2월</p>
             <p class="p-period" style="margin-bottom: 5px">
               - (연구 과제) 반도체 패키지 비전 검사 장비 소프트웨어 개발
+
+              <details>
+                <summary>캡스톤 DEMO 영상 및 발표자료</summary>
+                <iframe 
+                width="560" 
+                height="315" 
+                class="ref_img"
+                src="https://www.youtube.com/embed/IrMPKypC2UI?si=qydM0wH6I7fhI_Az" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              </details>
             </p>
-            <p class="p-period" style="margin-bottom: 5px">- 개인 연구 진행중</p>
+            <p class="p-period" style="margin-bottom: 5px">- 메모리 및 학습 속도 측면에서의 효율적인 생성형 비전 AI 연구</p>
           </div>
         </div>
         <hr />
@@ -454,6 +484,7 @@
         <div class="row pb-3">
           <div class="col-md-12">
             <button class="year-btn btn-all" style="background-color: #bbb" onclick="showAll()">ALL</button>
+            <button class="year-btn btn-2024" onclick="showOnlyYearOf(2024)">2024</button>
             <button class="year-btn btn-2022" onclick="showOnlyYearOf(2022)">2022</button>
             <button class="year-btn btn-2021" onclick="showOnlyYearOf(2021)">2021</button>
             <button class="year-btn btn-2020" onclick="showOnlyYearOf(2020)">2020</button>
@@ -465,6 +496,7 @@
           
           <script>
             function resetYear() {
+              $(".y-2024").hide();
               $(".y-2022").hide();
               $(".y-2021").hide();
               $(".y-2020").hide();
@@ -473,6 +505,7 @@
               $(".y-2017").hide();
               $(".y-2016").hide();
 
+              $(".btn-2024").css("background", "#eee");
               $(".btn-2022").css("background", "#eee");
               $(".btn-2021").css("background", "#eee");
               $(".btn-2020").css("background", "#eee");
@@ -486,6 +519,7 @@
             function showAll() {
               resetYear();
 
+              $(".y-2024").show();
               $(".y-2022").show();
               $(".y-2021").show();
               $(".y-2020").show();
@@ -506,6 +540,29 @@
           </script>
         </div>
         <div class="project-cards" style="padding-bottom: 150px">
+          <div class="project-card y-2024">
+            <a target="blank" href="https://github.com/techbless/mil-self-develop"
+              ><h5>💿 반도체 비전검사 (캡스톤)</h5></a
+            >
+            <hr />
+
+            <p>
+              캡스톤 디자인 출품 작품으로, AML 연구실내 연구과제의 일부 기능을 캡스톤용으로 축소하여 출품하였습니다. 반도체 후공정 장비를 위한 머신 비전 검사 프로그램입니다. 반도체 생산 과정에서 발생하는 불량을 효율적으로 탑지하고 장비를 제어할 수 있다.
+            </p>
+            <details>
+              <summary>DEMO 및 발표자료</summary>
+              <iframe 
+                width="560" 
+                height="315" 
+                class="ref_img"
+                src="https://www.youtube.com/embed/IrMPKypC2UI?si=qydM0wH6I7fhI_Az" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </details>
+          </div>
           <div class="project-card y-2021">
             <a target="blank" href="https://github.com/techbless/mil-self-develop"
               ><h5>🪖 군장병 자기개발 플랫폼</h5></a
