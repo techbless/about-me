@@ -588,7 +588,7 @@
         <div class="row pt-5">
           <div class="col-md-12">
             <h3 id="projects">PERSONAL PROJECTS</h3>
-            <!-- <h5>제목을 클릭하면 깃허브 Repo를 확인하실 수 있습니다.</h5> -->
+            <p class="p-period">제목을 클릭하면 Github Repo를 확인하실 수 있습니다.</p>
             <hr />
           </div>
         </div>
@@ -596,6 +596,7 @@
           <div class="col-md-12">
             <button class="year-btn btn-all" style="background-color: #bbb" onclick="showAll()">ALL</button>
             <button class="year-btn btn-2024" onclick="showOnlyYearOf(2024)">2024</button>
+            <button class="year-btn btn-2023" onclick="showOnlyYearOf(2023)">2023</button>
             <button class="year-btn btn-2022" onclick="showOnlyYearOf(2022)">2022</button>
             <button class="year-btn btn-2021" onclick="showOnlyYearOf(2021)">2021</button>
             <button class="year-btn btn-2020" onclick="showOnlyYearOf(2020)">2020</button>
@@ -608,6 +609,7 @@
           <script>
             function resetYear() {
               $(".y-2024").hide();
+              $(".y-2023").hide();
               $(".y-2022").hide();
               $(".y-2021").hide();
               $(".y-2020").hide();
@@ -617,6 +619,7 @@
               $(".y-2016").hide();
 
               $(".btn-2024").css("background", "#eee");
+              $(".btn-2023").css("background", "#eee");
               $(".btn-2022").css("background", "#eee");
               $(".btn-2021").css("background", "#eee");
               $(".btn-2020").css("background", "#eee");
@@ -631,6 +634,7 @@
               resetYear();
 
               $(".y-2024").show();
+              $(".y-2023").show();
               $(".y-2022").show();
               $(".y-2021").show();
               $(".y-2020").show();
@@ -651,10 +655,21 @@
           </script>
         </div>
         <div class="project-cards" style="padding-bottom: 150px">
-          <div class="project-card y-2024">
-            <a target="blank" href="https://github.com/techbless/mil-self-develop"
-              ><h5>💿 반도체 비전검사 (캡스톤)</h5></a
+          <div class="project-card y-2023">
+            <a target="blank" href="https://github.com/techbless/MAGICal-Synthesis"
+              ><h5>🖼️ 효율적인 GAN 아키텍처 제안</h5></a
             >
+            <hr />
+            (MAGICal Synthesis)
+            <p>
+              인공지능(AI)의 발전에 따라 반도체 수요가 급증하고 있으며, 패키징 과정에서 자동 결함 검출의 중요성이 커지고 있습니다. 딥러닝 모델은 대량의 데이터가 필요하지만, 보안상의 이유로 데이터 공유와 라벨링에 어려움이 있습니다. 본 연구에서는 적은 자원으로 충분한 데이터를 확보하기 위해 고해상도 이미지를 하위 영역으로 나누고, 각 영역을 학습한 후 경계 손실을 통해 전역적으로 일관된 이미지를 재구성하는 방법을 제안합니다. 실험 결과, 제안된 방법은 높은 효율성, 품질, 일관성을 보였습니다.
+
+
+            </p>
+            <a href="https://koreascience.or.kr/article/JAKO202301257618479.page"><p class="p-period" style="color: rgb(0, 0, 173)">한국 마이크로전자 및 패키징학회 학술지 바로가기</p></a>
+          </div>
+          <div class="project-card y-2024">
+            <h5>💿 반도체 비전검사 (캡스톤)</h5>
             <hr />
 
             <p>

@@ -2,14 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  gap: 30px;
+  gap: 20px;
 }
 
 .project-card {
   width: calc(50% - 15px);
   /* box-shadow: 0 0px 7px rgb(0 0 0 / 7%); */
   border: 1px solid rgb(0 0 0 / 7%);
-  padding: 35px;
+  padding: 30px;
 }
 
 .project-card > a,
@@ -26,7 +26,7 @@
 .project-card > p {
   color: rgb(0, 0, 0);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 .year {
