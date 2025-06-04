@@ -66,17 +66,17 @@
                         <li>조기 졸업</li>
                         <li>소프트웨어 특기자 전형 입학</li>
                         <li>국가우수장학금(이공계)
-                            <ul>
+                            <ul style="color: inherit;">
                                 <li>3, 4학년 전액 장학금 수혜</li>
                             </ul>
                         </li>
                         <li>최우수한성인재 장학금
-                            <ul>
+                            <ul style="color: inherit;">
                                 <li>2학년 70% 장학금 수혜</li>
                             </ul>
                         </li>
                         <li>우수한성역량장학금
-                            <ul>
+                            <ul style="color: inherit;">
                                 <li>1학년 1학기 50%, 2학기 30% 장학금 수혜</li>
                             </ul>
                         </li>
@@ -283,7 +283,7 @@
                     </div>
                     <div class="award-content">
                         <h3>Best Paper Award (Oral)</h3>
-                        <p>HCI Korea 2024</p>
+                        <p>HCI Korea 2024,<br>The HCI Society of Korea</p>
                         <p class="date">Jan 2024</p>
                         <button class="view-details-btn">View Details</button>
                     </div>
@@ -296,7 +296,7 @@
                     </div>
                     <div class="award-content">
                         <h3>Joint Service Commendation Medal</h3>
-                        <p>United States Department of Defense</p>
+                        <p>Secretary of Defense,<br> United States Department of Defense</p>
                         <p class="date">Apr 2022</p>
                         <button class="view-details-btn">View Details</button>
                     </div>
@@ -309,7 +309,7 @@
                     </div>
                     <div class="award-content">
                         <h3>국방부장관상</h3>
-                        <p>2021 국방 공공데이터 활용 경진대회, 서비스 개발 부문 최우수</p>
+                        <p>2021 국방 공공데이터 활용 경진대회,<br> 서비스 개발 부문 최우수</p>
                         <p class="date">Aug 2021</p>
                         <button class="view-details-btn">View Details</button>
                     </div>
@@ -322,7 +322,7 @@
                     </div>
                     <div class="award-content">
                         <h3>최우수상</h3>
-                        <p>제 2회 오픈 인프라 개발 경진대회 (OIDC 2020)</p>
+                        <p>제 2회 오픈 인프라 개발 경진대회<br> (OIDC 2020)</p>
                         <p class="date">Aug 2020</p>
                         <button class="view-details-btn">View Details</button>
                     </div>
@@ -335,8 +335,22 @@
                     </div>
                     <div class="award-content">
                         <h3>특별상</h3>
-                        <p>제 2회 개방형 클라우드 플랫폼 서비스 개발 해커톤</p>
+                        <p>개방형 클라우드 플랫폼 서비스 개발 공모전, <br>과학기술정보통신부, 국회도서관
+                        </p>
                         <p class="date">Dec 2019</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="award-item" onclick="openAwardModal('national-scholarship-modal')">
+                    <div class="award-image-container">
+                        <img src="national_scholarship.jpg" alt="국가우수장학생(이공계) 장학증서">
+                        <div class="award-image-caption">국가우수장학생(이공계) 장학증서</div>
+                    </div>
+                    <div class="award-content">
+                        <h3>국가우수장학생(이공계)</h3>
+                        <p>과학기술정보통신부 장관, <br>한국장학재단</p>
+                        <p class="date">Mar 2023</p>
                         <button class="view-details-btn">View Details</button>
                     </div>
                 </div>
@@ -358,7 +372,7 @@
             <div class="modal-content">
                 <span class="close-modal">&times;</span>
                 <h3>Joint Service Commendation Medal</h3>
-                <p>United States Department of Defense</p>
+                <p>Secretary of Defense, United States Department of Defense</p>
                 <p>합동공로훈장(JSCM)은 미국 국방장관 명의로 수여되는 훈장으로, 육군, 해군, 공군, 해병대 등 여러 군이 협력하는 참모조직이나 연합사령부 등 합동 조직(joint staff)에서 근무하며 감독직(supervisory role) 또는 전략적 핵심 보직(key positions)을 맡아, 탁월한 업적이나 공로를 세운 군인에게 수여됩니다.</p>
                 <p>전역 시 주한 미군/UN군 사령관 <i>Paul J. LaCamera</i> 대장으로 부터 수여받음.</p>
                 <p class="date">Apr 2022</p>
@@ -396,12 +410,25 @@
             <div class="modal-content">
                 <span class="close-modal">&times;</span>
                 <h3>특별상</h3>
-                <p>제 2회 개방형 클라우드 플랫폼 서비스 개발 해커톤</p>
+                <p>개방형 클라우드 플랫폼 서비스 개발 공모전, <br>과학기술정보통신부, 국회도서관</p>
                 <p>실종 동물의 실시간 정보를 공유할 수 있는 위치 기반 플랫폼을 개발하였습니다. 사용자는 실종 동물의 현재 상태를 확인할 수 있으며, 마지막으로 목격된 위치나 최근 발견된 위치를 공유할 수 있습니다.</p>
                 <ul>
                     <li>API 및 예측 모델을 포함한 모든 기능을 개발하였습니다.</li>
                 </ul>
                 <p class="date">Dec 2019</p>
+            </div>
+        </div>
+
+        <div id="national-scholarship-modal" class="award-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>국가우수장학생(이공계)</h3>
+                <p>한국장학재단</p>
+                <p>이공계 분야의 우수한 학생들을 지원하여 국가 핵심 인재로 양성하기 위한 장학금으로, 학업성적이 우수하고 잠재력이 있는 학생들에게 지원됩니다.</p>
+                <ul>
+                    <li>3, 4학년 전액 장학금 수혜</li>
+                </ul>
+                <p class="date">Mar 2023</p>
             </div>
         </div>
     </section>
