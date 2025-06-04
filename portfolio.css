@@ -614,6 +614,7 @@ body {
 .experience-gallery {
     margin: 2rem -2rem -2rem -2rem;
     max-width: none;
+    width: calc(100% + 4rem);
 }
 
 .gallery-item {
@@ -1346,37 +1347,34 @@ footer {
         width: 100%;
     }
 
-    .experience-item, .summary-category, .award-item {
+    .experience-item {
+        padding: 2rem;
         margin-bottom: 1.2rem;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         border-radius: 10px;
         background-color: var(--white);
     }
 
-    .award-image-container {
-        height: 280px;
+    .experience-gallery {
+        margin: 1.5rem -2rem -2rem -2rem;
+        width: calc(100% + 4rem);
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
     }
 
-    .award-image-caption {
-        padding: 0.7rem;
+    .gallery-item {
+        height: 110px;
+        border-radius: 0;
+    }
+
+    .gallery-item img {
+        object-position: center 20%;
+    }
+
+    .gallery-caption {
+        padding: 0.8rem;
         font-size: 0.9rem;
-    }
-
-    .award-content {
-        padding: 1.5rem;
-    }
-
-    .award-content h3 {
-        font-size: 1rem;
-    }
-
-    .award-content p {
-        font-size: 0.9rem;
-    }
-
-    .award-content .date {
-        font-size: 0.8rem;
-        padding: 0.25rem 0.7rem;
+        transform: translateY(100%);
     }
 
     .modal-content {
@@ -1425,25 +1423,6 @@ footer {
     .container {
         padding: 0 20px;
     }
-
-    .experience-gallery {
-        margin: 1.5rem -2rem -2rem -2rem;
-    }
-
-    .gallery-item {
-        height: 110px;
-        border-radius: 0 0 10px 10px;
-    }
-
-    .gallery-item img {
-        object-position: center 20%;
-    }
-
-    .gallery-caption {
-        padding: 0.8rem;
-        font-size: 0.9rem;
-        transform: translateY(100%);
-    }
 }
 
 /* Even smaller screens */
@@ -1489,24 +1468,14 @@ footer {
         gap: 1rem;
     }
 
-    .experience-item, .summary-category, .award-item {
+    .experience-item {
+        padding: 1.5rem;
         margin-bottom: 1rem;
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-
-    .award-image-container {
-        height: 240px;
-    }
-
-    .award-content {
-        padding: 1.2rem;
     }
 
     .experience-gallery {
         margin: 1.5rem -1.5rem -1.5rem -1.5rem;
+        width: calc(100% + 3rem);
     }
 
     .gallery-item {
