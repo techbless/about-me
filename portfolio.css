@@ -97,7 +97,7 @@ body {
     justify-content: center;
     padding: 80px 20px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
 }
 
@@ -149,16 +149,6 @@ body {
 
 .particle:nth-child(4n+3) {
     background: rgba(41, 128, 185, 0.3);
-}
-
-.particle.interactive {
-    width: 12px !important;
-    height: 12px !important;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 
-        0 0 15px rgba(255, 255, 255, 0.2),
-        0 0 30px rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
 }
 
 /* Particle initial positions */
@@ -1091,11 +1081,19 @@ footer {
 @media (max-width: 768px) {
     html {
         scroll-snap-type: none;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    body {
+        height: auto;
+        overflow-y: auto;
     }
 
     section {
         scroll-snap-align: none;
         scroll-snap-stop: normal;
+        overflow: visible;
     }
 
     .navbar {
@@ -1149,12 +1147,22 @@ footer {
     }
 
     .hero {
-        padding: 45px 15px;
+        min-height: 100vh;
+        height: auto;
+        overflow: visible;
+        position: relative;
+        padding: 80px 15px;
+    }
+
+    .particles {
+        pointer-events: none;
     }
 
     .hero-content {
         width: 94%;
         padding: 30px 20px;
+        position: relative;
+        z-index: 10;
     }
 
     .profile-img {
@@ -1499,5 +1507,37 @@ section {
         justify-content: center;
         padding: 8px 20px;
         font-size: 0.85rem;
+    }
+}
+
+/* Particle interactions - Only for non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .particle {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        pointer-events: auto;
+        transition: transform 0.1s ease;
+    }
+
+    .particle.interactive {
+        width: 12px !important;
+        height: 12px !important;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 
+            0 0 15px rgba(255, 255, 255, 0.2),
+            0 0 30px rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+}
+
+/* Disable particle interactions for touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .particle {
+        pointer-events: none;
+    }
+
+    .particle.interactive {
+        display: none;
     }
 }
