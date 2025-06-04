@@ -19,24 +19,14 @@
 
 html {
     scroll-behavior: smooth;
-    height: 100vh;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    min-height: 100vh;
     margin: 0;
     padding: 0;
-}
-
-.snap-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
 }
 
 .container {
@@ -116,9 +106,6 @@ body {
     position: relative;
     overflow: visible;
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    -webkit-overflow-scrolling: touch;
 }
 
 .particles {
@@ -333,7 +320,7 @@ body {
 
 .hero h1 {
     color: #fff;
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 25px 0 12px;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -398,9 +385,11 @@ body {
     justify-content: center;
     gap: 15px;
     margin-top: 30px;
+    position: relative;
+    padding-bottom: 35px;
 }
 
-.contact-info a, .contact-info span {
+.contact-info a, .contact-info span:not(.location) {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     display: flex;
@@ -414,6 +403,22 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.85rem;
     letter-spacing: 0.2px;
+}
+
+.contact-info .location {
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    letter-spacing: 0.2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .contact-info a:hover {
@@ -432,10 +437,7 @@ body {
     min-height: 50vh;
     padding: 5rem 0;
     background-color: var(--light-gray);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     position: relative;
-    -webkit-overflow-scrolling: touch;
 }
 
 .about h2 {
@@ -458,7 +460,6 @@ body {
 .summary {
     padding: 5rem 0;
     background-color: var(--light-gray);
-    scroll-snap-align: none;
 }
 
 .summary h2 {
@@ -530,7 +531,6 @@ body {
 .experience {
     padding: 5rem 0;
     background-color: var(--light-gray);
-    scroll-snap-align: none;
 }
 
 .experience h2 {
@@ -662,7 +662,6 @@ body {
 .education {
     padding: 5rem 0;
     background-color: var(--white);
-    scroll-snap-align: none;
 }
 
 .education h2 {
@@ -716,7 +715,6 @@ body {
 .awards {
     padding: 5rem 0;
     background-color: var(--white);
-    scroll-snap-align: none;
 }
 
 .awards h2 {
@@ -954,7 +952,6 @@ body {
 .publications {
     padding: 5rem 0;
     background-color: var(--light-gray);
-    scroll-snap-align: none;
 }
 
 .publications h2 {
@@ -991,7 +988,6 @@ body {
 .research {
     padding: 5rem 0;
     background-color: var(--white);
-    scroll-snap-align: none;
 }
 
 .research h2 {
@@ -1046,7 +1042,6 @@ body {
 .patents {
     padding: 5rem 0;
     background-color: var(--light-gray);
-    scroll-snap-align: none;
 }
 
 .patents h2 {
@@ -1113,7 +1108,6 @@ footer {
 @media (max-width: 768px) {
     html {
         scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
     }
 
     .hero {
@@ -1184,20 +1178,18 @@ footer {
     }
 
     .profile-img {
-        width: 140px;
-        height: 140px;
-        border-width: 3px;
+        width: 130px;
+        height: 130px;
     }
 
     .hero h1 {
-        font-size: 2.2em;
+        font-size: 1.7em;
         margin: 15px 0 8px;
     }
 
     .hero h2 {
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin-bottom: 20px;
-        line-height: 1.4;
     }
 
     .resume-buttons {
@@ -1223,12 +1215,21 @@ footer {
         gap: 8px;
         padding: 0 10px;
         margin-top: 20px;
+        padding-bottom: 35px;
     }
 
-    .contact-info a, .contact-info span {
+    .contact-info a, .contact-info span:not(.location) {
         width: 100%;
         justify-content: center;
         padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .contact-info .location {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        justify-content: center;
         font-size: 0.85rem;
     }
 
@@ -1382,8 +1383,13 @@ footer {
         gap: 10px;
     }
 
-    .contact-info a, .contact-info span {
+    .contact-info a, .contact-info span:not(.location) {
         padding: 6px 14px;
+        font-size: 0.85rem;
+    }
+
+    .contact-info .location {
+        text-align: center;
         font-size: 0.85rem;
     }
 
@@ -1402,6 +1408,7 @@ footer {
     }
 }
 
+/* Even smaller screens */
 @media (max-width: 480px) {
     .nav-content {
         padding: 1rem;
@@ -1422,12 +1429,12 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 1.6em;
         margin: 12px 0 6px;
     }
 
     .hero h2 {
-        font-size: 1em;
+        font-size: 1.1em;
         margin-bottom: 18px;
     }
 
@@ -1442,6 +1449,12 @@ footer {
 
     .awards-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-info a, .contact-info span:not(.location) {
+        padding: 6px 14px;
+        font-size: 0.85rem;
+        justify-content: center;
     }
 }
 
@@ -1563,6 +1576,5 @@ section {
 .publications,
 .research,
 .patents {
-    scroll-snap-align: none;
     position: relative;
 }
