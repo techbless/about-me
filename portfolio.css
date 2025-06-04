@@ -352,24 +352,34 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 12px 24px;
+    padding: 12px 28px;
     background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 8px;
     transition: all 0.3s ease;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.3px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .resume-btn:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(255, 255, 255, 0.1);
 }
 
 .resume-btn i {
     font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.resume-btn:hover i {
+    transform: translateX(3px);
 }
 
 .contact-info {
@@ -1059,6 +1069,41 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+    }
+
+    .navbar {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .nav-content {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-links li {
+        margin-left: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .hamburger span {
+        width: 22px;
+        height: 2px;
+        margin: 2px 0;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -1117,7 +1162,8 @@ footer {
     .resume-btn {
         width: 100%;
         justify-content: center;
-        padding: 12px 20px;
+        padding: 12px 24px;
+        font-size: 0.95rem;
     }
 
     .contact-info {
@@ -1306,41 +1352,48 @@ section {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 20px;
-    background: rgba(52, 152, 219, 0.2);
-    border: 1px solid rgba(52, 152, 219, 0.3);
-    border-radius: 25px;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
     transition: all 0.3s ease;
-    font-size: 0.95rem;
-    font-weight: 500;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-}
-
-.resume-btn i {
     font-size: 1rem;
-    transition: transform 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .resume-btn:hover {
-    background: rgba(52, 152, 219, 0.4);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.resume-btn i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
 }
 
 .resume-btn:hover i {
-    transform: translateY(1px);
+    transform: translateX(3px);
 }
 
 @media (max-width: 768px) {
     .resume-buttons {
         flex-direction: column;
-        gap: 10px;
-        margin: 20px 0;
+        gap: 12px;
+        margin: 25px 0;
+        padding: 0 15px;
     }
 
     .resume-btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+        padding: 12px 24px;
+        font-size: 0.95rem;
     }
 }
