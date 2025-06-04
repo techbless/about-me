@@ -622,14 +622,14 @@ body {
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 180px;
+    height: 130px;
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 35%;
+    object-position: center 20%;
 }
 
 .gallery-caption {
@@ -1431,12 +1431,12 @@ footer {
     }
 
     .gallery-item {
-        height: 140px;
+        height: 110px;
         border-radius: 0 0 10px 10px;
     }
 
     .gallery-item img {
-        object-position: center 40%;
+        object-position: center 20%;
     }
 
     .gallery-caption {
@@ -1511,6 +1511,10 @@ footer {
 
     .gallery-item {
         height: 120px;
+    }
+
+    .gallery-item img {
+        object-position: center 15%;
     }
 
     .gallery-caption {
