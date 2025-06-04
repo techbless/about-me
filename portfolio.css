@@ -612,29 +612,24 @@ body {
 }
 
 .experience-gallery {
-    margin: 2rem auto;
-    max-width: 800px;
+    margin: 2rem -2rem -2rem -2rem;
+    max-width: none;
 }
 
 .gallery-item {
     position: relative;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px;
+    height: 180px;
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    object-position: center 35%;
 }
 
 .gallery-caption {
@@ -644,7 +639,7 @@ body {
     right: 0;
     background: rgba(0,0,0,0.7);
     color: white;
-    padding: 0.8rem;
+    padding: 1rem;
     font-size: 0.95rem;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -652,6 +647,11 @@ body {
 
 .gallery-item:hover .gallery-caption {
     transform: translateY(0);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Education Section */
@@ -1328,7 +1328,9 @@ footer {
     }
 
     .gallery-caption {
+        padding: 0.8rem;
         font-size: 0.9rem;
+        transform: translateY(100%);
     }
 
     .awards-grid {
@@ -1438,9 +1440,9 @@ footer {
     }
 
     .gallery-caption {
-        font-size: 0.9rem;
-        background: rgba(0,0,0,0.7);
         padding: 0.8rem;
+        font-size: 0.9rem;
+        transform: translateY(100%);
     }
 }
 
@@ -1514,6 +1516,7 @@ footer {
     .gallery-caption {
         padding: 0.6rem;
         font-size: 0.85rem;
+        transform: translateY(100%);
     }
 }
 
