@@ -64,11 +64,14 @@
         
         <ul class="navbar-nav flex-column w-75 mx-auto py-2">
           <hr />
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#skills" onclick="hideNavbar();">SKILL</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#education" onclick="hideNavbar();">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#summary" onclick="hideNavbar();">SUMMARY</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#experiences" onclick="hideNavbar();">EXPERIENCE</a>
@@ -164,8 +167,6 @@
         </div> -->
 
         
-        
-
         <div class="row pt-5">
           <div class="col-md-12">
             <h3 id="education">EDUCATION</h3>
@@ -204,6 +205,52 @@
 
         <div class="row pt-5">
           <div class="col-md-12">
+            <h3 id="summary">SUMMARY OF EXPERIENCE</h3>
+            <hr>
+          </div>
+        </div>
+        
+        <div class="row pb-3">
+          <div class="col-md-12">
+            <h6 style="margin-top: 25px">🔧 Scalable Architecture Design</h6>
+            <div style="padding-left: 18px; margin-bottom: 20px;">
+              <p class="p-period" style="margin-bottom: 5px">모듈형 C#/.NET 기반 비전 소프트웨어 개발, 레거시 시스템 대체 및 현장 셋업 간소화</p>
+              <p class="p-period" style="margin-bottom: 5px">장비 추가를 위한 모듈화 확장성 확보</p>
+              <p class="p-period" style="margin-bottom: 5px">동적 레시피 기반 구조로 다양한 자재 및 검사 시나리오 대응</p>
+              <p class="p-period" style="margin-bottom: 5px">SQLite 기반 검사 히스토리 DB 및 LOT 추적 시스템 구축</p>
+              <p class="p-period" style="margin-bottom: 5px">EMAP/X-out upstream 연동으로 실시간 불량 맵핑 및 데이터 동기화</p>
+            </div>
+
+            <h6 style="margin-top: 25px">⚙️ Hardware-Integrated Software Development</h6>
+            <div style="padding-left: 18px; margin-bottom: 20px;">
+              <p class="p-period" style="margin-bottom: 5px">비전 소프트웨어-장비 핸들러 UDP 통신 및 컨트롤러 연동</p>
+              <p class="p-period" style="margin-bottom: 5px">Camera Link, GigE 등 산업용 카메라, 스트로브 조명, 트리거 기반 이미지 취득 시스템 구현</p>
+              <p class="p-period" style="margin-bottom: 5px">옵저버 기반 블로킹 큐로 비동기 트리거 처리 파이프라인 설계, 고속 검사 시 프레임 손실 방지</p>
+              <p class="p-period" style="margin-bottom: 5px">스트로브 조명과 트리거로 고속 플라잉 검사 구현, SW 트리거 대비 속도 향상</p>
+              <p class="p-period" style="margin-bottom: 5px">RS232 기반 조명 컨트롤러 연동 및 레시피 기반 자동 제어</p>
+            </div>
+
+            <h6 style="margin-top: 25px">📷 Machine Vision</h6>
+            <div style="padding-left: 18px; margin-bottom: 20px;">
+              <p class="p-period" style="margin-bottom: 5px">C#, WPF, Halcon 기반 반도체 패키지 검사 알고리즘 개발 및 최적화</p>
+              <p class="p-period" style="margin-bottom: 5px">결함 유형별 최적화된 다양한 조명 조건에서 이미지를 획득하는 멀티샷 조명 전략 설계 및 적용, 단일 조명 대비 검출 성능 향상</p>
+              <p class="p-period" style="margin-bottom: 5px">부분 영역 패치 기반, 메모리 효율적 조건부 GAN 프레임워크 개발</p>
+            </div>
+
+            <h6 style="margin-top: 25px">🌐 Backend & Cloud Infrastructure Development</h6>
+            <div style="padding-left: 18px; margin-bottom: 20px;">
+              <p class="p-period" style="margin-bottom: 5px">드랍쉬핑 플랫폼 물류, 결제, 관리자 시스템 통합 백엔드 및 인프라 풀스택 구축</p>
+              <p class="p-period" style="margin-bottom: 5px">Node.js, TypeScript 기반 "THEKOC" RESTful API 설계 및 구현</p>
+              <p class="p-period" style="margin-bottom: 5px">AWS(EC2, S3, LB, RDS, ElastiCache, Nginx) 인프라 설계</p>
+              <p class="p-period" style="margin-bottom: 5px">상품, 주문, 리뷰 관리 모듈 개발 및 SCM 시스템 연동으로 QExpress 창고와 배송 자동화</p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row pt-5">
+          <div class="col-md-12">
             <h3 id="experiences">EXPERIENCES</h3>
             <hr />
           </div>
@@ -211,41 +258,42 @@
         
         <div class="row pb-3">
           <div class="col-md-12">
-            <img src="./aml.jpg" alt="USFK" style="padding-right: 10px; max-width: 45px; float: left; padding-top: 3px" />
+            <img src="./aml.jpg" alt="Deepseers" style="padding-right: 10px; max-width: 45px; float: left; padding-top: 3px" />
             <h6>
               Deepseers <br />
               Vision Software Engineer
             </h6>
             <p class="p-period">2024년 2월 - 현재</p>
             <p class="p-period" style="margin-bottom: 5px">
-              - 연구실 내 스타트업으로 전환하여 창업멤버로 기존과 동일한 프로젝트 진행중
+              연구실 내 스타트업으로 전환하여 창업멤버로 기존과 동일한 프로젝트를 주도적으로 수행 중
             </p>
-            
+
             <h6 style="margin-top: 25px">🔧 시스템 설계 및 아키텍처</h6>
-            <p class="p-period" style="margin-bottom: 5px">- 시스템 전반에 대한 구조 설계 및 핵심 모듈(통신/검사/DB/영상 취득/조명 등) 개발 주도</p>
-            <p class="p-period" style="margin-bottom: 5px">- 맵핑 비전에서 조명 조건별로, 다중 멀티샷 이미지 취득 및 불량 유형 검출을 위한 티칭 알고리즘 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- 레시피/자재 유연화를 위한 다중 자재 대응 알고리즘 및 구조 설계</p>
-            <p class="p-period" style="margin-bottom: 5px">- LOT 관리 및 검사 결과 히스토리 관련 데이터 베이스 관련 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- Observer + BlockingQueue 기반의 구조로, 플라잉 검사 환경에서 트리거-Grab 타이밍 동기화 구현</p>
-            <p class="p-period" style="margin-bottom: 5px; margin-left: 15px">- Grab 타이밍 보장 및 검사 병목 해소로 고속 트리거 대응 안정화</p>
-            <p class="p-period" style="margin-bottom: 5px">- 전공정 EMAP/X-out 데이터 기반 검사 흐름 연동 구조 구현</p>
-            <p class="p-period" style="margin-bottom: 5px">- 다중 카메라 라이브 환경에서 옵저버 패턴 및 백프레셔 제어를 통한 프레임 동기화 및 프레임 개선</p>
+            <p class="p-period" style="margin-bottom: 5px">다양한 산업용 하드웨어에 유연하게 적용 가능한 모듈형 C#/.NET 기반 비전 소프트웨어를 주도적으로 개발</p>
+            <p class="p-period" style="margin-bottom: 5px">기존 레거시 시스템을 대체하고 현장 셋업을 간소화하여 엔지니어링 부담을 크게 경감</p>
+            <p class="p-period" style="margin-bottom: 5px">동적 레시피를 활용하여 여러 자재 종류와 검사 시나리오에 유연하게 대응할 수 있는 구조 설계</p>
+            <p class="p-period" style="margin-bottom: 5px">SQLite 기반 검사 히스토리 데이터베이스 및 LOT 추적 시스템 개발</p>
+            <p class="p-period" style="margin-bottom: 5px">실시간 불량 맵핑 및 데이터 동기화를 위한 EMAP/X-out upstream 연동</p>
+            <p class="p-period" style="margin-bottom: 5px">Observer + BlockingQueue 기반 구조로 플라잉 검사 환경에서 트리거-Grab 타이밍 동기화 및 병목 해소</p>
+            <p class="p-period" style="margin-bottom: 5px">다중 카메라 환경에서 옵저버 패턴 및 백프레셔 제어를 통한 프레임 동기화 및 성능 개선</p>
 
             <h6 style="margin-top: 25px">📷 비전 검사 및 알고리즘 개발</h6>
-            <p class="p-period" style="margin-bottom: 5px">- 딥러닝 ROI Recommendation 알고리즘 개발 및 특허 출원</p>
-            <p class="p-period" style="margin-bottom: 5px">- 맵핑 비전(+Marking면) 검사 알고리즘 아키텍처부터 구현까지 전 과정 주도 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- Strip DataCode 검사 개발 및 인식률 향상</p>
-            <p class="p-period" style="margin-bottom: 5px">- 카메라 Calibration 없이, Lens Distortion을 고려한 합리적인 Pixel Pitch 계산 알고리즘 고안</p>
+            <p class="p-period" style="margin-bottom: 5px">딥러닝 기반 ROI Recommendation 알고리즘 개발 및 특허 출원</p>
+            <p class="p-period" style="margin-bottom: 5px">맵핑 비전(+Marking면) 검사 알고리즘 아키텍처부터 구현까지 전 과정 주도 개발</p>
+            <p class="p-period" style="margin-bottom: 5px">결함 유형별 최적화된 다양한 조명 조건에서 이미지를 획득하는 멀티샷 조명 전략 설계</p>
+            <p class="p-period" style="margin-bottom: 5px">Strip DataCode 검사 개발 및 인식률 향상</p>
+            <p class="p-period" style="margin-bottom: 5px">카메라 Calibration 없이 Lens Distortion을 고려한 합리적인 Pixel Pitch 계산 알고리즘 고안</p>
+            <p class="p-period" style="margin-bottom: 5px">고해상도 이미지 합성을 위한 부분 영역 패치 기반, 메모리 효율적인 조건부 GAN 프레임워크 연구</p>
 
             <h6 style="margin-top: 25px">⚙ 하드웨어 제어 및 통신</h6>
-            <p class="p-period" style="margin-bottom: 5px">- 핸들러-비전 소켓 통신 프로토콜 연동 및 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- Camera Link 및 GigE 카메라 인터페이스 연동 및 통합 조명 시리얼 코드 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- Sawing, EMI등 다양한 장비에 빠르게 대응하기 위한 카메라 및 조명 컨트롤러 동적 세팅 구조 구현</p>
-            <p class="p-period" style="margin-bottom: 5px">- 장비 모터-비전 캘리브레이션 (핸들러-통신/비전) 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- 핸들러-비전 LOT 및 레시피 설정 정보 동기화 기능 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- 플라잉 검사를 위한 트리거 및 스트로브 조명 관련 개발</p>
-            <p class="p-period" style="margin-bottom: 5px">- 장비 하드웨어 트러블 슈팅</p>
-            
+            <p class="p-period" style="margin-bottom: 5px">비전 소프트웨어와 장비 핸들러 간 UDP/소켓 통신 프로토콜 연동 및 개발</p>
+            <p class="p-period" style="margin-bottom: 5px">Camera Link, GigE 등 산업용 카메라, 스트로브 조명, 트리거 기반의 조명 제어 및 이미지 취득 시스템 구현</p>
+            <p class="p-period" style="margin-bottom: 5px">옵저버 기반 블로킹 큐를 활용한 비동기 트리거 처리 파이프라인 설계로 고속 검사 시 프레임 손실 방지</p>
+            <p class="p-period" style="margin-bottom: 5px">스트로브 조명과 트리거를 이용한 고속 플라잉 검사 기능 구현</p>
+            <p class="p-period" style="margin-bottom: 5px">RS232 기반의 다양한 조명 컨트롤러 연동 및 레시피 기반 자동 제어</p>
+            <p class="p-period" style="margin-bottom: 5px">Sawing, EMI 등 다양한 장비에 빠르게 대응하기 위한 카메라 및 조명 컨트롤러 동적 세팅 구조 구현</p>
+            <p class="p-period" style="margin-bottom: 5px">장비 모터-비전 캘리브레이션(핸들러-통신/비전) 및 LOT/레시피 설정 정보 동기화 기능 개발</p>
+            <p class="p-period" style="margin-bottom: 5px">장비 하드웨어 트러블슈팅 및 현장 대응</p>
           </div>
         </div>
         <hr />
@@ -276,11 +324,16 @@
               <iframe class="ref_img" width="560" height="315" src="https://www.youtube.com/embed/0JsyZvNF8Fo?si=BxJb0go8CDdEpJaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </details>
             </p>
-            <p class="p-period" style="margin-bottom: 5px">- 고해상도 이미지 획득을 위한 Patch 기반 메모리 고효율 GAN 프레임워크 연구</p>
-            <p class="p-period" style="margin-bottom: 5px">- KCI 등재지 논문 개제 1편</p>
-            <p class="p-period" style="margin-bottom: 5px">- 국내 학술대회 구두발표 1회, 국제 학술대회 포스터 발표 1회</p>
-            <p class="p-period" style="margin-bottom: 5px">- 국내 학술대회 구두발표 논문 우수상 수상</p>
-            <p class="p-period" style="margin-bottom: 5px">- Saw Singulation및 Unloader 장비의 반도체 패키지 비전검사 소프트웨어 개발</p>
+            <h6 style="margin-top: 20px;">🔬 연구 및 논문</h6>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">Patch 기반 메모리 고효율 GAN 프레임워크 연구 및 고해상도 이미지 획득</p>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">KCI 등재지 논문 1편 게재</p>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">국내 학술대회 구두발표 1회, 국제 학술대회 포스터 발표 1회</p>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">국내 학술대회 구두발표 논문 우수상 수상</p>
+            <h6 style="margin-top: 20px;">💻 소프트웨어 개발</h6>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">Saw Singulation 및 Unloader 장비의 반도체 패키지 비전검사 소프트웨어 개발</p>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">반도체 생산 공정 데이터 수집 및 전처리 자동화 파이프라인 구축</p>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">딥러닝 기반 ROI 추천 및 결함 검출 알고리즘 개발</p>
+            <p class="p-period" style="margin-bottom: 5px; padding-left: 18px;">실험 데이터 관리 및 분석 자동화 도구 개발</p>
           </div>
         </div>
         <hr />
@@ -351,7 +404,6 @@
           <div class="col-md-12">
             <h3 id="researches">RESEARCHES</h3>
             <hr />
-            
           </div>
         </div>
 
@@ -363,9 +415,33 @@
 
         <div class="row pb-3">
           <div class="col-md-12 extra-project">
+            <h6>사용자 개입이 최소화된 차세대 반도체 패키지 불량 검출 시스템</h6>
+            <p class="p-period" style="font-style: italic; margin-bottom: 10px;">(Next-generation semiconductor package defect detection system with minimal user intervention)</p>
+            <p class="p-period" style="font-weight: 300; margin-bottom: 5px;">중소벤처기업부(TIPS)</p>
+            <p class="p-period" style="font-weight: 500; margin-bottom: 5px;">Jan 2025 -- Present</p>
+            <p class="p-period" style="font-weight: 300; margin-bottom: 5px;">Researcher, Deepseers</p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row pb-3">
+          <div class="col-md-12 extra-project">
+            <h6>사용자 개입이 최소화된 차세대 반도체 패키지 불량 검출 시스템</h6>
+            <p class="p-period" style="font-style: italic; margin-bottom: 10px;">(Next-generation semiconductor package defect detection system with minimal user intervention)</p>
+            <p class="p-period" style="font-weight: 300; margin-bottom: 5px;">중소벤처기업부(DIPS)</p>
+            <p class="p-period" style="font-weight: 500; margin-bottom: 5px;">Oct 2024 -- Dec 2024</p>
+            <p class="p-period" style="font-weight: 300; margin-bottom: 5px;">Researcher, Deepseers</p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row pb-3">
+          <div class="col-md-12 extra-project">
             <h6>반도체 소자 생산을 위한 인공지능 기반 스마트 제조 공정 장비 및 관련 기술 개발</h6>
+            <p class="p-period" style="font-style: italic; margin-bottom: 10px;">(Development of AI based smart manufacturing process and equipment technology to strengthen the competitiveness of semiconductor materials parts and equipment)</p>
             <p class="p-period" style="font-weight: 300; margin-bottom: 5px;">산업통상자원부(Ministry of Trade, Industry and Energy)</p>
-            <p class="p-period" style="font-weight: 500; margin-bottom: 5px;">2023.07.01~Present</p>
+            <p class="p-period" style="font-weight: 500; margin-bottom: 5px;">May 2023 -- Dec 2024</p>
+            <p class="p-period" style="font-weight: 300; margin-bottom: 5px;">Researcher, AML Lab. Hansung University</p>
             <hr />
           </div>
         </div>
@@ -674,6 +750,9 @@
 
 
             </p>
+            <p class="p-period" style="margin-bottom: 5px">- HCI 2024 학회 구두발표 최우수논문상 수상</p>
+            <p class="p-period" style="margin-bottom: 5px">- 한국 마이크로전자 및 패키징학회 학술지 게재</p>
+            <p class="p-period" style="margin-bottom: 5px">- ISMP 2023 국제학회 포스터 발표</p>
             <a href="https://koreascience.or.kr/article/JAKO202301257618479.page"><p class="p-period" style="color: rgb(0, 0, 173)">한국 마이크로전자 및 패키징학회 학술지 바로가기</p></a>
           </div>
           <div class="project-card y-2024">
@@ -681,7 +760,7 @@
             <hr />
 
             <p>
-              캡스톤 디자인 출품 작품으로, AML 연구실내 연구과제 결과 프로토타입의 일부 기능을 캡스톤용으로 일부 간소화하여 출품하였습니다. 반도체 후공정 장비를 위한 머신 비전 검사 프로그램입니다. 반도체 생산 과정에서 발생하는 불량을 효율적으로 탑지하고 장비를 제어할 수 있습니다. 캡스톤 버전에서는 간소화된 Auto 티칭 추천기능, 풀 오토 모터 캘리브레이션을 포함하고 있습니다.
+              반도체 후공정 장비를 위한 머신 비전 검사 프로그램으로, 반도체 생산 과정에서 발생하는 불량을 효율적으로 탐지하고 장비를 제어할 수 있습니다. 시스템 전반에 대한 구조 설계 및 핵심 모듈 개발을 주도하였으며, 특히 딥러닝 기반 ROI 추천 알고리즘을 개발하여 특허를 출원하였습니다. 현재는 연구실 스핀오프 스타트업인 Deepseers의 창업멤버로서 프로젝트를 지속 발전시키고 있습니다.
             </p>
             <details>
               <summary>DEMO 및 발표자료</summary>
@@ -997,7 +1076,7 @@
       </a>
       <!-- CV Download Button -->
       <a href="Yunbin_CV.pdf" class="btn btn-warning" download="Yunbin_CV.pdf">
-        <i class="fas fa-download"></i> Download CV
+        <i class="fas fa-download"></i>  Resume(ENG)
       </a>
     </div>
 
