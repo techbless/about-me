@@ -350,12 +350,43 @@ body {
 
 .experience-content h4 {
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin: 2rem 0 1rem;
+    font-size: 1.2rem;
+}
+
+.experience-content h4:first-child {
+    margin-top: 0;
+}
+
+.experience-content h5 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.8rem;
+    font-size: 1.1rem;
 }
 
 .experience-content ul {
-    list-style-position: inside;
+    list-style-position: outside;
     color: var(--dark-gray);
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.experience-content ul:last-child {
+    margin-bottom: 0;
+}
+
+.experience-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.experience-content li:last-child {
+    margin-bottom: 0;
+}
+
+.experience-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
 }
 
 .experience-gallery {
