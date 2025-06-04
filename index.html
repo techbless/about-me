@@ -276,7 +276,7 @@
         <div class="container">
             <h2>Awards & Achievements</h2>
             <div class="awards-grid">
-                <div class="award-item">
+                <div class="award-item" onclick="openAwardModal('hci2024-modal')">
                     <div class="award-image-container">
                         <img src="hci2024.jpg" alt="HCI Korea 2024 Best Paper Award">
                         <div class="award-image-caption">Best Paper Award at HCI Korea 2024</div>
@@ -285,20 +285,11 @@
                         <h3>Best Paper Award (Oral)</h3>
                         <p>HCI Korea 2024</p>
                         <p class="date">Jan 2024</p>
+                        <button class="view-details-btn">View Details</button>
                     </div>
                 </div>
-                <div class="award-item">
-                    <div class="award-image-container">
-                        <img src="national_scholarship.jpg" alt="국가우수장학금 (이공계)">
-                        <div class="award-image-caption">과학기술정보통신부 국가우수장학금 수여식</div>
-                    </div>
-                    <div class="award-content">
-                        <h3>국가우수장학금 (이공계)</h3>
-                        <p>과학기술정보통신부</p>
-                        <p class="date">2021 - 2022</p>
-                    </div>
-                </div>
-                <div class="award-item">
+
+                <div class="award-item" onclick="openAwardModal('jscm-modal')">
                     <div class="award-image-container">
                         <img src="jscm.jpeg" alt="Joint Service Commendation Medal">
                         <div class="award-image-caption">Joint Service Commendation Medal Award Ceremony</div>
@@ -307,31 +298,37 @@
                         <h3>Joint Service Commendation Medal</h3>
                         <p>United States Department of Defense</p>
                         <p class="date">Apr 2022</p>
+                        <button class="view-details-btn">View Details</button>
                     </div>
                 </div>
-                <div class="award-item">
+
+                <div class="award-item" onclick="openAwardModal('dod-modal')">
                     <div class="award-image-container">
                         <img src="dod.png" alt="국방 공공데이터 활용 경진대회">
                         <div class="award-image-caption">2021 국방 공공데이터 활용 경진대회 시상식</div>
                     </div>
                     <div class="award-content">
                         <h3>국방부장관상</h3>
-                        <p>2021 국방 공공데이터 활용 경진대회</p>
+                        <p>2021 국방 공공데이터 활용 경진대회, 서비스 개발 부문 최우수</p>
                         <p class="date">Aug 2021</p>
+                        <button class="view-details-btn">View Details</button>
                     </div>
                 </div>
-                <div class="award-item">
+
+                <div class="award-item" onclick="openAwardModal('oidc-modal')">
                     <div class="award-image-container">
                         <img src="oidc.jpg" alt="OIDC 2020">
                         <div class="award-image-caption">제 2회 오픈 인프라 개발 경진대회 시상식</div>
                     </div>
                     <div class="award-content">
                         <h3>최우수상</h3>
-                        <p>제 2회 오픈 인프라 개발 경진대회</p>
+                        <p>제 2회 오픈 인프라 개발 경진대회 (OIDC 2020)</p>
                         <p class="date">Aug 2020</p>
+                        <button class="view-details-btn">View Details</button>
                     </div>
                 </div>
-                <div class="award-item">
+
+                <div class="award-item" onclick="openAwardModal('paasta-modal')">
                     <div class="award-image-container">
                         <img src="paasta.jpg" alt="PaaS-TA">
                         <div class="award-image-caption">제 2회 개방형 클라우드 플랫폼 서비스 개발 해커톤 시상식</div>
@@ -340,8 +337,71 @@
                         <h3>특별상</h3>
                         <p>제 2회 개방형 클라우드 플랫폼 서비스 개발 해커톤</p>
                         <p class="date">Dec 2019</p>
+                        <button class="view-details-btn">View Details</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Award Modals -->
+        <div id="hci2024-modal" class="award-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Best Paper Award (Oral)</h3>
+                <p>HCI Korea 2024</p>
+                <p>HCI Korea 2024 학회에서 발표한 논문 "A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement"가 최우수 논문상(Best Paper Award)으로 선정되었습니다.</p>
+                <p class="date">Jan 2024</p>
+            </div>
+        </div>
+
+        <div id="jscm-modal" class="award-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Joint Service Commendation Medal</h3>
+                <p>United States Department of Defense</p>
+                <p>합동공로훈장(JSCM)은 미국 국방장관 명의로 수여되는 훈장으로, 육군, 해군, 공군, 해병대 등 여러 군이 협력하는 참모조직이나 연합사령부 등 합동 조직(joint staff)에서 근무하며 감독직(supervisory role) 또는 전략적 핵심 보직(key positions)을 맡아, 탁월한 업적이나 공로를 세운 군인에게 수여됩니다.</p>
+                <p>전역 시 주한 미군/UN군 사령관 <i>Paul J. LaCamera</i> 대장으로 부터 수여받음.</p>
+                <p class="date">Apr 2022</p>
+            </div>
+        </div>
+
+        <div id="dod-modal" class="award-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>국방부장관상</h3>
+                <p>2021 국방 공공데이터 활용 경진대회, 서비스 개발 부문 최우수</p>
+                <p>인공지능을 활용하여 군 장병의 체계적인 자기계발을 지원하는 플랫폼을 개발하였습니다. 플랫폼은 개인별 맞춤 도서 및 자격증을 추천하고, 자격증 합격률 정보를 제공합니다. 사용자는 마크다운(Markdown) 문법을 활용해 자기계발 일지를 작성하며, 자신의 성장 과정을 쉽게 관리할 수 있습니다. 또한, 포인트를 부여하는 랭킹 시스템을 도입하여 사용자 간의 건강한 경쟁을 유도하였습니다.</p>
+                <ul>
+                    <li>Inference API, 웹 RESTful API, Frontend 페이지를 개발하였습니다.</li>
+                    <li>tf-idf와 word2vec을 활용한 딥러닝 기반 개인화 추천 모델 개발을 지원하였습니다.</li>
+                </ul>
+                <p class="date">Aug 2021</p>
+            </div>
+        </div>
+
+        <div id="oidc-modal" class="award-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>최우수상</h3>
+                <p>제 2회 오픈 인프라 개발 경진대회 (OIDC 2020)</p>
+                <p>서울시 공공자전거 '따릉이'의 실시간 대여 가능 정보를 정기적으로 수집하고 미래의 재고 변화를 예측하는 플랫폼을 개발하였습니다. 이 플랫폼은 서울시 Open API를 활용하여 실시간 데이터를 자동으로 수집하며, LSTM 딥러닝 모델을 통해 향후 대여소별 자전거 재고를 예측합니다. 이를 통해 사용자들이 자전거 이용 가능 여부를 사전에 파악할 수 있도록 하여, 따릉이 이용 편의성 및 접근성을 효과적으로 향상시켰습니다.</p>
+                <ul>
+                    <li>API 및 예측 모델을 포함한 모든 기능을 개발하였습니다.</li>
+                </ul>
+                <p class="date">Aug 2020</p>
+            </div>
+        </div>
+
+        <div id="paasta-modal" class="award-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>특별상</h3>
+                <p>제 2회 개방형 클라우드 플랫폼 서비스 개발 해커톤</p>
+                <p>실종 동물의 실시간 정보를 공유할 수 있는 위치 기반 플랫폼을 개발하였습니다. 사용자는 실종 동물의 현재 상태를 확인할 수 있으며, 마지막으로 목격된 위치나 최근 발견된 위치를 공유할 수 있습니다.</p>
+                <ul>
+                    <li>API 및 예측 모델을 포함한 모든 기능을 개발하였습니다.</li>
+                </ul>
+                <p class="date">Dec 2019</p>
             </div>
         </div>
     </section>
@@ -446,6 +506,49 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        // Modal functionality
+        function openAwardModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+
+        // Close modal when clicking the close button or outside the modal
+        document.querySelectorAll('.close-modal').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function() {
+                const modal = this.closest('.award-modal');
+                modal.style.display = 'none';
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        });
+
+        // Close modal when clicking outside
+        document.querySelectorAll('.award-modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.style.display = 'none';
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+            });
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.award-modal').forEach(modal => {
+                    modal.style.display = 'none';
+                });
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+
+        // Prevent modal from closing when clicking inside modal content
+        document.querySelectorAll('.modal-content').forEach(content => {
+            content.addEventListener('click', function(e) {
+                e.stopPropagation();
             });
         });
     </script>
