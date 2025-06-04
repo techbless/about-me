@@ -625,20 +625,16 @@ body {
     height: 200px;
 }
 
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    object-position: center;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.05);
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .gallery-caption {
@@ -1305,11 +1301,14 @@ footer {
 
     .summary-list {
         grid-template-columns: 1fr;
-        max-width: 800px;
+        max-width: 100%;
+        padding: 0;
     }
 
     .summary-category {
-        padding: 1.2rem;
+        padding: 2rem;
+        margin: 0;
+        width: 100%;
     }
 
     .summary-category h3 {
@@ -1333,13 +1332,27 @@ footer {
     }
 
     .awards-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5rem;
-        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .award-item {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .experience-item, .summary-category, .award-item {
+        margin-bottom: 1.2rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        background-color: var(--white);
     }
 
     .award-image-container {
-        height: 200px;
+        height: 280px;
     }
 
     .award-image-caption {
@@ -1348,7 +1361,7 @@ footer {
     }
 
     .award-content {
-        padding: 1.2rem;
+        padding: 1.5rem;
     }
 
     .award-content h3 {
@@ -1406,6 +1419,29 @@ footer {
         height: auto;
         max-height: 300px;
     }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .experience-gallery {
+        margin: 1.5rem -2rem -2rem -2rem;
+    }
+
+    .gallery-item {
+        height: 140px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .gallery-item img {
+        object-position: center 40%;
+    }
+
+    .gallery-caption {
+        font-size: 0.9rem;
+        background: rgba(0,0,0,0.7);
+        padding: 0.8rem;
+    }
 }
 
 /* Even smaller screens */
@@ -1448,13 +1484,36 @@ footer {
     }
 
     .awards-grid {
-        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .contact-info a, .contact-info span:not(.location) {
-        padding: 6px 14px;
+    .experience-item, .summary-category, .award-item {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .award-image-container {
+        height: 240px;
+    }
+
+    .award-content {
+        padding: 1.2rem;
+    }
+
+    .experience-gallery {
+        margin: 1.5rem -1.5rem -1.5rem -1.5rem;
+    }
+
+    .gallery-item {
+        height: 120px;
+    }
+
+    .gallery-caption {
+        padding: 0.6rem;
         font-size: 0.85rem;
-        justify-content: center;
     }
 }
 
