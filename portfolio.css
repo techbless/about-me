@@ -17,10 +17,26 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .container {
@@ -92,6 +108,7 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,6 +116,9 @@ body {
     position: relative;
     overflow: visible;
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
 }
 
 .particles {
@@ -409,8 +429,13 @@ body {
 
 /* About Section */
 .about {
+    min-height: 50vh;
     padding: 5rem 0;
     background-color: var(--light-gray);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 
 .about h2 {
@@ -433,6 +458,7 @@ body {
 .summary {
     padding: 5rem 0;
     background-color: var(--light-gray);
+    scroll-snap-align: none;
 }
 
 .summary h2 {
@@ -504,6 +530,7 @@ body {
 .experience {
     padding: 5rem 0;
     background-color: var(--light-gray);
+    scroll-snap-align: none;
 }
 
 .experience h2 {
@@ -635,6 +662,7 @@ body {
 .education {
     padding: 5rem 0;
     background-color: var(--white);
+    scroll-snap-align: none;
 }
 
 .education h2 {
@@ -688,6 +716,7 @@ body {
 .awards {
     padding: 5rem 0;
     background-color: var(--white);
+    scroll-snap-align: none;
 }
 
 .awards h2 {
@@ -925,6 +954,7 @@ body {
 .publications {
     padding: 5rem 0;
     background-color: var(--light-gray);
+    scroll-snap-align: none;
 }
 
 .publications h2 {
@@ -961,6 +991,7 @@ body {
 .research {
     padding: 5rem 0;
     background-color: var(--white);
+    scroll-snap-align: none;
 }
 
 .research h2 {
@@ -1015,6 +1046,7 @@ body {
 .patents {
     padding: 5rem 0;
     background-color: var(--light-gray);
+    scroll-snap-align: none;
 }
 
 .patents h2 {
@@ -1080,20 +1112,18 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     html {
-        scroll-snap-type: none;
-        height: auto;
-        overflow-y: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
     }
 
-    body {
-        height: auto;
-        overflow-y: auto;
+    .hero {
+        height: 100vh;
+        min-height: 100vh;
+        padding: 60px 15px;
     }
 
-    section {
-        scroll-snap-align: none;
-        scroll-snap-stop: normal;
-        overflow: visible;
+    .about {
+        min-height: 50vh;
     }
 
     .navbar {
@@ -1144,18 +1174,6 @@ footer {
 
     .nav-links li {
         margin: 1rem 0;
-    }
-
-    .hero {
-        min-height: 100vh;
-        height: auto;
-        overflow: visible;
-        position: relative;
-        padding: 80px 15px;
-    }
-
-    .particles {
-        pointer-events: none;
     }
 
     .hero-content {
@@ -1441,11 +1459,6 @@ footer {
     }
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -1540,4 +1553,16 @@ section {
     .particle.interactive {
         display: none;
     }
+}
+
+/* Remove scroll-snap from other sections */
+.education,
+.summary,
+.experience,
+.awards,
+.publications,
+.research,
+.patents {
+    scroll-snap-align: none;
+    position: relative;
 }
