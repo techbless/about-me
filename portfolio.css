@@ -618,44 +618,44 @@ body {
 
 /* Timeline category colors */
 .timeline__content.education {
-    border-left: 4px solid #3498db;
+    border-left: 2px solid rgba(52, 152, 219, 0.8);
 }
 
 .timeline__content.awards {
-    border-left: 4px solid #e74c3c;
+    border-left: 2px solid rgba(231, 76, 60, 0.8);
 }
 
 .timeline__content.work {
-    border-left: 4px solid #2ecc71;
+    border-left: 2px solid rgba(46, 204, 113, 0.8);
 }
 
 .timeline__content.research {
-    border-left: 4px solid #9b59b6;
+    border-left: 2px solid rgba(155, 89, 182, 0.8);
 }
 
 .timeline__content.patent {
-    border-left: 4px solid #f39c12;
+    border-left: 2px solid rgba(243, 156, 18, 0.8);
 }
 
 /* Timeline date badge colors matching categories */
 .timeline__content.education .timeline__date {
-    background-color: #3498db;
+    background-color: rgba(52, 152, 219, 0.9);
 }
 
 .timeline__content.awards .timeline__date {
-    background-color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.9);
 }
 
 .timeline__content.work .timeline__date {
-    background-color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.9);
 }
 
 .timeline__content.research .timeline__date {
-    background-color: #9b59b6;
+    background-color: rgba(155, 89, 182, 0.9);
 }
 
 .timeline__content.patent .timeline__date {
-    background-color: #f39c12;
+    background-color: rgba(243, 156, 18, 0.9);
 }
 
 /* Timeline navigation button colors matching categories */
