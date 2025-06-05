@@ -268,16 +268,39 @@ body {
 
 .particle {
     position: absolute;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     pointer-events: none;
-    transition: transform 0.1s ease;
+    animation: twinkle 2s infinite ease-in-out;
+    box-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.5),
+        0 0 6px rgba(255, 255, 255, 0.3);
+    transform-origin: center;
 }
 
-.particle:nth-child(4n) { background: rgba(255, 255, 255, 0.05); }
-.particle:nth-child(4n+1) { background: rgba(255, 255, 255, 0.1); }
-.particle:nth-child(4n+2) { background: rgba(255, 255, 255, 0.05); }
-.particle:nth-child(4n+3) { background: rgba(255, 255, 255, 0.08); }
+@keyframes twinkle {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+        box-shadow: 
+            0 0 3px rgba(255, 255, 255, 0.5),
+            0 0 6px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        opacity: 0.95;
+        transform: scale(1.1);
+        box-shadow: 
+            0 0 5px rgba(255, 255, 255, 0.7),
+            0 0 10px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1);
+        box-shadow: 
+            0 0 3px rgba(255, 255, 255, 0.5),
+            0 0 6px rgba(255, 255, 255, 0.3);
+    }
+}
 
 /* Different particle sizes */
 .particle:nth-child(3n) {
@@ -286,48 +309,95 @@ body {
 }
 
 .particle:nth-child(3n+1) {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
 }
 
 .particle:nth-child(3n+2) {
-    width: 7px;
-    height: 7px;
+    width: 3px;
+    height: 3px;
 }
 
 /* Different particle colors and opacities */
 .particle:nth-child(4n) {
-    background: rgba(52, 152, 219, 0.15);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.6),
+        0 0 6px rgba(255, 255, 255, 0.4);
 }
 
 .particle:nth-child(4n+1) {
-    background: rgba(41, 128, 185, 0.2);
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.55),
+        0 0 6px rgba(255, 255, 255, 0.35);
 }
 
 .particle:nth-child(4n+2) {
-    background: rgba(52, 152, 219, 0.25);
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 
+        0 0 4px rgba(255, 255, 255, 0.7),
+        0 0 8px rgba(255, 255, 255, 0.45);
 }
 
 .particle:nth-child(4n+3) {
-    background: rgba(41, 128, 185, 0.3);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.5),
+        0 0 6px rgba(255, 255, 255, 0.3);
 }
 
-/* Particle initial positions */
-.particle:nth-child(1) { animation: none; top: 20%; left: 30%; }
-.particle:nth-child(2) { animation: none; top: 40%; left: 50%; }
-.particle:nth-child(3) { animation: none; top: 60%; left: 70%; }
-.particle:nth-child(4) { animation: none; top: 80%; left: 20%; }
-.particle:nth-child(5) { animation: none; top: 30%; left: 80%; }
-.particle:nth-child(6) { animation: none; top: 50%; left: 40%; }
-.particle:nth-child(7) { animation: none; top: 70%; left: 60%; }
-.particle:nth-child(8) { animation: none; top: 25%; left: 75%; }
-.particle:nth-child(9) { animation: none; top: 85%; left: 35%; }
-.particle:nth-child(10) { animation: none; top: 45%; left: 65%; }
-.particle:nth-child(11) { animation: none; top: 15%; left: 45%; }
-.particle:nth-child(12) { animation: none; top: 35%; left: 25%; }
-.particle:nth-child(13) { animation: none; top: 55%; left: 85%; }
-.particle:nth-child(14) { animation: none; top: 75%; left: 15%; }
-.particle:nth-child(15) { animation: none; top: 25%; left: 55%; }
+/* Particle initial positions - 50 particles randomly distributed below navbar */
+.particle:nth-child(1) { top: 18%; left: 23%; }
+.particle:nth-child(2) { top: 92%; left: 45%; }
+.particle:nth-child(3) { top: 33%; left: 78%; }
+.particle:nth-child(4) { top: 67%; left: 12%; }
+.particle:nth-child(5) { top: 45%; left: 89%; }
+.particle:nth-child(6) { top: 82%; left: 34%; }
+.particle:nth-child(7) { top: 28%; left: 56%; }
+.particle:nth-child(8) { top: 73%; left: 67%; }
+.particle:nth-child(9) { top: 51%; left: 23%; }
+.particle:nth-child(10) { top: 95%; left: 78%; }
+.particle:nth-child(11) { top: 38%; left: 15%; }
+.particle:nth-child(12) { top: 86%; left: 92%; }
+.particle:nth-child(13) { top: 42%; left: 45%; }
+.particle:nth-child(14) { top: 63%; left: 88%; }
+.particle:nth-child(15) { top: 25%; left: 34%; }
+.particle:nth-child(16) { top: 78%; left: 56%; }
+.particle:nth-child(17) { top: 55%; left: 78%; }
+.particle:nth-child(18) { top: 89%; left: 15%; }
+.particle:nth-child(19) { top: 31%; left: 92%; }
+.particle:nth-child(20) { top: 71%; left: 34%; }
+.particle:nth-child(21) { top: 48%; left: 67%; }
+.particle:nth-child(22) { top: 93%; left: 23%; }
+.particle:nth-child(23) { top: 36%; left: 45%; }
+.particle:nth-child(24) { top: 84%; left: 78%; }
+.particle:nth-child(25) { top: 22%; left: 12%; }
+.particle:nth-child(26) { top: 76%; left: 89%; }
+.particle:nth-child(27) { top: 52%; left: 34%; }
+.particle:nth-child(28) { top: 97%; left: 56%; }
+.particle:nth-child(29) { top: 43%; left: 78%; }
+.particle:nth-child(30) { top: 88%; left: 15%; }
+.particle:nth-child(31) { top: 27%; left: 92%; }
+.particle:nth-child(32) { top: 69%; left: 23%; }
+.particle:nth-child(33) { top: 15%; left: 45%; }
+.particle:nth-child(34) { top: 91%; left: 67%; }
+.particle:nth-child(35) { top: 34%; left: 34%; }
+.particle:nth-child(36) { top: 82%; left: 88%; }
+.particle:nth-child(37) { top: 58%; left: 12%; }
+.particle:nth-child(38) { top: 96%; left: 89%; }
+.particle:nth-child(39) { top: 41%; left: 56%; }
+.particle:nth-child(40) { top: 87%; left: 34%; }
+.particle:nth-child(41) { top: 19%; left: 78%; }
+.particle:nth-child(42) { top: 73%; left: 15%; }
+.particle:nth-child(43) { top: 46%; left: 92%; }
+.particle:nth-child(44) { top: 94%; left: 23%; }
+.particle:nth-child(45) { top: 29%; left: 67%; }
+.particle:nth-child(46) { top: 79%; left: 45%; }
+.particle:nth-child(47) { top: 16%; left: 88%; }
+.particle:nth-child(48) { top: 65%; left: 34%; }
+.particle:nth-child(49) { top: 85%; left: 56%; }
+.particle:nth-child(50) { top: 24%; left: 78%; }
 
 /* Add a subtle transition effect when snapping */
 .hero::after {
@@ -1888,22 +1958,15 @@ section {
 
 /* Particle interactions - Only for non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-    .particle {
-        position: absolute;
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-        pointer-events: auto;
-        transition: transform 0.1s ease;
-    }
-
     .particle.interactive {
-        width: 12px !important;
-        height: 12px !important;
-        background: rgba(255, 255, 255, 0.25);
+        width: 4px !important;
+        height: 4px !important;
+        background: rgba(255, 255, 255, 0.7);
         box-shadow: 
-            0 0 15px rgba(255, 255, 255, 0.2),
-            0 0 30px rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
+            0 0 5px rgba(255, 255, 255, 0.6),
+            0 0 10px rgba(255, 255, 255, 0.4);
+        transition: all 0.2s ease;
+        animation: none;
     }
 }
 
