@@ -2066,9 +2066,97 @@ section {
     pointer-events: none;
 }
 
+@media (max-width: 800px) {
+    .timeline.filtering .timeline__item.filtered-out {
+        display: none;
+    }
+    
+    .timeline__content {
+        margin-bottom: 20px;
+    }
+}
+
 /* Alternative filtering style - uncomment if you prefer this approach */
 /*
 .timeline.filtering .timeline__item.filtered-out {
     display: none;
 }
 */
+
+/* Timeline floating back button */
+.timeline-back-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: none;
+    align-items: center;
+    gap: 8px;
+    z-index: 999;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.timeline-back-btn.visible {
+    display: flex;
+    animation: slideUp 0.3s ease;
+}
+
+.timeline-back-btn:hover {
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    background-color: #34495e;
+}
+
+.timeline-back-btn i {
+    font-size: 1.1rem;
+}
+
+.timeline-back-btn .close-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.timeline-back-btn .close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-back-btn {
+        bottom: 20px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .timeline-back-btn i {
+        font-size: 1rem;
+    }
+}

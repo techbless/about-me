@@ -108,7 +108,7 @@
                 <div class="legend-item research-legend">
                     <span class="legend-color"></span>
                     <span class="legend-label">Research/Academic</span>
-                    <span class="legend-count">4</span>
+                    <span class="legend-count">5</span>
                 </div>
                 <div class="legend-item patent-legend">
                     <span class="legend-color"></span>
@@ -205,6 +205,15 @@
                                 <h3>ISMP 2023</h3>
                                 <p>국제 학술대회 포스터 발표</p>
                                 <p>"A Computationally Optimized Data Augmentation Framework Utilizing cDCGAN for High-Resolution Package Images Acquisition"</p>
+                                <a href="#publications" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content research">
+                                <span class="timeline__date">Jan 2024</span>
+                                <h3>HCI Korea 2024</h3>
+                                <p>학회 발표 (구두)</p>
+                                <p>"A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement"</p>
                                 <a href="#publications" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -733,6 +742,15 @@
         </div>
     </footer>
 
+    <!-- Timeline Back Button -->
+    <div class="timeline-back-btn">
+        <i class="fas fa-clock"></i>
+        <span>타임라인으로 돌아가기</span>
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
     <script>
         // Initialize timeline
         document.addEventListener('DOMContentLoaded', function() {
@@ -742,6 +760,50 @@
                 forceVerticalMode: 800,
                 verticalStartPosition: 'left',
                 verticalTrigger: '150px'
+            });
+
+            // Timeline Back Button Functionality
+            const timelineBackBtn = document.querySelector('.timeline-back-btn');
+            const timelineSection = document.querySelector('#timeline');
+            let fromTimeline = false;
+
+            // Track clicks on timeline navigation buttons
+            document.querySelectorAll('.timeline-nav-btn').forEach(btn => {
+                if (!btn.hasAttribute('onclick')) {  // Only for non-modal buttons
+                    btn.addEventListener('click', () => {
+                        fromTimeline = true;
+                        setTimeout(() => {
+                            timelineBackBtn.classList.add('visible');
+                        }, 500);
+                    });
+                }
+            });
+
+            // Close button functionality
+            timelineBackBtn.querySelector('.close-btn').addEventListener('click', (e) => {
+                e.stopPropagation();
+                timelineBackBtn.classList.remove('visible');
+                fromTimeline = false;
+            });
+
+            // Back to timeline functionality
+            timelineBackBtn.addEventListener('click', () => {
+                timelineSection.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    timelineBackBtn.classList.remove('visible');
+                    fromTimeline = false;
+                }, 1000);
+            });
+
+            // Hide back button when scrolling back to timeline naturally
+            window.addEventListener('scroll', () => {
+                if (fromTimeline) {
+                    const timelineRect = timelineSection.getBoundingClientRect();
+                    if (timelineRect.top >= 0 && timelineRect.bottom <= window.innerHeight) {
+                        timelineBackBtn.classList.remove('visible');
+                        fromTimeline = false;
+                    }
+                }
             });
         });
         
@@ -774,10 +836,11 @@
                         
                         activeFilter = null;
                     } else {
-                        // Add active class to clicked legend item and remove from others
+                        // Remove active class from all legend items
                         legendItems.forEach(legendItem => {
                             legendItem.classList.remove('active');
                         });
+                        // Add active class to clicked legend item
                         this.classList.add('active');
                         
                         // Add filtering class to timeline
