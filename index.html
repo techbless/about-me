@@ -568,7 +568,9 @@
                 <h3>Best Paper Award (Oral)</h3>
                 <p>HCI Korea 2024</p>
                 <div class="modal-image">
-                    <img src="bestpaper.jpg" alt="HCI Korea 2024 Best Paper Award">
+                    <div class="modal-image-wrapper">
+                        <img src="bestpaper.jpg" alt="HCI Korea 2024 Best Paper Award">
+                    </div>
                 </div>
                 <p>HCI Korea 2024 학회에서 발표한 논문 "A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement"가 최우수 논문상(Best Paper Award)으로 선정되었습니다.</p>
                 <p class="date">Jan 2024</p>
@@ -919,7 +921,7 @@
         function openAwardModal(modalId) {
             const modal = document.getElementById(modalId);
             modal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            document.body.classList.add('modal-open');
         }
 
         // Close modal when clicking the close button or outside the modal
@@ -927,7 +929,7 @@
             closeBtn.addEventListener('click', function() {
                 const modal = this.closest('.award-modal');
                 modal.style.display = 'none';
-                document.body.style.overflow = ''; // Restore scrolling
+                document.body.classList.remove('modal-open');
             });
         });
 
@@ -936,7 +938,7 @@
             modal.addEventListener('click', function(e) {
                 if (e.target === this) {
                     this.style.display = 'none';
-                    document.body.style.overflow = ''; // Restore scrolling
+                    document.body.classList.remove('modal-open');
                 }
             });
         });
@@ -947,7 +949,7 @@
                 document.querySelectorAll('.award-modal').forEach(modal => {
                     modal.style.display = 'none';
                 });
-                document.body.style.overflow = ''; // Restore scrolling
+                document.body.classList.remove('modal-open');
             }
         });
 
