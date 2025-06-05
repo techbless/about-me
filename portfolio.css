@@ -334,8 +334,10 @@ body {
     font-weight: 500;
     letter-spacing: 0.3px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: -5px;
 }
 
+/* Resume Buttons */
 .resume-buttons {
     display: flex;
     justify-content: center;
@@ -1181,26 +1183,32 @@ footer {
 
     .hero h1 {
         font-size: 1.7em;
-        margin: 15px 0 8px;
+        margin: 15px 0 6px;
     }
 
     .hero h2 {
         font-size: 1.2em;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
+        margin-top: -3px;
     }
 
     .resume-buttons {
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        gap: 10px;
         margin: 15px 0;
         padding: 0 15px;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .resume-btn {
-        width: 100%;
+        width: calc(50% - 5px);
         justify-content: center;
-        padding: 8px 20px;
-        font-size: 0.85rem;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .resume-btn i {
@@ -1447,21 +1455,23 @@ footer {
 
     .hero h1 {
         font-size: 1.6em;
-        margin: 12px 0 6px;
+        margin: 12px 0 4px;
     }
 
     .hero h2 {
         font-size: 1.1em;
         margin-bottom: 18px;
+        margin-top: -2px;
     }
 
     .resume-btn {
+        width: calc(50% - 5px);
         padding: 8px 16px;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .resume-btn i {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .awards-grid {
@@ -1510,65 +1520,6 @@ footer {
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
-}
-
-.resume-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 15px 0;
-}
-
-.resume-btn {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 20px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
-.resume-btn:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 
-        0 5px 15px rgba(0, 0, 0, 0.2),
-        0 0 30px rgba(255, 255, 255, 0.1);
-}
-
-.resume-btn i {
-    font-size: 0.95rem;
-    transition: transform 0.3s ease;
-}
-
-.resume-btn:hover i {
-    transform: translateX(3px);
-}
-
-@media (max-width: 768px) {
-    .resume-buttons {
-        flex-direction: column;
-        gap: 12px;
-        margin: 15px 0;
-        padding: 0 15px;
-    }
-
-    .resume-btn {
-        width: 100%;
-        justify-content: center;
-        padding: 8px 20px;
-        font-size: 0.85rem;
-    }
 }
 
 /* Particle interactions - Only for non-touch devices */
