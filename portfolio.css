@@ -438,7 +438,7 @@ body {
 .about {
     min-height: 50vh;
     padding: 5rem 0;
-    background-color: var(--light-gray);
+    background-color: var(--white);
     position: relative;
 }
 
@@ -456,6 +456,65 @@ body {
     line-height: 1.8;
     font-size: 1.05rem;
     padding: 0 20px;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+/* Education Section */
+.education {
+    padding: 5rem 0;
+    background-color: var(--white);
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.education-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.edu-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.education-content {
+    width: 100%;
+}
+
+.education-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-content ul {
+    list-style-position: inside;
+    color: var(--dark-gray);
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.education-content ul ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95em;
+}
+
+.education-content ul ul li {
+    color: inherit;
 }
 
 /* Summary Section */
@@ -533,6 +592,7 @@ body {
 .experience {
     padding: 5rem 0;
     background-color: var(--light-gray);
+    scroll-behavior: smooth;
 }
 
 .experience h2 {
@@ -547,6 +607,27 @@ body {
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    scroll-margin-top: 80px; /* Adds margin for scroll targets to account for fixed navbar */
+}
+
+/* When an experience item is targeted by the URL hash, highlight it */
+.experience-item:target {
+    animation: highlight-item 2s ease;
+}
+
+@keyframes highlight-item {
+    0% {
+        box-shadow: 0 0 0 2px var(--secondary-color);
+        transform: translateY(-5px);
+    }
+    70% {
+        box-shadow: 0 0 0 2px var(--secondary-color);
+        transform: translateY(-5px);
+    }
+    100% {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transform: translateY(0);
+    }
 }
 
 .company-header {
@@ -655,59 +736,6 @@ body {
 .gallery-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* Education Section */
-.education {
-    padding: 5rem 0;
-    background-color: var(--white);
-}
-
-.education h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--primary-color);
-}
-
-.education-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.edu-logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-.education-content {
-    width: 100%;
-}
-
-.education-content h3 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.education-content ul {
-    list-style-position: inside;
-    color: var(--dark-gray);
-    margin-top: 1rem;
-    padding-left: 1rem;
-}
-
-.education-content ul ul {
-    margin-left: 1.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.95em;
-}
-
-.education-content ul ul li {
-    color: inherit;
 }
 
 /* Awards Section */
@@ -1568,7 +1596,7 @@ section {
 /* Timeline Section */
 .timeline-section {
     padding: 80px 0;
-    background-color: #f9f9f9;
+    background-color: var(--light-gray);
 }
 
 .timeline-section h2 {
@@ -1583,6 +1611,21 @@ section {
     max-width: 100%;
 }
 
+/* Make timeline wider on desktop */
+@media (min-width: 1200px) {
+    .timeline-section .container {
+        max-width: 90%;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .timeline-section .container {
+        max-width: 85%;
+        width: 85%;
+    }
+}
+
 .timeline__content {
     background-color: var(--white);
     border-radius: 10px;
@@ -1590,6 +1633,8 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 4px solid var(--secondary-color);
+    position: relative;
+    padding-bottom: 40px;
 }
 
 .timeline__content:hover {
@@ -1624,27 +1669,40 @@ section {
 }
 
 /* Timeline navigation buttons */
-.timeline__nav {
-    background-color: var(--secondary-color);
+.timeline-nav-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    background-color: var(--secondary-color);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
 }
 
-.timeline__nav:hover {
+.timeline__content:hover .timeline-nav-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-nav-btn:hover {
     background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
 
-.timeline__nav:before {
-    border-color: var(--white);
+.timeline-nav-btn i {
+    font-size: 0.9rem;
 }
 
-/* Responsive adjustments for timeline */
 @media (max-width: 768px) {
     .timeline__content {
         padding: 15px;
@@ -1661,6 +1719,19 @@ section {
     .timeline__date {
         font-size: 0.8rem;
         padding: 4px 8px;
+    }
+
+    .timeline-nav-btn {
+        width: 28px;
+        height: 28px;
+        bottom: 12px;
+        right: 12px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .timeline-nav-btn i {
+        font-size: 0.8rem;
     }
 }
 
