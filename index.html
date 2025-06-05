@@ -6,6 +6,8 @@
     <title>Chang, Yunbin - Vision & Software Engineer</title>
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/squarechip/timeline@master/dist/css/timeline.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/squarechip/timeline@master/dist/js/timeline.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -15,6 +17,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#timeline">Timeline</a></li>
                 <li><a href="#summary">Summary</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#awards">Awards</a></li>
@@ -97,6 +100,111 @@
                         <li>최우수한성인재 장학금 - 2학년 70% 장학금</li>
                         <li>우수한성역량장학금 - 1학년 1학기 50%, 2학기 30% 장학금</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline__wrap">
+                    <div class="timeline__items">
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Mar 2019</span>
+                                <h3>Hansung University</h3>
+                                <p>Started B.S. in Computer Science and Engineering</p>
+                                <p>Admitted through Software Special Admission</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Dec 2019</span>
+                                <h3>PaaS-TA Hackathon</h3>
+                                <p>Special Award</p>
+                                <p>Developed a location-based platform for sharing real-time information about missing pets</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Aug 2020</span>
+                                <h3>OIDC 2020</h3>
+                                <p>Grand Prize</p>
+                                <p>Developed a platform to collect and predict real-time availability of Seoul City's public bicycles</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Dec 2020 - Jun 2022</span>
+                                <h3>USFK HQ, UNC</h3>
+                                <p>KATUSA, J1 Data Management</p>
+                                <p>Managed personnel records for over 10,000 individuals</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Apr 2022</span>
+                                <h3>Joint Service Commendation Medal</h3>
+                                <p>Awarded by Secretary of Defense, United States Department of Defense</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Jun 2022 - May 2023</span>
+                                <h3>STAFACT INC.</h3>
+                                <p>Backend Developer</p>
+                                <p>Developed dropshipping platform "THEKOC" and internal SCM system</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Mar 2023</span>
+                                <h3>National Excellence Scholarship</h3>
+                                <p>Awarded full scholarship for 3rd and 4th year</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">May 2023 - Feb 2024</span>
+                                <h3>AML Lab, Hansung University</h3>
+                                <p>Undergraduate Researcher</p>
+                                <p>Developed semiconductor package inspection software and researched memory-efficient GAN framework</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Jan 2024</span>
+                                <h3>HCI Korea 2024</h3>
+                                <p>Best Paper Award (Oral)</p>
+                                <p>"A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement"</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Feb 2024 - Present</span>
+                                <h3>Deepseers</h3>
+                                <p>Vision & Software Engineer</p>
+                                <p>Leading semiconductor package vision inspection solution development</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Aug 2024</span>
+                                <h3>Hansung University</h3>
+                                <p>Early Graduation</p>
+                                <p>B.S. in Computer Science and Engineering with GPA 4.27/4.5</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content">
+                                <span class="timeline__date">Nov 2024</span>
+                                <h3>Patent Application</h3>
+                                <p>"System and method for automatic creating region of interest based on deep learning for machine vision"</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -556,6 +664,17 @@
     </footer>
 
     <script>
+        // Initialize timeline
+        document.addEventListener('DOMContentLoaded', function() {
+            timeline(document.querySelectorAll('.timeline'), {
+                mode: 'horizontal',
+                visibleItems: 4,
+                forceVerticalMode: 800,
+                verticalStartPosition: 'left',
+                verticalTrigger: '150px'
+            });
+        });
+        
         // Hamburger menu toggle
         document.querySelector('.hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');

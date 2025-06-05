@@ -1564,3 +1564,120 @@ section {
 .patents {
     position: relative;
 }
+
+/* Timeline Section */
+.timeline-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.timeline {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.timeline__content {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.timeline__content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timeline__content h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.timeline__content p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.timeline__content p:last-child {
+    margin-bottom: 0;
+}
+
+.timeline__date {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+/* Timeline navigation buttons */
+.timeline__nav {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.timeline__nav:hover {
+    background-color: var(--primary-color);
+}
+
+.timeline__nav:before {
+    border-color: var(--white);
+}
+
+/* Responsive adjustments for timeline */
+@media (max-width: 768px) {
+    .timeline__content {
+        padding: 15px;
+    }
+    
+    .timeline__content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .timeline__content p {
+        font-size: 0.9rem;
+    }
+    
+    .timeline__date {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-section h2 {
+        font-size: 2rem;
+    }
+    
+    .timeline__content {
+        padding: 12px;
+    }
+    
+    .timeline__content h3 {
+        font-size: 1rem;
+    }
+    
+    .timeline__content p {
+        font-size: 0.85rem;
+    }
+}
