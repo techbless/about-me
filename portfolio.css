@@ -1471,6 +1471,50 @@ body {
     font-weight: 500;
 }
 
+.research-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.research-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.research-link:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary-color);
+}
+
+.research-link i {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .research-links {
+        gap: 8px;
+        margin-top: 6px;
+    }
+    
+    .research-link {
+        padding: 3px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .research-link i {
+        font-size: 0.85rem;
+    }
+}
+
 /* Patents Section */
 .patents {
     padding: 5rem 0;
