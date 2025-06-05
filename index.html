@@ -674,6 +674,7 @@
                 <h3>Conference Proceedings & Presentations</h3>
                 <div class="publication-item">
                     <h4>A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement</h4>
+                    <p>Yunbin Chang, Wonyong Choi, Keejun Han*</p>
                     <p>HCI Korea 2024</p>
                     <div class="research-links">
                         <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11714627" target="_blank" class="research-link"><i class="fas fa-book"></i> Proceedings</a>
@@ -681,9 +682,10 @@
                 </div>
                 <div class="publication-item">
                     <h4>A Computationally Optimized Data Augmentation Framework Utilizing cDCGAN for High-Resolution Package Images Acquisition</h4>
+                    <p>Yunbin Chang, Wonyong Choi, Keejun Han*</p>
                     <p>ISMP 2023</p>
                     <div class="research-links">
-                        <a href="https://github.com/techbless/techbless/blob/master/poster.jpg?raw=true" target="_blank" class="research-link"><i class="fas fa-image"></i> Poster</a>
+                        <a href="#ismp2023-modal" class="research-link" onclick="openPosterModal('ismp2023-modal'); return false;"><i class="fas fa-image"></i> Poster</a>
                     </div>
                 </div>
             </div>
@@ -756,6 +758,25 @@
         <span>타임라인으로 돌아가기</span>
         <div class="close-btn">
             <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <!-- ISMP 2023 Poster Modal -->
+    <div id="ismp2023-modal" class="award-modal">
+        <div class="modal-content poster-modal-content">
+            <span class="close-modal" onclick="PosterViewer.closeModal('ismp2023-modal')">&times;</span>
+            <div class="zoom-controls">
+                <button onclick="PosterViewer.zoomPoster(1.2)" class="zoom-btn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+                <button onclick="PosterViewer.zoomPoster(0.8)" class="zoom-btn" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+                <button onclick="PosterViewer.resetPoster()" class="zoom-btn" title="Reset"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="poster-container" id="poster-container">
+                <img src="https://raw.githubusercontent.com/techbless/techbless/master/poster.jpg" 
+                     alt="ISMP 2023 Poster" 
+                     class="poster-image" 
+                     id="poster-image"
+                     draggable="false">
+            </div>
         </div>
     </div>
 
@@ -936,7 +957,375 @@
                 e.stopPropagation();
             });
         });
+
+        // Poster Viewer Module
+        const PosterViewer = (function() {
+            let scale = 1;
+            let isDragging = false;
+            let startX, startY, translateX = 0, translateY = 0;
+            let initialScale = 1;
+            let lastCenterX = 0, lastCenterY = 0;
+            
+            function initPosterSize() {
+                const container = document.getElementById('poster-container');
+                const img = document.getElementById('poster-image');
+                
+                if (!img.complete || !img.naturalWidth) {
+                    setTimeout(initPosterSize, 100);
+                    return;
+                }
+                
+                // Calculate scale to fit the image within the container while maintaining aspect ratio
+                const containerAspect = container.offsetWidth / container.offsetHeight;
+                const imageAspect = img.naturalWidth / img.naturalHeight;
+                
+                if (containerAspect > imageAspect) {
+                    // Container is wider than image aspect ratio
+                    initialScale = (container.offsetHeight / img.naturalHeight) * 1.5; // Increased initial zoom
+                } else {
+                    // Container is taller than image aspect ratio
+                    initialScale = (container.offsetWidth / img.naturalWidth) * 1.5; // Increased initial zoom
+                }
+                
+                scale = initialScale;
+                
+                // Calculate initial Y translation to show the top of the image
+                const scaledHeight = img.naturalHeight * scale;
+                const containerHeight = container.offsetHeight;
+                translateY = (scaledHeight - containerHeight) / 2;
+                translateX = 0;
+                
+                updatePosterTransform();
+                updateCursorStyle();
+            }
+
+            function isDraggable() {
+                const container = document.getElementById('poster-container');
+                const img = document.getElementById('poster-image');
+                if (!container || !img) return false;
+
+                const containerRect = container.getBoundingClientRect();
+                const scaledWidth = img.naturalWidth * scale;
+                const scaledHeight = img.naturalHeight * scale;
+
+                return scaledWidth > containerRect.width || scaledHeight > containerRect.height;
+            }
+            
+            function startDragging(e) {
+                if (!isDraggable()) return;
+                
+                isDragging = true;
+                if (e.type === 'mousedown') {
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                } else {
+                    const touch = e.touches[0];
+                    startX = touch.clientX - translateX;
+                    startY = touch.clientY - translateY;
+                }
+                container.style.cursor = 'grabbing';
+            }
+
+            // Update cursor style based on draggability
+            function updateCursorStyle() {
+                const container = document.getElementById('poster-container');
+                if (!container) return;
+                
+                container.style.cursor = isDraggable() ? 'grab' : 'default';
+            }
+
+            function zoomPoster(factor) {
+                const container = document.getElementById('poster-container');
+                const img = document.getElementById('poster-image');
+                
+                // Store old scale for ratio calculation
+                const oldScale = scale;
+                
+                // If trying to zoom out
+                if (factor < 1) {
+                    // Calculate what the new scale would be
+                    const nextScale = scale * factor;
+                    
+                    // If the next scale would be less than or equal to initial scale, reset
+                    if (nextScale <= initialScale) {
+                        resetPoster();
+                        return;
+                    }
+                }
+                
+                // Update scale with bounds
+                scale *= factor;
+                scale = Math.min(scale, initialScale * 3);
+                
+                // Calculate the scale ratio
+                const scaleRatio = scale / oldScale;
+                
+                // Adjust translation to zoom around the center point
+                translateX = translateX * scaleRatio;
+                translateY = translateY * scaleRatio;
+                
+                updatePosterTransform();
+                updateCursorStyle();
+            }
+
+            function resetPoster() {
+                scale = initialScale;
+                // Reset to top position
+                const container = document.getElementById('poster-container');
+                const img = document.getElementById('poster-image');
+                const scaledHeight = img.naturalHeight * scale;
+                const containerHeight = container.offsetHeight;
+                translateY = (scaledHeight - containerHeight) / 2;
+                translateX = 0;
+                updatePosterTransform();
+                updateCursorStyle();
+            }
+
+            function updatePosterTransform() {
+                const img = document.getElementById('poster-image');
+                img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+
+            function closeModal(modalId) {
+                document.getElementById(modalId).style.display = "none";
+                resetPoster();
+            }
+            
+            function openModal(modalId) {
+                const modal = document.getElementById(modalId);
+                modal.style.display = "block";
+                
+                const img = document.getElementById('poster-image');
+                if (img.complete) {
+                    initPosterSize();
+                } else {
+                    img.onload = initPosterSize;
+                }
+            }
+
+            // Add drag functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const container = document.getElementById('poster-container');
+                const img = document.getElementById('poster-image');
+                
+                if (!container || !img) return;
+
+                container.addEventListener('mousedown', startDragging);
+                container.addEventListener('mousemove', drag);
+                container.addEventListener('mouseup', stopDragging);
+                container.addEventListener('mouseleave', stopDragging);
+                container.addEventListener('touchstart', handleTouchStart, { passive: false });
+                container.addEventListener('touchmove', handleTouchMove, { passive: false });
+                container.addEventListener('touchend', stopDragging);
+                
+                function drag(e) {
+                    if (!isDragging || !isDraggable()) return;
+                    e.preventDefault();
+                    
+                    let clientX, clientY;
+                    if (e.type === 'mousemove') {
+                        clientX = e.clientX;
+                        clientY = e.clientY;
+                    } else {
+                        const touch = e.touches[0];
+                        clientX = touch.clientX;
+                        clientY = touch.clientY;
+                    }
+                    
+                    translateX = clientX - startX;
+                    translateY = clientY - startY;
+                    
+                    // Add bounds to prevent dragging too far
+                    const containerRect = container.getBoundingClientRect();
+                    const scaledWidth = img.naturalWidth * scale;
+                    const scaledHeight = img.naturalHeight * scale;
+                    
+                    const maxTranslateX = Math.max(0, (scaledWidth - containerRect.width) / 2);
+                    const maxTranslateY = Math.max(0, (scaledHeight - containerRect.height) / 2);
+                    
+                    translateX = Math.max(Math.min(translateX, maxTranslateX), -maxTranslateX);
+                    translateY = Math.max(Math.min(translateY, maxTranslateY), -maxTranslateY);
+                    
+                    updatePosterTransform();
+                }
+                
+                function stopDragging() {
+                    isDragging = false;
+                    updateCursorStyle();
+                }
+                
+                function handleTouchStart(e) {
+                    if (!isDraggable()) return;
+                    e.preventDefault();
+                    startDragging(e);
+                }
+                
+                function handleTouchMove(e) {
+                    if (!isDraggable()) return;
+                    e.preventDefault();
+                    drag(e);
+                }
+
+                // Update cursor style when image is loaded
+                if (img.complete) {
+                    updateCursorStyle();
+                } else {
+                    img.onload = updateCursorStyle;
+                }
+            });
+
+            // Public API
+            return {
+                openModal,
+                closeModal,
+                zoomPoster,
+                resetPoster
+            };
+        })();
+
+        // Update the onclick handler
+        function openPosterModal(modalId) {
+            PosterViewer.openModal(modalId);
+        }
     </script>
     <script src="js/particles.js"></script>
+    <style>
+        .award-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            overflow: hidden;
+        }
+        
+        .poster-modal-content {
+            position: relative;
+            width: 95%;
+            height: 95%;
+            margin: 2.5vh auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .zoom-controls {
+            position: absolute;
+            top: 20px;
+            right: 80px;
+            display: flex;
+            gap: 10px;
+            z-index: 1001;
+        }
+
+        .zoom-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .zoom-btn:hover {
+            background: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .poster-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .poster-container:active {
+            cursor: grabbing;
+        }
+
+        .poster-image {
+            max-width: none;
+            transform-origin: center;
+            transition: transform 0.1s ease;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 28px;
+            color: #333;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+        }
+
+        .close-modal:hover {
+            background: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .poster-modal-content {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 0;
+                padding: 15px;
+            }
+
+            .zoom-controls {
+                top: 15px;
+                right: 70px;
+            }
+
+            .zoom-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+            }
+
+            .close-modal {
+                top: 15px;
+                right: 15px;
+                width: 35px;
+                height: 35px;
+                font-size: 24px;
+            }
+        }
+    </style>
 </body>
 </html>
+
