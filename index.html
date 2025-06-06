@@ -34,27 +34,9 @@
     </nav>
 
     <section id="home" class="hero">
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-        <div class="floating-shapes">
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
+        <div class="vision-grid"></div>
+        <div class="circuit-container"></div>
+        <div class="scanner"></div>
         <div class="hero-content">
             <img src="profile.jpg" alt="Chang, Yunbin" class="profile-img">
             <h1>Chang, Yunbin</h1>
@@ -1224,6 +1206,124 @@
         document.addEventListener('DOMContentLoaded', function() {
             // ... rest of your existing script ...
         });
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Create vision grid
+        const visionGrid = document.querySelector('.vision-grid');
+        for (let i = 0; i < 1600; i++) {
+            const cell = document.createElement('div');
+            cell.className = 'grid-cell';
+            visionGrid.appendChild(cell);
+        }
+
+        // Create circuit pattern
+        const circuitContainer = document.querySelector('.circuit-container');
+        const numNodes = 30;
+        const nodes = [];
+
+        // Create nodes
+        for (let i = 0; i < numNodes; i++) {
+            const node = document.createElement('div');
+            node.className = 'circuit-node';
+            node.style.left = `${Math.random() * 100}%`;
+            node.style.top = `${Math.random() * 100}%`;
+            circuitContainer.appendChild(node);
+            nodes.push(node);
+        }
+
+        // Create lines between nodes
+        for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+                if (Math.random() < 0.3) { // 30% chance to create a line
+                    const line = document.createElement('div');
+                    line.className = 'circuit-line';
+                    circuitContainer.appendChild(line);
+                    
+                    // Position and rotate line to connect nodes
+                    const updateLine = () => {
+                        const rect1 = nodes[i].getBoundingClientRect();
+                        const rect2 = nodes[j].getBoundingClientRect();
+                        
+                        const x1 = rect1.left + rect1.width / 2;
+                        const y1 = rect1.top + rect1.height / 2;
+                        const x2 = rect2.left + rect2.width / 2;
+                        const y2 = rect2.top + rect2.height / 2;
+                        
+                        const length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+                        const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+                        
+                        line.style.width = `${length}px`;
+                        line.style.left = `${x1}px`;
+                        line.style.top = `${y1}px`;
+                        line.style.transform = `rotate(${angle}deg)`;
+                        line.style.height = '1px';
+                    };
+                    
+                    updateLine();
+                    window.addEventListener('resize', updateLine);
+                }
+            }
+        }
+
+        // Scanner effect
+        const scanner = document.querySelector('.scanner');
+        let isScanning = false;
+
+        document.addEventListener('mousemove', (e) => {
+            const hero = document.querySelector('.hero');
+            const rect = hero.getBoundingClientRect();
+            
+            // Only show scanner in hero section
+            if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+                if (!isScanning) {
+                    scanner.style.opacity = '1';
+                    isScanning = true;
+                }
+                scanner.style.left = `${e.clientX}px`;
+                scanner.style.top = `${e.clientY}px`;
+
+                // Highlight nearby grid cells
+                const cells = document.querySelectorAll('.grid-cell');
+                cells.forEach(cell => {
+                    const cellRect = cell.getBoundingClientRect();
+                    const distance = Math.sqrt(
+                        Math.pow(e.clientX - (cellRect.left + cellRect.width/2), 2) +
+                        Math.pow(e.clientY - (cellRect.top + cellRect.height/2), 2)
+                    );
+                    
+                    if (distance < 100) {
+                        cell.style.borderColor = `rgba(0, 255, 255, ${0.3 * (1 - distance/100)})`;
+                    } else {
+                        cell.style.borderColor = 'rgba(0, 255, 255, 0.1)';
+                    }
+                });
+
+                // Highlight nearby circuit nodes
+                nodes.forEach(node => {
+                    const nodeRect = node.getBoundingClientRect();
+                    const distance = Math.sqrt(
+                        Math.pow(e.clientX - (nodeRect.left + nodeRect.width/2), 2) +
+                        Math.pow(e.clientY - (nodeRect.top + nodeRect.height/2), 2)
+                    );
+                    
+                    if (distance < 150) {
+                        node.style.transform = 'scale(1.5)';
+                        node.style.background = 'rgba(0, 255, 255, 0.6)';
+                    } else {
+                        node.style.transform = 'scale(1)';
+                        node.style.background = 'rgba(0, 255, 255, 0.3)';
+                    }
+                });
+            } else {
+                if (isScanning) {
+                    scanner.style.opacity = '0';
+                    isScanning = false;
+                }
+            }
+        });
+    });
     </script>
 </body>
 </html>
