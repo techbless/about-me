@@ -1665,7 +1665,7 @@ footer {
     }
 
     .navbar.dark-mode.menu-open {
-        background: rgba(0, 0, 13, 0.9);
+        background: rgba(1, 1, 17, 0.8);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
     }
@@ -1673,7 +1673,7 @@ footer {
     /* Dark mode mobile menu */
     .navbar.dark-mode .nav-links,
     .navbar.dark-mode .nav-links.active {
-        background-color: rgba(0, 0, 13, 0.9) !important;
+        background-color: rgba(1, 1, 17, 0.8) !important;
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
