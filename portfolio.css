@@ -2266,3 +2266,130 @@ section {
         font-size: 1rem;
     }
 }
+
+/* Remove current scroll indicator */
+.scroll-indicator {
+    display: none;
+}
+
+/* Mouse-shaped scroll indicator */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    animation: scrollIndicator 2s infinite;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: scrollDot 2s infinite;
+}
+
+@keyframes scrollIndicator {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+@keyframes scrollDot {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, 15px);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero::after {
+        bottom: 25px;
+        width: 24px;
+        height: 40px;
+    }
+
+    .hero::before {
+        bottom: 37px;
+        width: 5px;
+        height: 5px;
+    }
+}
+
+.about {
+    min-height: 50vh;
+    padding: 5rem 0;
+    background-color: var(--white);
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.about p {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    padding: 0 2rem;
+    word-break: keep-all;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 4rem 0;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+        line-height: 1.7;
+        padding: 0 1.5rem;
+        word-break: keep-all;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 3rem 0;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 1.2rem;
+        word-break: keep-all;
+    }
+}
