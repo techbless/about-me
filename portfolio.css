@@ -509,24 +509,24 @@ body {
     font-weight: 500;
 }
 
-.education-legend.active {
-    color: #2c5f7c;
+.education-legend .legend-color {
+    background-color: #2c5282; /* 딥 네이비 블루 */
 }
 
-.awards-legend.active {
-    color: #8b6f47;
+.awards-legend .legend-color {
+    background-color: #513294; /* 소프트 바이올렛 */
 }
 
-.work-legend.active {
-    color: #556b2f;
+.work-legend .legend-color {
+    background-color: #2f855a; /* 포레스트 그린 */
 }
 
-.research-legend.active {
-    color: #4a5568;
+.research-legend .legend-color {
+    background-color: #d97706; /* 앰버 오렌지 */
 }
 
-.patent-legend.active {
-    color: #6b5b4a;
+.patent-legend .legend-color {
+    background-color: #b91c1c; /* 딥 레드 */
 }
 
 .legend-color {
@@ -538,11 +538,11 @@ body {
 }
 
 .education-legend.active {
-    color: #2b6cb0;
+    color: #2c5282;
 }
 
 .awards-legend.active {
-    color: #b7791f;
+    color: #513294;
 }
 
 .work-legend.active {
@@ -550,20 +550,20 @@ body {
 }
 
 .research-legend.active {
-    color: #6b46c1;
+    color: #d97706;
 }
 
 .patent-legend.active {
-    color: #c05621;
+    color: #b91c1c;
 }
 
 /* Timeline category colors matching categories */
 .timeline__content.education {
-    border-left: 2px solid rgba(43, 108, 176, 0.8);
+    border-left: 2px solid rgba(44, 82, 130, 0.8);
 }
 
 .timeline__content.awards {
-    border-left: 2px solid rgba(183, 121, 31, 0.8);
+    border-left: 2px solid rgba(128, 90, 213, 0.8);
 }
 
 .timeline__content.work {
@@ -571,20 +571,20 @@ body {
 }
 
 .timeline__content.research {
-    border-left: 2px solid rgba(107, 70, 193, 0.8);
+    border-left: 2px solid rgba(217, 119, 6, 0.8);
 }
 
 .timeline__content.patent {
-    border-left: 2px solid rgba(192, 86, 33, 0.8);
+    border-left: 2px solid rgba(185, 28, 28, 0.8);
 }
 
 /* Timeline date badge colors matching categories */
 .timeline__content.education .timeline__date {
-    background-color: rgba(43, 108, 176, 0.9);
+    background-color: rgba(44, 82, 130, 0.9);
 }
 
 .timeline__content.awards .timeline__date {
-    background-color: rgba(183, 121, 31, 0.9);
+    background-color: rgba(81, 50, 148, 0.9);
 }
 
 .timeline__content.work .timeline__date {
@@ -592,20 +592,20 @@ body {
 }
 
 .timeline__content.research .timeline__date {
-    background-color: rgba(107, 70, 193, 0.9);
+    background-color: rgba(217, 119, 6, 0.9);
 }
 
 .timeline__content.patent .timeline__date {
-    background-color: rgba(192, 86, 33, 0.9);
+    background-color: rgba(185, 28, 28, 0.9);
 }
 
 /* Timeline navigation button colors matching categories */
 .timeline__content.education .timeline-nav-btn {
-    background-color: #2b6cb0;
+    background-color: #2c5282;
 }
 
 .timeline__content.awards .timeline-nav-btn {
-    background-color: #b7791f;
+    background-color: #513294;
 }
 
 .timeline__content.work .timeline-nav-btn {
@@ -613,21 +613,21 @@ body {
 }
 
 .timeline__content.research .timeline-nav-btn {
-    background-color: #6b46c1;
+    background-color: #d97706;
 }
 
 .timeline__content.patent .timeline-nav-btn {
-    background-color: #c05621;
+    background-color: #b91c1c;
 }
 
 .education-legend .legend-count {
-    background-color: rgba(43, 108, 176, 0.2);
-    color: #2b6cb0;
+    background-color: rgba(44, 82, 130, 0.2);
+    color: #2c5282;
 }
 
 .awards-legend .legend-count {
-    background-color: rgba(183, 121, 31, 0.2);
-    color: #b7791f;
+    background-color: rgba(128, 90, 213, 0.2);
+    color: #513294;
 }
 
 .work-legend .legend-count {
@@ -636,15 +636,14 @@ body {
 }
 
 .research-legend .legend-count {
-    background-color: rgba(107, 70, 193, 0.2);
-    color: #6b46c1;
+    background-color: rgba(217, 119, 6, 0.2);
+    color: #d97706;
 }
 
 .patent-legend .legend-count {
-    background-color: rgba(192, 86, 33, 0.2);
-    color: #c05621;
+    background-color: rgba(185, 28, 28, 0.2);
+    color: #b91c1c;
 }
-
 .timeline-section h2 {
     text-align: center;
     font-size: 2.5rem;
