@@ -510,23 +510,23 @@ body {
 }
 
 .education-legend.active {
-    color: #3498db;
+    color: #3b5998;
 }
 
 .awards-legend.active {
-    color: #e74c3c;
+    color: #c0392b;
 }
 
 .work-legend.active {
-    color: #2ecc71;
+    color: #27ae60;
 }
 
 .research-legend.active {
-    color: #9b59b6;
+    color: #8e44ad;
 }
 
 .patent-legend.active {
-    color: #f39c12;
+    color: #d68910;
 }
 
 .legend-color {
@@ -538,86 +538,86 @@ body {
 }
 
 .education-legend .legend-color {
-    background-color: #3498db; /* Blue */
+    background-color: #3b5998; /* 차분한 블루 */
 }
 
 .awards-legend .legend-color {
-    background-color: #e74c3c; /* Red */
+    background-color: #c0392b; /* 깊은 와인 레드 */
 }
 
 .work-legend .legend-color {
-    background-color: #2ecc71; /* Green */
+    background-color: #27ae60; /* 차분한 그린 */
 }
 
 .research-legend .legend-color {
-    background-color: #9b59b6; /* Purple */
+    background-color: #8e44ad; /* 딥 퍼플 */
 }
 
 .patent-legend .legend-color {
-    background-color: #f39c12; /* Orange */
+    background-color: #d68910; /* 차분한 골드 */
 }
 
 /* Timeline category colors matching categories */
-.timeline__content.education {
-    border-left: 2px solid rgba(52, 152, 219, 0.8);
+.timeline__content.education .timeline-nav-btn {
+    background-color: #3b5998;
 }
 
-.timeline__content.awards {
-    border-left: 2px solid rgba(231, 76, 60, 0.8);
+.timeline__content.awards .timeline-nav-btn {
+    background-color: #c0392b;
 }
 
-.timeline__content.work {
-    border-left: 2px solid rgba(46, 204, 113, 0.8);
+.timeline__content.work .timeline-nav-btn {
+    background-color: #27ae60;
 }
 
-.timeline__content.research {
-    border-left: 2px solid rgba(155, 89, 182, 0.8);
+.timeline__content.research .timeline-nav-btn {
+    background-color: #8e44ad;
 }
 
-.timeline__content.patent {
-    border-left: 2px solid rgba(243, 156, 18, 0.8);
+.timeline__content.patent .timeline-nav-btn {
+    background-color: #d68910;
 }
 
 /* Timeline date badge colors matching categories */
 .timeline__content.education .timeline__date {
-    background-color: rgba(52, 152, 219, 0.9);
+    background-color: rgba(59, 89, 152, 0.9);
 }
 
 .timeline__content.awards .timeline__date {
-    background-color: rgba(231, 76, 60, 0.9);
+    background-color: rgba(192, 57, 43, 0.9);
 }
 
 .timeline__content.work .timeline__date {
-    background-color: rgba(46, 204, 113, 0.9);
+    background-color: rgba(39, 174, 96, 0.9);
 }
 
 .timeline__content.research .timeline__date {
-    background-color: rgba(155, 89, 182, 0.9);
+    background-color: rgba(142, 68, 173, 0.9);
 }
 
 .timeline__content.patent .timeline__date {
-    background-color: rgba(243, 156, 18, 0.9);
+    background-color: rgba(214, 137, 16, 0.9);
 }
 
 /* Timeline navigation button colors matching categories */
 .timeline__content.education .timeline-nav-btn {
-    background-color: #3498db;
+    background-color: #3b5998;
 }
 
 .timeline__content.awards .timeline-nav-btn {
-    background-color: #e74c3c;
+    background-color: #c0392b;
 }
 
 .timeline__content.work .timeline-nav-btn {
-    background-color: #2ecc71;
+    background-color: #27ae60;
 }
 
 .timeline__content.research .timeline-nav-btn {
-    background-color: #9b59b6;
+    background-color: #8e44ad;
 }
 
 .timeline__content.patent .timeline-nav-btn {
-    background-color: #f39c12;
+    background-color: #d68910;
 }
 
 .timeline-section h2 {
@@ -2112,28 +2112,28 @@ section {
 }
 
 .education-legend .legend-count {
-    background-color: rgba(52, 152, 219, 0.2);
-    color: #3498db;
+    background-color: rgba(59, 89, 152, 0.2);
+    color: #3b5998;
 }
 
 .awards-legend .legend-count {
-    background-color: rgba(231, 76, 60, 0.2);
-    color: #e74c3c;
+    background-color: rgba(192, 57, 43, 0.2);
+    color: #c0392b;
 }
 
 .work-legend .legend-count {
-    background-color: rgba(46, 204, 113, 0.2);
-    color: #2ecc71;
+    background-color: rgba(39, 174, 96, 0.2);
+    color: #27ae60;
 }
 
 .research-legend .legend-count {
-    background-color: rgba(155, 89, 182, 0.2);
-    color: #9b59b6;
+    background-color: rgba(142, 68, 173, 0.2);
+    color: #8e44ad;
 }
 
 .patent-legend .legend-count {
-    background-color: rgba(243, 156, 18, 0.2);
-    color: #f39c12;
+    background-color: rgba(214, 137, 16, 0.2);
+    color: #d68910;
 }
 
 @media (max-width: 768px) {
