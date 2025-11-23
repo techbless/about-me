@@ -510,23 +510,23 @@ body {
 }
 
 .education-legend .legend-color {
-    background-color: #2c5282; /* 딥 네이비 블루 */
+    background-color: #1e40af; /* 클래식 로얄 블루 - 신뢰감, 학문적 */
 }
 
 .awards-legend .legend-color {
-    background-color: #513294; /* 소프트 바이올렛 */
+    background-color: #b45309; /* 프리미엄 골드/브론즈 - 영예, 성취 */
 }
 
 .work-legend .legend-color {
-    background-color: #2f855a; /* 포레스트 그린 */
+    background-color: #047857; /* 비즈니스 그린 - 성장, 전문성 */
 }
 
 .research-legend .legend-color {
-    background-color: #d97706; /* 앰버 오렌지 */
+    background-color: #7c3aed; /* 모던 바이올렛 - 혁신, 창의성 */
 }
 
 .patent-legend .legend-color {
-    background-color: #b91c1c; /* 딥 레드 */
+    background-color: #dc2626; /* 시그니처 레드 - 중요성, 독창성 */
 }
 
 .legend-color {
@@ -538,112 +538,113 @@ body {
 }
 
 .education-legend.active {
-    color: #2c5282;
+    color: #1e40af;
 }
 
 .awards-legend.active {
-    color: #513294;
+    color: #b45309;
 }
 
 .work-legend.active {
-    color: #2f855a;
+    color: #047857;
 }
 
 .research-legend.active {
-    color: #d97706;
+    color: #7c3aed;
 }
 
 .patent-legend.active {
-    color: #b91c1c;
+    color: #dc2626;
 }
 
 /* Timeline category colors matching categories */
 .timeline__content.education {
-    border-left: 2px solid rgba(44, 82, 130, 0.8);
+    border-left: 2px solid rgba(30, 64, 175, 0.8);
 }
 
 .timeline__content.awards {
-    border-left: 2px solid rgba(128, 90, 213, 0.8);
+    border-left: 2px solid rgba(180, 83, 9, 0.8);
 }
 
 .timeline__content.work {
-    border-left: 2px solid rgba(47, 133, 90, 0.8);
+    border-left: 2px solid rgba(4, 120, 87, 0.8);
 }
 
 .timeline__content.research {
-    border-left: 2px solid rgba(217, 119, 6, 0.8);
+    border-left: 2px solid rgba(124, 58, 237, 0.8);
 }
 
 .timeline__content.patent {
-    border-left: 2px solid rgba(185, 28, 28, 0.8);
+    border-left: 2px solid rgba(220, 38, 38, 0.8);
 }
 
 /* Timeline date badge colors matching categories */
 .timeline__content.education .timeline__date {
-    background-color: rgba(44, 82, 130, 0.9);
+    background-color: rgba(30, 64, 175, 0.9);
 }
 
 .timeline__content.awards .timeline__date {
-    background-color: rgba(81, 50, 148, 0.9);
+    background-color: rgba(180, 83, 9, 0.9);
 }
 
 .timeline__content.work .timeline__date {
-    background-color: rgba(47, 133, 90, 0.9);
+    background-color: rgba(4, 120, 87, 0.9);
 }
 
 .timeline__content.research .timeline__date {
-    background-color: rgba(217, 119, 6, 0.9);
+    background-color: rgba(124, 58, 237, 0.9);
 }
 
 .timeline__content.patent .timeline__date {
-    background-color: rgba(185, 28, 28, 0.9);
+    background-color: rgba(220, 38, 38, 0.9);
 }
 
 /* Timeline navigation button colors matching categories */
 .timeline__content.education .timeline-nav-btn {
-    background-color: #2c5282;
+    background-color: #1e40af;
 }
 
 .timeline__content.awards .timeline-nav-btn {
-    background-color: #513294;
+    background-color: #b45309;
 }
 
 .timeline__content.work .timeline-nav-btn {
-    background-color: #2f855a;
+    background-color: #047857;
 }
 
 .timeline__content.research .timeline-nav-btn {
-    background-color: #d97706;
+    background-color: #7c3aed;
 }
 
 .timeline__content.patent .timeline-nav-btn {
-    background-color: #b91c1c;
+    background-color: #dc2626;
 }
 
 .education-legend .legend-count {
-    background-color: rgba(44, 82, 130, 0.2);
-    color: #2c5282;
+    background-color: rgba(30, 64, 175, 0.2);
+    color: #1e40af;
 }
 
 .awards-legend .legend-count {
-    background-color: rgba(128, 90, 213, 0.2);
-    color: #513294;
+    background-color: rgba(180, 83, 9, 0.2);
+    color: #b45309;
 }
 
 .work-legend .legend-count {
-    background-color: rgba(47, 133, 90, 0.2);
-    color: #2f855a;
+    background-color: rgba(4, 120, 87, 0.2);
+    color: #047857;
 }
 
 .research-legend .legend-count {
-    background-color: rgba(217, 119, 6, 0.2);
-    color: #d97706;
+    background-color: rgba(124, 58, 237, 0.2);
+    color: #7c3aed;
 }
 
 .patent-legend .legend-count {
-    background-color: rgba(185, 28, 28, 0.2);
-    color: #b91c1c;
+    background-color: rgba(220, 38, 38, 0.2);
+    color: #dc2626;
 }
+
 .timeline-section h2 {
     text-align: center;
     font-size: 2.5rem;
