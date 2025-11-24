@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chang, Yunbin - Vision & Software Engineer</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/squarechip/timeline@master/dist/css/timeline.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/squarechip/timeline@master/dist/js/timeline.min.js"></script>
+    <meta name="description"
+        content="Portfolio of Yunbin Chang, a Vision & Software Engineer specializing in backend development, vision software, and hardware integration.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">YC</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#patents">Patents</a></li>
-            </ul>
+        <div class="container nav-container">
+            <a href="#" class="logo">YC<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#patents" class="nav-link">Patents</a>
+                <a href="#awards" class="nav-link">Awards</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#projects" class="nav-link">Projects</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,1353 +44,601 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="vision-grid"></div>
-        <div class="circuit-container"></div>
-        <div class="scanner"></div>
-        <div class="hero-content">
-            <img src="profile.jpg" alt="Chang, Yunbin" class="profile-img">
-            <h1>Chang, Yunbin</h1>
-            <h2>Vision & Software Engineer</h2>
-            <div class="resume-buttons">
-                <a href="YunbinChang_Resume_ENG.pdf" download class="resume-btn">
-                    <i class="fas fa-file-download"></i> Resume (ENG)
-                </a>
-                <a href="YunbinChang_Resume_KOR.pdf" download class="resume-btn">
-                    <i class="fas fa-file-download"></i> 이력서 (KOR)
-                </a>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="gradient-sphere sphere-1"></div>
+                <div class="gradient-sphere sphere-2"></div>
             </div>
-            <div class="contact-info">
-                <a href="mailto:yvin.chang@gmail.com"><i class="fas fa-envelope"></i> yvin.chang@gmail.com</a>
-                <a href="tel:+821041073727"><i class="fas fa-phone"></i> +82 10-4107-3727</a>
-                <a href="https://linkedin.com/in/vinchang" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/vinchang</a>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Seoul, Republic of Korea</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Profile</h2>
-            <p><b>백엔드 및 머신 비전 엔지니어</b>로서, 백엔드 개발, 비전 소프트웨어, 하드웨어 연동 시스템 분야에서 2년 이상의 실무 경험을 보유하고 있습니다. 어릴 적부터 컴퓨터 과학에 대한 열정을 바탕으로 소프트웨어 특기자 전형으로 입학하였으며, 이공계 국가우수장학생으로 조기 졸업하였습니다. 학부 재학 중에도 연구실과 기업에 재직하며 실무 프로젝트에 지속적으로 참여해 실전 감각을 쌓았고, 반도체 검사 및 이커머스 등 다양한 분야에서 여러 프로젝트를 처음부터 끝까지 주도적으로 수행하였습니다. 특히 Deepseers에서 주도한 비전 검사 프로젝트는 중소벤처기업부의 TIPS 및 DIPS R&D 프로그램에 연속 선정되어 기술적 우수성과 시장성을 동시에 인정받았습니다. 메모리 효율적인 GAN 프레임워크를 연구하고, 딥러닝 기반 ROI 추천 기술로 특허를 출원하며 AI 분야도 함께 탐구해 왔습니다. 더불어, 주한미군사령부에서의 카투사 복무를 통해 다국적 인사 데이터 관리 및 협업 경험을 쌓으며, 글로벌 환경에서도 능동적으로 업무를 수행할 수 있는 역량을 갖추었습니다.
-        </div>
-    </section>
-
-    <section id="timeline" class="timeline-section">
-        <div class="container">
-            <h2>My Journey</h2>
-            
-            <!-- Timeline Legend -->
-            <div class="legend-hint">Click on a category to filter the timeline</div>
-            <div class="timeline-legend">
-                <div class="legend-item education-legend">
-                    <span class="legend-color"></span>
-                    <span class="legend-label">Education</span>
-                    <span class="legend-count">2</span>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="name">Yunbin Chang</h1>
+                    <h2 class="title">Vision & Software Engineer</h2>
+                    <p class="description">
+                        Specializing in backend development, vision software, and hardware integration systems.
+                        Bridging the gap between software and physical hardware.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <div class="resume-dropdown">
+                            <button class="btn btn-outline">Download Resume <i class="fas fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="YunbinChang_Resume_ENG.pdf" download><i class="fas fa-file-pdf"></i>
+                                    English</a>
+                                <a href="YunbinChang_Resume_KOR.pdf" download><i class="fas fa-file-pdf"></i> Korean</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/vinchang" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:yvin.chang@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+821041073727" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
                 </div>
-                <div class="legend-item awards-legend">
-                    <span class="legend-color"></span>
-                    <span class="legend-label">Awards</span>
-                    <span class="legend-count">6</span>
-                </div>
-                <div class="legend-item work-legend">
-                    <span class="legend-color"></span>
-                    <span class="legend-label">Work Experience</span>
-                    <span class="legend-count">3</span>
-                </div>
-                <div class="legend-item research-legend">
-                    <span class="legend-color"></span>
-                    <span class="legend-label">Research/Academic</span>
-                    <span class="legend-count">5</span>
-                </div>
-                <div class="legend-item patent-legend">
-                    <span class="legend-color"></span>
-                    <span class="legend-label">Patents</span>
-                    <span class="legend-count">1</span>
-                </div>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline__wrap">
-                    <div class="timeline__items">
-                        <div class="timeline__item">
-                            <div class="timeline__content work">
-                                <span class="timeline__date">Sep 2024 - Present</span>
-                                <h3>SOLUM</h3>
-                                <p>비전 & 소프트웨어 엔지니어</p>
-                                <p>Newton Eye / ESL SaaS Development</p>
-                                <a href="#solum" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content research">
-                                <span class="timeline__date">Oct 2024 - Present</span>
-                                <h3>중소벤처기업부 TIPS 프로그램</h3>
-                                <p>사용자 개입이 최소화된 차세대 반도체 패키지 불량 검출 시스템</p>
-                                <p>Deepseers, 연구원</p>
-                                <a href="#research" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content patent">
-                                <span class="timeline__date">Nov 2024</span>
-                                <h3>특허 출원</h3>
-                                <p>"머신비전을 위한 딥러닝 기반 관심영역 자동생성 시스템 및 방법"</p>
-                                <a href="#patents" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content education">
-                                <span class="timeline__date">Aug 2024</span>
-                                <h3>한성대학교</h3>
-                                <p>조기 졸업</p>
-                                <p>컴퓨터공학부 학사, GPA 4.27/4.5</p>
-                                <a href="#education" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content work">
-                                <span class="timeline__date">Feb 2024 - Aug 2025</span>
-                                <h3>Deepseers</h3>
-                                <p>비전 & 소프트웨어 엔지니어</p>
-                                <p>반도체 패키지 비전 검사 솔루션 개발 주도</p>
-                                <a href="#deepseers" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content awards">
-                                <span class="timeline__date">Jan 2024</span>
-                                <h3>최우수 논문상 (Oral)</h3>
-                                <p>HCI Korea 2024</p>
-                                <p>"A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement"</p>
-                                <a href="#hci2024-modal" class="timeline-nav-btn" onclick="openAwardModal('hci2024-modal'); return false;"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content research">
-                                <span class="timeline__date">Jan 2024</span>
-                                <h3>HCI Korea 2024</h3>
-                                <p>학회 발표 (구두)</p>
-                                <p>"A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement"</p>
-                                <a href="#publications" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content research">
-                                <span class="timeline__date">2023</span>
-                                <h3>ISMP 2023</h3>
-                                <p>국제 학술대회 포스터 발표</p>
-                                <p>"A Computationally Optimized Data Augmentation Framework Utilizing cDCGAN for High-Resolution Package Images Acquisition"</p>
-                                <a href="#publications" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content research">
-                                <span class="timeline__date">2023</span>
-                                <h3>학술지 논문 게재</h3>
-                                <p>Journal of the Microelectronics and Packaging Society</p>
-                                <p>"MAGICal Synthesis: Memory-Efficient Approach for Generative Semiconductor Package Image Construction"</p>
-                                <a href="#publications" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content research">
-                                <span class="timeline__date">May 2023 - Feb 2024</span>
-                                <h3>AML 연구실, 한성대학교</h3>
-                                <p>학부 연구원</p>
-                                <p>반도체 패키지 검사 소프트웨어 개발 및 메모리 효율적인 GAN 프레임워크 연구</p>
-                                <a href="#aml-lab" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content awards">
-                                <span class="timeline__date">Mar 2023</span>
-                                <h3>국가우수장학생(이공계)</h3>
-                                <p>3, 4학년 전액 장학금 수혜</p>
-                                <a href="#national-scholarship-modal" class="timeline-nav-btn" onclick="openAwardModal('national-scholarship-modal'); return false;"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content work">
-                                <span class="timeline__date">Jun 2022 - May 2023</span>
-                                <h3>스타팩트</h3>
-                                <p>백엔드 개발자</p>
-                                <p>드랍쉬핑 플랫폼 "THEKOC" 및 내부 SCM 시스템 개발</p>
-                                <a href="#stafact" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content awards">
-                                <span class="timeline__date">Apr 2022</span>
-                                <h3>Joint Service Commendation Medal</h3>
-                                <p>Awarded by Secretary of Defense, United States Department of Defense</p>
-                                <a href="#jscm-modal" class="timeline-nav-btn" onclick="openAwardModal('jscm-modal'); return false;"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content awards">
-                                <span class="timeline__date">Aug 2021</span>
-                                <h3>국방부 장관상</h3>
-                                <p>2021 국방 공공데이터 활용 경진대회, 서비스 개발 부문 최우수</p>
-                                <a href="#dod-modal" class="timeline-nav-btn" onclick="openAwardModal('dod-modal'); return false;"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content work">
-                                <span class="timeline__date">Dec 2020 - Jun 2022</span>
-                                <h3>USFK HQ, UNC</h3>
-                                <p>KATUSA, J1 Data Management</p>
-                                <p>60,000명 이상의 데이터 관리</p>
-                                <a href="#usfk" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content awards">
-                                <span class="timeline__date">Aug 2020</span>
-                                <h3>OIDC 2020</h3>
-                                <p>최우수상</p>
-                                <p>서울시 공공자전거 '따릉이'의 실시간 대여 가능 정보 수집 및 예측 플랫폼 개발</p>
-                                <a href="#oidc-modal" class="timeline-nav-btn" onclick="openAwardModal('oidc-modal'); return false;"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content awards">
-                                <span class="timeline__date">Dec 2019</span>
-                                <h3>PaaS-TA 해커톤</h3>
-                                <p>특별상</p>
-                                <p>실종 동물의 실시간 정보를 공유하는 위치 기반 플랫폼 개발</p>
-                                <a href="#paasta-modal" class="timeline-nav-btn" onclick="openAwardModal('paasta-modal'); return false;"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content education">
-                                <span class="timeline__date">Mar 2019</span>
-                                <h3>한성대학교</h3>
-                                <p>컴퓨터공학부 학사 과정 시작</p>
-                                <p>소프트웨어 특기자 전형 입학</p>
-                                <a href="#education" class="timeline-nav-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="profile.jpg" alt="Yunbin Chang">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="education" class="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <img src="hsu.png" alt="Hansung University" class="edu-logo">
-                <div class="education-content">
-                    <h3>Hansung University</h3>
-                    <p>B.S. in Computer Science and Engineering</p>
-                    <p class="date">Mar 2019 - Aug 2024</p>
-                    <ul>
-                        <li>GPA: 4.27/4.5 (Major 4.43)</li>
-                        <li>조기 졸업</li>
-                        <li>소프트웨어 특기자 전형 입학</li>
-                        <li>국가우수장학금(이공계) - 3, 4학년 전액 장학금</li>
-                        <li>최우수한성인재 장학금 - 2학년 70% 장학금</li>
-                        <li>우수한성역량장학금 - 1학년 1학기 50%, 2학기 30% 장학금</li>
-                    </ul>
-                </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="summary" class="summary">
-        <div class="container">
-            <h2>Summary Of Experience</h2>
-            <div class="summary-list">
-                <div class="summary-category">
-                    <h3>Scalable Architecture Design</h3>
-                    <ul>
-                        <li>다양한 산업용 하드웨어에 유연하게 적용 가능한 모듈형 C#/.NET 기반 비전 소프트웨어를 주도적으로 개발하여, 기존의 레거시 시스템을 대체하고 현장 셋업을 간소화하여 엔지니어링 부담을 크게 줄였습니다.</li>
-                        <li>다양한 장비의 추가를 위한 모듈화된 확장성을 보장하였습니다.</li>
-                        <li>동적 레시피를 활용하여 여러 자재 종류와 검사 시나리오에 유연하게 대응할 수 있는 구조를 설계하였습니다.</li>
-                        <li>SQLite을 활용하여 검사 히스토리 데이터베이스 및 LOT 추적 시스템을 개발하였습니다.</li>
-                        <li>실시간 불량 맵핑 및 데이터 동기화를 위한 EMAP/X-out upstream을 연동하였습니다.</li>
-                    </ul>
-                </div>
-
-                <div class="summary-category">
-                    <h3>Hardware-Integrated Software Development</h3>
-                    <ul>
-                        <li>비전 소프트웨어와 장비 핸들러 간 UDP 통신을 구성하고, 프로토콜에 따라 컨트롤러와 연동되도록 구현하였습니다.</li>
-                        <li>Camera Link, GigE 등 산업용 카메라, 스트로브 조명, 트리거 기반의 조명 제어 및 이미지 취득 시스템을 구현하였습니다.</li>
-                        <li>옵저버 기반 블로킹 큐를 활용한 비동기 트리거 처리 파이프라인을 설계하여 고속 검사 시 프레임 손실을 방지하였습니다.</li>
-                        <li>스트로브 조명과 트리거를 이용해 고속 플라잉 검사 기능을 구현하여, SW 트리거 방식 대비 속도를 크게 향상시켰습니다.</li>
-                        <li>RS232 기반의 다양한 조명 컨트롤러를 연동하고, 레시피에 따라 자동으로 조명이 제어되도록 구현하였습니다.</li>
-                    </ul>
-                </div>
-
-                <div class="summary-category">
-                    <h3>Machine Vision</h3>
-                    <ul>
-                        <li>C#, WPF, Halcon을 활용하여 반도체 패키지 검사 알고리즘을 개발 및 최적화하였습니다.</li>
-                        <li>결함 유형별 최적화된 다양한 조명 조건에서 이미지를 획득하는 멀티샷 조명 전략을 설계하여 단일 조명 대비 검출 성능을 향상시켰습니다.</li>
-                        <li>고해상도 이미지 합성을 위한 부분 영역 패치 기반, 메모리 효율적인 조건부 GAN 프레임워크를 개발하였습니다.</li>
-                    </ul>
-                </div>
-
-                <div class="summary-category">
-                    <h3>Backend & Cloud Infrastructure Development</h3>
-                    <ul>
-                        <li>Node.js와 TypeScript로 드랍쉬핑 플랫폼의 물류, 결제, 관리자 시스템을 통합하는 확장 가능한 RESTful API를 개발하였습니다.</li>
-                        <li>고가용성 서비스를 지원하기 위해 AWS 인프라(EC2, S3, LB, RDS, ElastiCache, Nginx)를 설계하였습니다.</li>
-                        <li>상품, 주문, 리뷰 관리 모듈을 개발하고, SCM 시스템을 통한 QExpress 창고와의 연동으로 배송 업무를 자동화하여 드랍쉬핑 전 과정을 효율화하였습니다.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Professional Experience</h2>
-
-            <div class="experience-item" id="solum">
-                <div class="company-header">
-                    <img src="solum_logo.jpeg" alt="Solum" class="company-logo">
-                    <div class="company-info">
-                        <h3>SOLUM</h3>
-                        <p>Vision & Software Engineer</p>
-                        <p class="date">Sep 2025 - Present</p>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <h4>Newton Eye / ESL SaaS Development</h4>
-                    <ul>
-                        <li>Newton Eye Vision 알고리즘 개발 중</li>
-                        <li>ESL SaaS system 개발 중</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="experience-item" id="deepseers">
-                <div class="company-header">
-                    <img src="deepseers.png" alt="Deepseers" class="company-logo">
-                    <div class="company-info">
-                        <h3>Deepseers</h3>
-                        <p>Vision & Software Engineer</p>
-                        <p class="date">Feb 2024 - Aug 2025</p>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <h4>반도체 패키지 비전 검사 솔루션</h4>
-                    <p>대학 연구실에서 스핀오프된 스타트업에 합류하여 기존 프로젝트와 역할을 지속적으로 수행하였습니다.</p>
-                    <h5>시스템 아키텍처 및 핵심 모듈 개발</h5>
-                    <ul>
-                        <li>시스템 전체 아키텍처를 처음부터 설계하고, 핵심 모듈 개발을 기술적으로 리드하였습니다.</li>
-                        <li>고속 플라잉 검사 환경을 위해 Observer + Blocking Queue 기반 트리거-그랩 동기화 구조를 구현하였습니다.</li>
-                        <li>다양한 자재에 적응 가능한 레시피 구조를 개발하고, EMAP/X-out 등 상위 데이터 흐름을 통합하였습니다.</li>
-                        <li>LOT 관리 및 검사 이력 추적을 위한 데이터베이스를 구축하였습니다.</li>
-                    </ul>
-                    <h5>비전 검사 및 알고리즘 개발</h5>
-                    <ul>
-                        <li>맵핑 비전 검사의 모든 검사 알고리즘(마킹면 포함)개발을 아키텍처 설계부터 배포까지 주도하였습니다.</li>
-                        <li>비전을 통한 3Points, Jig 및 Pad Pitch등 다양한 모터의 오토 캘리브레이션기능을 개발하였습니다.</li>
-                        <li>맵핑 검사와 PRS 과정에서 바텀면과 마킹면 검사가 자유롭게 전환되도록 구현하여, 장비 운용의 유연성을 향상시켰습니다.</li>
-                        <li>핵심 영역만을 학습에 활용하여 Shape 매칭 모델의 연산 효율을 높이고 얼라인 시간을 단축하는 등, 다양한 비전 알고리즘의 최적화에 기여하였습니다.</li>
-                        <li>딥러닝 기반 ROI 추천 알고리즘에 대해 특허를 출원하였습니다.</li>
-                    </ul>
-                    <h5>하드웨어 연동 및 제어</h5>
-                    <ul>
-                        <li>트리거/스트로브 조명 제어를 구현하고, 하드웨어 트러블슈팅을 수행하였습니다.</li>
-                        <li>동적 설정 구조를 통해 다양한 카메라 인터페이스와 조명을 유연하게 통합하여, 장비 셋업 부담을 최소화하였습니다.</li>
-                        <li>장비 타입별 핸들러-비전 소켓 및 라우팅 로직을 개발하여 다양한 장비 타입(Tray, Ring 등)과의 호환성을 확보하였습니다.</li>
-                        <li>핸들러와 비전 시스템 간 LOT 및 레시피 동기화, 이력 관리를 개발하였습니다.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item" id="aml-lab">
-                <div class="company-header">
-                    <img src="hsu.png" alt="AML Lab" class="company-logo">
-                    <div class="company-info">
-                        <h3>AML Lab, Hansung University</h3>
-                        <p>Undergraduate Researcher</p>
-                        <p class="date">May 2023 - Feb 2024</p>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <h4>반도체 패키지 비전 검사 솔루션</h4>
-                    <ul>
-                        <li>반도체 패키지 장비(Saw Singulation)용 비전 검사 소프트웨어를 초기 프로토타입부터 배포까지 개발하였습니다.</li>
-                        <li>실제 반도체 장비에 프로토타입 소프트웨어를 배포 및 검증하여 안정적이고 실시간으로 동작함을 확인하였습니다.</li>
-                        <li>반도체 패키지 맵핑 검사에서 수행되는 모든 알고리즘(마킹면 포함) 개발에 기여하였습니다.</li>
-                        <li>협업 테스트와 피드백을 통해 바닥면 검사 알고리즘의 구현 및 파라미터 최적화 과정에 기여하였습니다.</li>
-                    </ul>
-
-                    <h4>메모리 효율적인 GAN 프레임워크</h4>
-                    <ul>
-                        <li>고해상도 이미지 생성을 위한 패치 기반 메모리 효율적 GAN 프레임워크를 연구하였습니다.</li>
-                        <li>KCI 등재 학술지에 논문 1편을 게재하였습니다.</li>
-                        <li>국내(구두) 1건, 국제(포스터) 1건의 학술대회에서 발표하였습니다.</li>
-                        <li>HCI2024 구두 발표에서 최우수 논문상을 수상하였습니다.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item" id="stafact">
-                <div class="company-header">
-                    <img src="sf.png" alt="STAFACT" class="company-logo">
-                    <div class="company-info">
-                        <h3>STAFACT INC.</h3>
-                        <p>Backend Developer</p>
-                        <p class="date">Jun 2022 - May 2023</p>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <h4>드랍쉬핑 플랫폼 "THEKOC"</h4>
-                    <ul>
-                        <li>모든 public/private API 개발을 단독으로 담당하였습니다.</li>
-                        <li>AWS EC2, S3, LB, RDS, ElastiCache, Nginx 등으로 구성된 AWS 기반 클라우드 인프라를 구축 및 운영하여 고가용성을 보장하였습니다.</li>
-                        <li>카카오, 네이버, 구글, 애플, 페이스북 소셜 로그인 연동을 구현하였습니다.</li>
-                        <li>PayPal, WeChat Pay, MoMo 등 글로벌 결제 시스템을 연동하였습니다.</li>
-                        <li>토스페이먼츠, 카카오페이, 네이버페이 등 국내 결제 시스템을 연동하였습니다.</li>
-                        <li>관리자 대시보드 및 관리 기능을 전면 개발하였습니다.</li>
-                        <li>판매자 미니샵 생성 및 맞춤형 가격 책정 기능을 구현하였습니다.</li>
-                        <li>카카오톡 알림 및 인증 시스템을 개발하였습니다.</li>
-                        <li>판매자 정산 환불 시스템을 구축하였습니다.</li>
-                        <li>Nuxt를 활용하여 프론트엔드 개발 커밋 기준 30% 이상을 기여하였습니다.</li>
-                    </ul>
-
-                    <h4>사내 SCM 시스템 개발</h4>
-                    <ul>
-                        <li>QExpress 창고와 SCM 간 자동 배송 연동을 구현하였습니다.</li>
-                        <li>사내 SCM을 상품, 주문, 리뷰 관리 모듈과 연동하였습니다.</li>
-                        <li>상품/주문 관리 및 인플루언서 체험단(샘플링) 기능을 개발하였습니다.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item" id="usfk">
-                <div class="company-header">
-                    <img src="usfk2.jpg" alt="USFK" class="company-logo">
-                    <div class="company-info">
-                        <h3>United States Forces Korea HQ (USFK),<br> United Nations Command (UNC)</h3>
-                        <p>KATUSA, J1 Data Management</p>
-                        <p class="date">Dec 2020 - Jun 2022</p>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <h4>Data Management & Personnel</h4>
-                    <ul>
-                        <li>PIMS-K(인사정보관리시스템)를 통해 10,000명 이상의 인사 기록을 관리하며, 여러 사령부에 걸쳐 데이터의 정확성과 무결성을 보장하였습니다.</li>
-                        <li>USFK Regulation 60-1에 따라 duty-free 구매 violation tracking 시스템을 개선하고, 60,000명 이상의 수혜자를 대상으로 월간 보고 체계를 구축하였습니다.</li>
-                        <li>주한미군 사령부 장성급 지휘관의 의사결정을 돕기 위해 Weekly Strength Report 작성과 번역을 지원하며, 한영 이중언어 업무를 수행하였습니다.</li>
-                        <li>연합지휘소훈련(CCPT) 기간 동안 유엔군(UNC) 등 다국적 인원의 In-processing 및 인사 행정 절차를 관리하였습니다.</li>
-                    </ul>
-
-                    <h4>Policy & Program</h4>
-                    <ul>
-                        <li>미 대사관 직원 및 군인 가족을 위한 규정 예외(ETP)를 200건 이상을 처리하였습니다.</li>
-                        <li>미군과 연합사 간 인사 협조 및 공동 정책 정렬을 통해 협업을 강화하였습니다.</li>
-                        <li>미군 및 유엔군을 대상으로 한 CFC, C5 주관 Cultural Immersion 프로그램 확대에 기여하여, 문화 적응력 및 양국 교류를 증진하였습니다.</li>
-                    </ul>
-                    <p class="note"><small><i>(Note: Certain achievements are summarized in accordance with military security policy, as recognized in JSCM citation.)</i></small></p>
-                    
-                    <div class="experience-gallery">
-                        <div class="gallery-item">
-                            <img src="ets.jpg" alt="ETS Ceremony at USFK">
-                            <div class="gallery-caption">ETS Ceremony at USFK HQ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="awards" class="awards">
-        <div class="container">
-            <h2>Awards & Achievements</h2>
-            <div class="awards-grid">
-                <div class="award-item" onclick="openAwardModal('hci2024-modal')">
-                    <div class="award-image-container">
-                        <img src="hci2024.jpg" alt="HCI Korea 2024 Best Paper Award">
-                        <div class="award-image-caption">Best Paper Award at HCI Korea 2024</div>
-                    </div>
-                    <div class="award-content">
-                        <h3>Best Paper Award (Oral)</h3>
-                        <p>HCI Korea 2024,<br>The HCI Society of Korea</p>
-                        <p class="date">Jan 2024</p>
-                        <button class="view-details-btn">View Details</button>
-                    </div>
-                </div>
-
-                <div class="award-item" onclick="openAwardModal('national-scholarship-modal')">
-                  <div class="award-image-container">
-                      <img src="national_scholarship.jpg" alt="국가우수장학생(이공계) 장학증서">
-                      <div class="award-image-caption">국가우수장학생(이공계) 장학증서</div>
-                  </div>
-                  <div class="award-content">
-                      <h3>국가우수장학생(이공계)</h3>
-                      <p>과학기술정보통신부 장관, <br>한국장학재단</p>
-                      <p class="date">Mar 2023</p>
-                      <button class="view-details-btn">View Details</button>
-                  </div>
-              </div>
-
-                <div class="award-item" onclick="openAwardModal('jscm-modal')">
-                    <div class="award-image-container">
-                        <img src="jscm.jpeg" alt="Joint Service Commendation Medal">
-                        <div class="award-image-caption">Joint Service Commendation Medal Award Ceremony</div>
-                    </div>
-                    <div class="award-content">
-                        <h3>Joint Service Commendation Medal</h3>
-                        <p>Secretary of Defense,<br> United States Department of Defense</p>
-                        <p class="date">Apr 2022</p>
-                        <button class="view-details-btn">View Details</button>
-                    </div>
-                </div>
-
-                <div class="award-item" onclick="openAwardModal('dod-modal')">
-                    <div class="award-image-container">
-                        <img src="dod.png" alt="국방 공공데이터 활용 경진대회">
-                        <div class="award-image-caption">2021 국방 공공데이터 활용 경진대회 상장</div>
-                    </div>
-                    <div class="award-content">
-                        <h3>국방부장관상</h3>
-                        <p>2021 국방 공공데이터 활용 경진대회,<br> 서비스 개발 부문 최우수</p>
-                        <p class="date">Aug 2021</p>
-                        <button class="view-details-btn">View Details</button>
-                    </div>
-                </div>
-
-                <div class="award-item" onclick="openAwardModal('oidc-modal')">
-                    <div class="award-image-container">
-                        <img src="oidc.jpg" alt="OIDC 2020">
-                        <div class="award-image-caption">제 2회 오픈 인프라 개발 경진대회 시상식</div>
-                    </div>
-                    <div class="award-content">
-                        <h3>최우수상</h3>
-                        <p>제 2회 오픈 인프라 개발 경진대회<br> (OIDC 2020)</p>
-                        <p class="date">Aug 2020</p>
-                        <button class="view-details-btn">View Details</button>
-                    </div>
-                </div>
-
-                <div class="award-item" onclick="openAwardModal('paasta-modal')">
-                    <div class="award-image-container">
-                        <img src="paasta.jpg" alt="PaaS-TA">
-                        <div class="award-image-caption">제 2회 개방형 클라우드 플랫폼 서비스 개발 해커톤 시상식</div>
-                    </div>
-                    <div class="award-content">
-                        <h3>특별상</h3>
-                        <p>개방형 클라우드 플랫폼 서비스 HCI Korea 2024개발 공모전, <br>과학기술정보통신부, 국회도서관
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            <b>백엔드 및 머신 비전 엔지니어</b>로서, 백엔드 개발, 비전 소프트웨어, 하드웨어 연동 시스템 분야에서 2년 이상의 실무 경험을 보유하고 있습니다.
+                            어릴 적부터 컴퓨터 과학에 대한 열정을 바탕으로 소프트웨어 특기자 전형으로 입학하였으며, 이공계 국가우수장학생으로 조기 졸업하였습니다.
                         </p>
-                        <p class="date">Dec 2019</p>
-                        <button class="view-details-btn">View Details</button>
+                        <p>
+                            학부 재학 중에도 연구실과 기업에 재직하며 실무 프로젝트에 지속적으로 참여해 실전 감각을 쌓았고,
+                            반도체 검사 및 이커머스 등 다양한 분야에서 여러 프로젝트를 처음부터 끝까지 주도적으로 수행하였습니다.
+                        </p>
+                        <p>
+                            특히 Deepseers에서 주도한 비전 검사 프로젝트는 중소벤처기업부의 TIPS 및 DIPS R&D 프로그램에 연속 선정되어 기술적 우수성과 시장성을 동시에
+                            인정받았습니다.
+                            메모리 효율적인 GAN 프레임워크를 연구하고, 딥러닝 기반 ROI 추천 기술로 특허를 출원하며 AI 분야도 함께 탐구해 왔습니다.
+                        </p>
                     </div>
-                </div>
-
-                
-            </div>
-        </div>
-
-        <!-- Award Modals -->
-        <div id="patent-modal" class="award-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>머신비전을 위한 딥러닝 기반 관심영역 자동생성 시스템 및 방법</h3>
-                <p></p>
-                <div class="modal-image">
-                    <div class="modal-image-wrapper">
-                        <img src="https://raw.githubusercontent.com/techbless/techbless/refs/heads/master/patent.png" alt="특허증">
-                    </div>
-                </div>
-                <p>머신비전을 위한 딥러닝 기반 관심영역 자동생성 시스템 및 방법(System and method for automatic creating region of interest based on deep learning for machine vision) 특허 등록이 완료되었습니다.</p>
-                <p class="date">Nov 2024</p>
-            </div>
-        </div>
-
-        <!-- Award Modals -->
-        <div id="hci2024-modal" class="award-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>Best Paper Award (Oral)</h3>
-                <p>HCI Korea 2024</p>
-                <div class="modal-image">
-                    <div class="modal-image-wrapper">
-                        <img src="bestpaper.jpg" alt="HCI Korea 2024 Best Paper Award">
-                    </div>
-                </div>
-                <p>HCI Korea 2024 학회에서 발표한 논문 "A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement"가 최우수 논문상(Best Paper Award)으로 선정되었습니다.</p>
-                <p class="date">Jan 2024</p>
-            </div>
-        </div>
-
-        <div id="jscm-modal" class="award-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>Joint Service Commendation Medal</h3>
-                <p>Secretary of Defense, United States Department of Defense</p>
-                <div class="modal-image">
-                    <img src="jscm2.jpeg" alt="Joint Service Commendation Medal Ceremony">
-                </div>
-                <p>합동공로훈장(JSCM)은 미국 국방장관 명의로 수여되는 훈장으로, 육군, 해군, 공군, 해병대 등 여러 군이 협력하는 참모조직이나 연합사령부 등 합동 조직(joint staff)에서 근무하며 감독직(supervisory role) 또는 전략적 핵심 보직(key positions)을 맡아, 탁월한 업적이나 공로를 세운 군인에게 수여됩니다.</p>
-                <p>전역 시 주한 미군/UN군 사령관 <i>Paul J. LaCamera</i> 대장으로 부터 수여받음.</p>
-                <p class="date">Apr 2022</p>
-            </div>
-        </div>
-
-        <div id="dod-modal" class="award-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>국방부장관상</h3>
-                <p>2021 국방 공공데이터 활용 경진대회, 서비스 개발 부문 최우수</p>
-                <div class="modal-image">
-                    <img src="dod.png" alt="2021 국방 공공데이터 활용 경진대회 상장">
-                </div>
-                <p>인공지능을 활용하여 군 장병의 체계적인 자기계발을 지원하는 플랫폼을 개발하였습니다. 플랫폼은 개인별 맞춤 도서 및 자격증을 추천하고, 자격증 합격률 정보를 제공합니다. 사용자는 마크다운(Markdown) 문법을 활용해 자기계발 일지를 작성하며, 자신의 성장 과정을 쉽게 관리할 수 있습니다. 또한, 포인트를 부여하는 랭킹 시스템을 도입하여 사용자 간의 건강한 경쟁을 유도하였습니다.</p>
-                <ul>
-                    <li>Inference API, 웹 RESTful API, Frontend 페이지를 개발하였습니다.</li>
-                    <li>tf-idf와 word2vec을 활용한 딥러닝 기반 개인화 추천 모델 개발을 지원하였습니다.</li>
-                </ul>
-                <p class="date">Aug 2021</p>
-            </div>
-        </div>
-
-        <div id="oidc-modal" class="award-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>최우수상</h3>
-                <p>제 2회 오픈 인프라 개발 경진대회 (OIDC 2020)</p>
-                <div class="modal-image">
-                    <img src="oidc_cert.png" alt="OIDC 2020 최우수상 상장">
-                </div>
-                <p>서울시 공공자전거 '따릉이'의 실시간 대여 가능 정보를 정기적으로 수집하고 미래의 재고 변화를 예측하는 플랫폼을 개발하였습니다. 이 플랫폼은 서울시 Open API를 활용하여 실시간 데이터를 자동으로 수집하며, LSTM 딥러닝 모델을 통해 향후 대여소별 자전거 재고를 예측합니다. 이를 통해 사용자들이 자전거 이용 가능 여부를 사전에 파악할 수 있도록 하여, 따릉이 이용 편의성 및 접근성을 효과적으로 향상시켰습니다.</p>
-                <ul>
-                    <li>API 및 예측 모델을 포함한 모든 기능을 개발하였습니다.</li>
-                </ul>
-                <p class="date">Aug 2020</p>
-            </div>
-        </div>
-
-        <div id="paasta-modal" class="award-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>특별상</h3>
-                <p>개방형 클라우드 플랫폼 서비스 개발 공모전, <br>과학기술정보통신부, 국회도서관</p>
-                <div class="modal-image">
-                    <img src="paasta.png" alt="PaaS-TA 해커톤 특별상 상장">
-                </div>
-                <p>실종 동물의 실시간 정보를 공유할 수 있는 위치 기반 플랫폼을 개발하였습니다. 사용자는 실종 동물의 현재 상태를 확인할 수 있으며, 마지막으로 목격된 위치나 최근 발견된 위치를 공유할 수 있습니다.</p>
-                <ul>
-                    <li>API 및 예측 모델을 포함한 모든 기능을 개발하였습니다.</li>
-                </ul>
-                <p class="date">Dec 2019</p>
-            </div>
-        </div>
-
-        <div id="national-scholarship-modal" class="award-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>국가우수장학생(이공계)</h3>
-                <p>한국장학재단</p>
-                <div class="modal-image">
-                    <img src="national.png" alt="국가우수장학생(이공계) 장학증서">
-                </div>
-                <p>이공계 분야의 우수한 학생들을 지원하여 국가 핵심 인재로 양성하기 위한 장학금으로, 학업성적이 우수하고 잠재력이 있는 학생들에게 지원됩니다.</p>
-                <ul>
-                    <li>3, 4학년 전액 장학금 수혜</li>
-                </ul>
-                <p class="date">Mar 2023</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <div class="publication-category">
-                <h3>Journal Articles</h3>
-                <div class="publication-item">
-                    <h4>MAGICal Synthesis: Memory-Efficient Approach for Generative Semiconductor Package Image Construction</h4>
-                    <p>Yunbin Chang, Wonyong Choi, Keejun Han*</p>
-                    <p>Journal of the Microelectronics and Packaging Society, 2023</p>
-                    <div class="research-links">
-                        <a href="https://doi.org/10.6117/kmeps.2023.30.4.069" target="_blank" class="research-link"><i class="fas fa-book"></i> Paper</a>
-                        <a href="https://github.com/techbless/MAGICal-Synthesis" target="_blank" class="research-link"><i class="fab fa-github"></i> Code</a>
+                    <div class="skills-container">
+                        <h3>Core Competencies</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Backend Development</span>
+                            <span class="tag">Machine Vision</span>
+                            <span class="tag">Hardware Integration</span>
+                            <span class="tag">C# / .NET</span>
+                            <span class="tag">Node.js / TypeScript</span>
+                            <span class="tag">AWS Cloud</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">System Architecture</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="publication-category">
-                <h3>Conference Proceedings & Presentations</h3>
-                <div class="publication-item">
-                    <h4>A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement</h4>
-                    <p>Yunbin Chang, Wonyong Choi, Keejun Han*</p>
-                    <p>HCI Korea 2024</p>
-                    <div class="research-links">
-                        <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11714627" target="_blank" class="research-link"><i class="fas fa-book"></i> Proceedings</a>
+        </section>
+
+
+
+        <!-- Experience Section (Timeline) -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <!-- Solum -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2025 - Present</div>
+                        <div class="timeline-content">
+                            <div class="company-header">
+                                <img src="solum_logo.jpeg" alt="Solum" class="company-logo">
+                                <div>
+                                    <h3>SOLUM</h3>
+                                    <span class="role">Vision & Software Engineer</span>
+                                </div>
+                            </div>
+                            <h4>Newton Eye / ESL SaaS Development</h4>
+                            <ul>
+                                <li>Newton Eye Vision 알고리즘 개발 중</li>
+                                <li>ESL SaaS system 개발 중</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Deepseers -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Feb 2024 - Aug 2025</div>
+                        <div class="timeline-content">
+                            <div class="company-header">
+                                <img src="deepseers.png" alt="Deepseers" class="company-logo">
+                                <div>
+                                    <h3>Deepseers</h3>
+                                    <span class="role">Vision & Software Engineer</span>
+                                </div>
+                            </div>
+                            <h4>반도체 패키지 비전 검사 솔루션</h4>
+                            <p>대학 연구실에서 스핀오프된 스타트업에 합류하여 기존 프로젝트와 역할을 지속적으로 수행하였습니다.</p>
+                            <h5>시스템 아키텍처 및 핵심 모듈 개발</h5>
+                            <ul>
+                                <li>시스템 전체 아키텍처를 처음부터 설계하고, 핵심 모듈 개발을 기술적으로 리드하였습니다.</li>
+                                <li>고속 플라잉 검사를 위한 Observer + Blocking Queue 기반 트리거-그랩 동기화 구조를 구현하였습니다.</li>
+                                <li>다양한 자재에 적응 가능한 레시피 구조를 개발하고, EMAP/X-out 등 상위 데이터 흐름을 통합하였습니다.</li>
+                                <li>LOT 관리 및 검사 이력 추적을 위한 데이터베이스를 구축하였습니다.</li>
+                            </ul>
+                            <h5>비전 검사 및 알고리즘 개발</h5>
+                            <ul>
+                                <li>맵핑 비전 검사의 모든 검사 알고리즘(마킹면 포함)개발을 아키텍처 설계부터 배포까지 주도하였습니다.</li>
+                                <li>비전을 통한 3Points, Jig 및 Pad Pitch등 다양한 모터의 오토 캘리브레이션기능을 개발하였습니다.</li>
+                                <li>맵핑 검사와 PRS 과정에서 바텀면과 마킹면 검사가 자유롭게 전환되도록 구현하여, 장비 운용의 유연성을 향상시켰습니다.</li>
+                                <li>핵심 영역만을 학습에 활용하여 Shape 매칭 모델의 연산 효율을 높이고 얼라인 시간을 단축하는 등, 다양한 비전 알고리즘의 최적화에 기여하였습니다.
+                                </li>
+                                <li>딥러닝 기반 ROI 추천 알고리즘에 대해 특허를 출원하였습니다.</li>
+                            </ul>
+                            <h5>하드웨어 연동 및 제어</h5>
+                            <ul>
+                                <li>트리거/스트로브 조명 제어를 구현하고, 하드웨어 트러블슈팅을 수행하였습니다.</li>
+                                <li>동적 설정 구조를 통해 다양한 카메라 인터페이스와 조명을 유연하게 통합하여, 장비 셋업 부담을 최소화하였습니다.</li>
+                                <li>장비 타입별 핸들러-비전 소켓 및 라우팅 로직을 개발하여 다양한 장비 타입(Tray, Ring 등)과의 호환성을 확보하였습니다.</li>
+                                <li>핸들러와 비전 시스템 간 LOT 및 레시피 동기화, 이력 관리를 개발하였습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AML Lab -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2023 - Feb 2024</div>
+                        <div class="timeline-content">
+                            <div class="company-header">
+                                <img src="hsu.png" alt="AML Lab" class="company-logo">
+                                <div>
+                                    <h3>AML Lab, Hansung University</h3>
+                                    <span class="role">Undergraduate Researcher</span>
+                                </div>
+                            </div>
+                            <h4>반도체 패키지 비전 검사 솔루션</h4>
+                            <ul>
+                                <li>반도체 패키지 장비(Saw Singulation)용 비전 검사 소프트웨어를 초기 프로토타입부터 배포까지 개발하였습니다.</li>
+                                <li>실제 반도체 장비에 프로토타입 소프트웨어를 배포 및 검증하여 안정적이고 실시간으로 동작함을 확인하였습니다.</li>
+                                <li>반도체 패키지 맵핑 검사에서 수행되는 모든 알고리즘(마킹면 포함) 개발에 기여하였습니다.</li>
+                                <li>협업 테스트와 피드백을 통해 바닥면 검사 알고리즘의 구현 및 파라미터 최적화 과정에 기여하였습니다.</li>
+                            </ul>
+
+                            <h4>메모리 효율적인 GAN 프레임워크</h4>
+                            <ul>
+                                <li>고해상도 이미지 생성을 위한 패치 기반 메모리 효율적 GAN 프레임워크를 연구하였습니다.</li>
+                                <li>KCI 등재 학술지에 논문 1편을 게재하였습니다.</li>
+                                <li>국내(구두) 1건, 국제(포스터) 1건의 학술대회에서 발표하였습니다.</li>
+                                <li>HCI2024 구두 발표에서 최우수 논문상을 수상하였습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Stafact -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2022 - May 2023</div>
+                        <div class="timeline-content">
+                            <div class="company-header">
+                                <img src="sf.png" alt="STAFACT" class="company-logo">
+                                <div>
+                                    <h3>STAFACT INC.</h3>
+                                    <span class="role">Backend Developer</span>
+                                </div>
+                            </div>
+                            <h4>드랍쉬핑 플랫폼 "THEKOC"</h4>
+                            <ul>
+                                <li>모든 public/private API 개발을 단독으로 담당하였습니다.</li>
+                                <li>AWS EC2, S3, LB, RDS, ElastiCache, Nginx 등으로 구성된 AWS 기반 클라우드 인프라를 구축 및 운영하여 고가용성을
+                                    보장하였습니다.</li>
+                                <li>카카오, 네이버, 구글, 애플, 페이스북 소셜 로그인 연동을 구현하였습니다.</li>
+                                <li>PayPal, WeChat Pay, MoMo 등 글로벌 결제 시스템을 연동하였습니다.</li>
+                                <li>토스페이먼츠, 카카오페이, 네이버페이 등 국내 결제 시스템을 연동하였습니다.</li>
+                                <li>관리자 대시보드 및 관리 기능을 전면 개발하였습니다.</li>
+                                <li>판매자 미니샵 생성 및 맞춤형 가격 책정 기능을 구현하였습니다.</li>
+                                <li>카카오톡 알림 및 인증 시스템을 개발하였습니다.</li>
+                                <li>판매자 정산 환불 시스템을 구축하였습니다.</li>
+                                <li>Nuxt를 활용하여 프론트엔드 개발 커밋 기준 30% 이상을 기여하였습니다.</li>
+                            </ul>
+
+                            <h4>사내 SCM 시스템 개발</h4>
+                            <ul>
+                                <li>QExpress 창고와 SCM 간 자동 배송 연동을 구현하였습니다.</li>
+                                <li>사내 SCM을 상품, 주문, 리뷰 관리 모듈과 연동하였습니다.</li>
+                                <li>상품/주문 관리 및 인플루언서 체험단(샘플링) 기능을 개발하였습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- USFK -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Dec 2020 - Jun 2022</div>
+                        <div class="timeline-content">
+                            <div class="company-header">
+                                <img src="usfk2.jpg" alt="USFK" class="company-logo">
+                                <div>
+                                    <h3>USFK HQ, UNC</h3>
+                                    <span class="role">KATUSA, J1 Data Management</span>
+                                </div>
+                            </div>
+                            <h4>Data Management & Personnel</h4>
+                            <ul>
+                                <li>PIMS-K(인사정보관리시스템)를 통해 10,000명 이상의 인사 기록을 관리하며, 여러 사령부에 걸쳐 데이터의 정확성과 무결성을 보장하였습니다.
+                                </li>
+                                <li>USFK Regulation 60-1에 따라 duty-free 구매 violation tracking 시스템을 개선하고, 60,000명 이상의 수혜자를
+                                    대상으로 월간 보고 체계를 구축하였습니다.</li>
+                                <li>주한미군 사령부 장성급 지휘관의 의사결정을 돕기 위해 Weekly Strength Report 작성과 번역을 지원하며, 한영 이중언어 업무를
+                                    수행하였습니다.</li>
+                                <li>연합지휘소훈련(CCPT) 기간 동안 유엔군(UNC) 등 다국적 인원의 In-processing 및 인사 행정 절차를 관리하였습니다.</li>
+                            </ul>
+
+                            <h4>Policy & Program</h4>
+                            <ul>
+                                <li>미 대사관 직원 및 군인 가족을 위한 규정 예외(ETP)를 200건 이상을 처리하였습니다.</li>
+                                <li>미군과 연합사 간 인사 협조 및 공동 정책 정렬을 통해 협업을 강화하였습니다.</li>
+                                <li>미군 및 유엔군을 대상으로 한 CFC, C5 주관 Cultural Immersion 프로그램 확대에 기여하여, 문화 적응력 및 양국 교류를
+                                    증진하였습니다.</li>
+                            </ul>
+                            <p class="note"><small><i>(Note: Certain achievements are summarized in accordance with
+                                        military security policy, as recognized in JSCM citation.)</i></small></p>
+
+                            <div class="experience-gallery">
+                                <div class="gallery-item">
+                                    <img src="ets.jpg" alt="ETS Ceremony at USFK">
+                                    <div class="gallery-caption">ETS Ceremony at USFK HQ</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="publication-item">
-                    <h4>A Computationally Optimized Data Augmentation Framework Utilizing cDCGAN for High-Resolution Package Images Acquisition</h4>
-                    <p>Yunbin Chang, Wonyong Choi, Keejun Han*</p>
-                    <p>ISMP 2023</p>
-                    <div class="research-links">
-                        <a href="#ismp2023-modal" class="research-link" onclick="openPosterModal('ismp2023-modal'); return false;"><i class="fas fa-image"></i> Poster</a>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-simple">
+                    <div class="edu-logo-wrapper">
+                        <img src="hsu.png" alt="Hansung University" class="edu-logo">
+                    </div>
+                    <div class="edu-details">
+                        <h3>Hansung University</h3>
+                        <p class="degree">B.S. in Computer Science and Engineering</p>
+                        <p class="date">Mar 2019 - Aug 2024</p>
+                        <ul class="edu-highlights-list">
+                            <li>GPA: 4.27/4.5 (Major 4.43)</li>
+                            <li>Early Graduation (조기 졸업)</li>
+                            <li>National Science & Engineering Scholarship (Full Ride)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="research" class="research">
-        <div class="container">
-            <h2>Research Projects</h2>
-            <div class="research-list">
-                <div class="research-item">
-                    <h3>사용자 개입이 최소화된 차세대 반도체 패키지 불량 검출 시스템</h3>
-                    <p class="subtitle">(Next-generation semiconductor package defect detection system with minimal user intervention)</p>
-                    <p class="details">
-                        <span class="role">Researcher, Deepseers</span>
-                        <span class="organization">중소벤처기업부(TIPS)</span>
-                        <span class="date">Jan 2025 - Present</span>
-                    </p>
-                </div>
 
-                <div class="research-item">
-                    <h3>사용자 개입이 최소화된 차세대 반도체 패키지 불량 검출 시스템</h3>
-                    <p class="subtitle">(Next-generation semiconductor package defect detection system with minimal user intervention)</p>
-                    <p class="details">
-                        <span class="role">Researcher, Deepseers</span>
-                        <span class="organization">중소벤처기업부(TIPS)</span>
-                        <span class="date">Oct 2024 - Dec 2024</span>
-                    </p>
-                </div>
 
-                <div class="research-item">
-                    <h3>반도체 소자 생산을 위한 인공지능 기반 스마트 제조 공정 장비 및 관련 기술 개발</h3>
-                    <p class="subtitle">(Development of AI based smart manufacturing process and equipment technology to strengthen the competitiveness of semiconductor materials parts and equipment)</p>
-                    <p class="details">
-                        <span class="role">Researcher, AML Lab. Hansung University</span>
-                        <span class="organization">산업통상자원부</span>
-                        <span class="date">May 2023 - Dec 2024</span>
-                    </p>
+        <!-- Patents Section -->
+        <section id="patents" class="section patents">
+            <div class="container">
+                <h2 class="section-title">Patents</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <span class="card-label">Patent</span>
+                            <h3>Automatic ROI Creation for Machine Vision</h3>
+                            <p class="role">Inventor</p>
+                            <p class="desc">머신비전을 위한 딥러닝 기반 관심영역 자동생성 시스템 및 방법 (No. 10-2821336)</p>
+                            <div class="card-footer">
+                                <button class="btn-text" onclick="openModal('patent-modal')">View Patent <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="patents" class="patents">
-        <div class="container">
-            <h2>Patents</h2>
-            <div class="patent-list">
-                <div class="patent-item">
-                    <h3>머신비전을 위한 딥러닝 기반 관심영역 자동생성 시스템 및 방법</h3>
-                    <p class="subtitle">(System and method for automatic creating region of interest based on deep learning for machine vision)</p>
-                    <p class="details">
-                        <span class="number">No. 10-2821336</span>
-                        <span class="inventors">K. Han, Y. Chang, K. Lee</span>
-                        <span class="date">Nov 2024</span>
-                    </p>
+        <!-- Awards Section -->
+        <section id="awards" class="section awards">
+            <div class="container">
+                <h2 class="section-title">Awards & Achievements</h2>
+                <div class="awards-grid">
+                    <!-- HCI 2024 -->
+                    <div class="award-card" onclick="openModal('hci2024-modal')">
+                        <div class="award-img">
+                            <img src="hci2024.jpg" alt="HCI Korea 2024">
+                            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="award-info">
+                            <h3>Best Paper Award (Oral)</h3>
+                            <p>HCI Korea 2024</p>
+                            <span class="award-date">Jan 2024</span>
+                        </div>
+                    </div>
 
-                    <button href="#patent-modal" class="view-details-btn" onclick="openAwardModal('patent-modal'); return false;">특허증 <i class="fas fa-arrow-right"></i></button>
+                    <!-- National Scholarship -->
+                    <div class="award-card" onclick="openModal('national-scholarship-modal')">
+                        <div class="award-img">
+                            <img src="national_scholarship.jpg" alt="National Scholarship">
+                            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="award-info">
+                            <h3>National Science & Engineering Scholarship</h3>
+                            <p>Ministry of Science and ICT</p>
+                            <span class="award-date">Mar 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- JSCM -->
+                    <div class="award-card" onclick="openModal('jscm-modal')">
+                        <div class="award-img">
+                            <img src="jscm.jpeg" alt="JSCM">
+                            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="award-info">
+                            <h3>Joint Service Commendation Medal</h3>
+                            <p>US Department of Defense</p>
+                            <span class="award-date">Apr 2022</span>
+                        </div>
+                    </div>
+
+                    <!-- DOD Award -->
+                    <div class="award-card" onclick="openModal('dod-modal')">
+                        <div class="award-img">
+                            <img src="dod.png" alt="DOD Award">
+                            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="award-info">
+                            <h3>Minister of Defense Award</h3>
+                            <p>Defense Public Data Contest</p>
+                            <span class="award-date">Aug 2021</span>
+                        </div>
+                    </div>
+
+                    <!-- OIDC -->
+                    <div class="award-card" onclick="openModal('oidc-modal')">
+                        <div class="award-img">
+                            <img src="oidc.jpg" alt="OIDC">
+                            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="award-info">
+                            <h3>Grand Prize (1st Place)</h3>
+                            <p>Open Infra Developer Contest</p>
+                            <span class="award-date">Aug 2020</span>
+                        </div>
+                    </div>
+
+                    <!-- PaaS-TA -->
+                    <div class="award-card" onclick="openModal('paasta-modal')">
+                        <div class="award-img">
+                            <img src="paasta.jpg" alt="PaaS-TA">
+                            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="award-info">
+                            <h3>Special Award</h3>
+                            <p>PaaS-TA Hackathon</p>
+                            <span class="award-date">Dec 2019</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Chang, Yunbin. All rights reserved.</p>
-        </div>
-    </footer>
+        <!-- Publications Section -->
+        <section id="publications" class="section publications">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <div class="pub-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="pub-content">
+                            <h3>MAGICal Synthesis: Memory-Efficient Approach for Generative Semiconductor Package Image
+                                Construction</h3>
+                            <p class="authors">Yunbin Chang, Wonyong Choi, Keejun Han*</p>
+                            <p class="venue">Journal of the Microelectronics and Packaging Society, 2023</p>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.6117/kmeps.2023.30.4.069" target="_blank">Paper <i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/techbless/MAGICal-Synthesis" target="_blank">Code <i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Timeline Back Button -->
-    <div class="timeline-back-btn">
-        <i class="fas fa-clock"></i>
-        <span>타임라인으로 돌아가기</span>
-        <div class="close-btn">
-            <i class="fas fa-times"></i>
+                    <div class="pub-item">
+                        <div class="pub-icon"><i class="fas fa-users"></i></div>
+                        <div class="pub-content">
+                            <h3>A Sub-Region Approach with Conditional GANs for Memory Efficiency Enhancement</h3>
+                            <p class="authors">Yunbin Chang, Wonyong Choi, Keejun Han*</p>
+                            <p class="venue">HCI Korea 2024 (Best Paper Award)</p>
+                            <div class="pub-links">
+                                <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11714627"
+                                    target="_blank">Proceedings <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-icon"><i class="fas fa-image"></i></div>
+                        <div class="pub-content">
+                            <h3>A Computationally Optimized Data Augmentation Framework Utilizing cDCGAN</h3>
+                            <p class="authors">Yunbin Chang, Wonyong Choi, Keejun Han*</p>
+                            <p class="venue">ISMP 2023</p>
+                            <div class="pub-links">
+                                <a href="#" onclick="openModal('ismp2023-modal'); return false;">View Poster <i
+                                        class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Research Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Research & Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <span class="card-label">TIPS Program</span>
+                            <h3>Next-gen Semiconductor Package Defect Detection</h3>
+                            <p class="role">Researcher, Deepseers</p>
+                            <p class="desc">사용자 개입이 최소화된 차세대 반도체 패키지 불량 검출 시스템 개발.</p>
+                            <div class="card-footer">
+                                <span class="date">Oct 2024 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-content">
+                            <span class="card-label">R&D Project</span>
+                            <h3>AI-based Smart Manufacturing Process</h3>
+                            <p class="role">Researcher, AML Lab</p>
+                            <p class="desc">반도체 소자 생산을 위한 인공지능 기반 스마트 제조 공정 장비 및 관련 기술 개발.</p>
+                            <div class="card-footer">
+                                <span class="date">May 2023 - Dec 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact">
+            <div class="container footer-content">
+                <div class="footer-left">
+                    <h3>Yunbin Chang</h3>
+                    <p>Vision & Software Engineer</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Seoul, Republic of Korea</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/vinchang" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:yvin.chang@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+821041073727"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <p class="copyright">&copy; 2025 Yunbin Chang. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modals -->
+    <div id="modal-overlay" class="modal-overlay"></div>
+
+    <!-- Patent Modal -->
+    <div id="patent-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>머신비전을 위한 딥러닝 기반 관심영역 자동생성 시스템 및 방법</h3>
+            <img src="https://raw.githubusercontent.com/techbless/techbless/refs/heads/master/patent.png"
+                alt="Patent Certificate">
+            <p>머신비전을 위한 딥러닝 기반 관심영역 자동생성 시스템 및 방법(System and method for automatic creating region of interest based on
+                deep learning for machine vision) 특허 등록이 완료되었습니다.</p>
+            <p class="date">Nov 2024</p>
         </div>
     </div>
 
-    <!-- ISMP 2023 Poster Modal -->
-    <div id="ismp2023-modal" class="award-modal">
-        <div class="modal-content poster-modal-content">
-            <span class="close-modal" onclick="PosterViewer.closeModal('ismp2023-modal')">&times;</span>
-            <div class="zoom-controls">
-                <button onclick="PosterViewer.zoomPoster(1.2)" class="zoom-btn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
-                <button onclick="PosterViewer.zoomPoster(0.8)" class="zoom-btn" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
-                <button onclick="PosterViewer.resetPoster()" class="zoom-btn" title="Reset"><i class="fas fa-redo"></i></button>
-            </div>
-            <div class="poster-container" id="poster-container">
-                <img src="https://raw.githubusercontent.com/techbless/techbless/master/poster.jpg" 
-                     alt="ISMP 2023 Poster" 
-                     class="poster-image" 
-                     id="poster-image"
-                     draggable="false">
-            </div>
+    <!-- HCI 2024 Modal -->
+    <div id="hci2024-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>Best Paper Award (Oral)</h3>
+            <p class="subtitle">HCI Korea 2024</p>
+            <img src="bestpaper.jpg" alt="HCI Best Paper">
+            <p>HCI Korea 2024 학회에서 발표한 논문 "A Sub-Region Approach with Conditional GANs for Memory Efficiency
+                Enhancement"가 최우수 논문상(Best Paper Award)으로 선정되었습니다.</p>
+            <p class="date">Jan 2024</p>
         </div>
     </div>
 
-    <script>
-        // Initialize timeline
-        document.addEventListener('DOMContentLoaded', function() {
-            timeline(document.querySelectorAll('.timeline'), {
-                mode: 'horizontal',
-                visibleItems: 6,
-                forceVerticalMode: 800,
-                verticalStartPosition: 'left',
-                verticalTrigger: '150px',
-                moveItems: 3
-            });
+    <!-- JSCM Modal -->
+    <div id="jscm-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>Joint Service Commendation Medal</h3>
+            <p class="subtitle">Secretary of Defense, United States Department of Defense</p>
+            <img src="jscm2.jpeg" alt="JSCM Ceremony">
+            <p>합동공로훈장(JSCM)은 미국 국방장관 명의로 수여되는 훈장으로, 육군, 해군, 공군, 해병대 등 여러 군이 협력하는 참모조직이나 연합사령부 등 합동 조직(joint staff)에서
+                근무하며 감독직(supervisory role) 또는 전략적 핵심 보직(key positions)을 맡아, 탁월한 업적이나 공로를 세운 군인에게 수여됩니다.</p>
+            <p>전역 시 주한 미군/UN군 사령관 <i>Paul J. LaCamera</i> 대장으로 부터 수여받음.</p>
+            <p class="date">Apr 2022</p>
+        </div>
+    </div>
 
-            // Timeline Back Button Functionality
-            const timelineBackBtn = document.querySelector('.timeline-back-btn');
-            const timelineSection = document.querySelector('#timeline');
-            let fromTimeline = false;
+    <!-- DOD Modal -->
+    <div id="dod-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>국방부장관상</h3>
+            <p class="subtitle">2021 국방 공공데이터 활용 경진대회, 서비스 개발 부문 최우수</p>
+            <img src="dod.png" alt="DOD Award">
+            <p>인공지능을 활용하여 군 장병의 체계적인 자기계발을 지원하는 플랫폼을 개발하였습니다. 플랫폼은 개인별 맞춤 도서 및 자격증을 추천하고, 자격증 합격률 정보를 제공합니다.</p>
+            <p class="date">Aug 2021</p>
+        </div>
+    </div>
 
-            // Track clicks on timeline navigation buttons
-            document.querySelectorAll('.timeline-nav-btn').forEach(btn => {
-                if (!btn.hasAttribute('onclick')) {  // Only for non-modal buttons
-                    btn.addEventListener('click', () => {
-                        fromTimeline = true;
-                        setTimeout(() => {
-                            timelineBackBtn.classList.add('visible');
-                        }, 500);
-                    });
-                }
-            });
+    <!-- OIDC Modal -->
+    <div id="oidc-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>최우수상</h3>
+            <p class="subtitle">제 2회 오픈 인프라 개발 경진대회 (OIDC 2020)</p>
+            <img src="oidc_cert.png" alt="OIDC Award">
+            <p>서울시 공공자전거 '따릉이'의 실시간 대여 가능 정보를 정기적으로 수집하고 미래의 재고 변화를 예측하는 플랫폼을 개발하였습니다.</p>
+            <p class="date">Aug 2020</p>
+        </div>
+    </div>
 
-            // Close button functionality
-            timelineBackBtn.querySelector('.close-btn').addEventListener('click', (e) => {
-                e.stopPropagation();
-                timelineBackBtn.classList.remove('visible');
-                fromTimeline = false;
-            });
+    <!-- PaaS-TA Modal -->
+    <div id="paasta-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>특별상</h3>
+            <p class="subtitle">개방형 클라우드 플랫폼 서비스 개발 공모전</p>
+            <img src="paasta.png" alt="PaaS-TA Award">
+            <p>실종 동물의 실시간 정보를 공유할 수 있는 위치 기반 플랫폼을 개발하였습니다.</p>
+            <p class="date">Dec 2019</p>
+        </div>
+    </div>
 
-            // Back to timeline functionality
-            timelineBackBtn.addEventListener('click', () => {
-                timelineSection.scrollIntoView({ behavior: 'smooth' });
-                setTimeout(() => {
-                    timelineBackBtn.classList.remove('visible');
-                    fromTimeline = false;
-                }, 1000);
-            });
+    <!-- National Scholarship Modal -->
+    <div id="national-scholarship-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>국가우수장학생(이공계)</h3>
+            <p class="subtitle">한국장학재단</p>
+            <img src="national.png" alt="National Scholarship">
+            <p>이공계 분야의 우수한 학생들을 지원하여 국가 핵심 인재로 양성하기 위한 장학금으로, 학업성적이 우수하고 잠재력이 있는 학생들에게 지원됩니다.</p>
+            <p class="date">Mar 2023</p>
+        </div>
+    </div>
 
-            // Hide back button when scrolling back to timeline naturally
-            window.addEventListener('scroll', () => {
-                if (fromTimeline) {
-                    const timelineRect = timelineSection.getBoundingClientRect();
-                    if (timelineRect.top >= 0 && timelineRect.bottom <= window.innerHeight) {
-                        timelineBackBtn.classList.remove('visible');
-                        fromTimeline = false;
-                    }
-                }
-            });
-        });
-        
-        // Timeline filtering functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get all legend items and timeline items
-            const legendItems = document.querySelectorAll('.legend-item');
-            const timelineItems = document.querySelectorAll('.timeline__item');
-            let activeFilter = null;
-            
-            // Add click event to each legend item
-            legendItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    // Get the category from the class name
-                    const categoryClass = this.classList[1]; // e.g., education-legend
-                    const category = categoryClass.replace('-legend', ''); // e.g., education
-                    
-                    // If clicking the same filter, remove it
-                    if (activeFilter === category) {
-                        // Show all items
-                        document.querySelector('.timeline').classList.remove('filtering');
-                        timelineItems.forEach(item => {
-                            item.classList.remove('filtered-out');
-                        });
-                        
-                        // Remove active class from all legend items
-                        legendItems.forEach(legendItem => {
-                            legendItem.classList.remove('active');
-                        });
-                        
-                        activeFilter = null;
-                    } else {
-                        // Remove active class from all legend items
-                        legendItems.forEach(legendItem => {
-                            legendItem.classList.remove('active');
-                        });
-                        // Add active class to clicked legend item
-                        this.classList.add('active');
-                        
-                        // Add filtering class to timeline
-                        document.querySelector('.timeline').classList.add('filtering');
-                        
-                        // Filter timeline items
-                        timelineItems.forEach(item => {
-                            const content = item.querySelector('.timeline__content');
-                            if (content.classList.contains(category)) {
-                                item.classList.remove('filtered-out');
-                            } else {
-                                item.classList.add('filtered-out');
-                            }
-                        });
-                        
-                        activeFilter = category;
-                    }
-                });
-            });
-        });
+    <!-- ISMP Poster Modal -->
+    <div id="ismp2023-modal" class="modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-content">
+            <h3>ISMP 2023 Poster</h3>
+            <img src="ismp.jpg" alt="ISMP Poster">
+        </div>
+    </div>
 
-        // Hamburger menu toggle
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-            document.querySelector('.navbar').classList.toggle('menu-open');
-        });
-
-        // Close mobile menu when clicking a nav link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.querySelector('.nav-links').classList.remove('active');
-                document.querySelector('.hamburger').classList.remove('active');
-                document.querySelector('.navbar').classList.remove('menu-open');
-            });
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Modal functionality
-        function openAwardModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'block';
-            document.body.classList.add('modal-open');
-        }
-
-        // Close modal when clicking the close button or outside the modal
-        document.querySelectorAll('.close-modal').forEach(closeBtn => {
-            closeBtn.addEventListener('click', function() {
-                const modal = this.closest('.award-modal');
-                modal.style.display = 'none';
-                document.body.classList.remove('modal-open');
-            });
-        });
-
-        // Close modal when clicking outside
-        document.querySelectorAll('.award-modal').forEach(modal => {
-            modal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    this.style.display = 'none';
-                    document.body.classList.remove('modal-open');
-                }
-            });
-        });
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.querySelectorAll('.award-modal').forEach(modal => {
-                    modal.style.display = 'none';
-                });
-                document.body.classList.remove('modal-open');
-            }
-        });
-
-        // Prevent modal from closing when clicking inside modal content
-        document.querySelectorAll('.modal-content').forEach(content => {
-            content.addEventListener('click', function(e) {
-                e.stopPropagation();
-            });
-        });
-
-        // Poster Viewer Module
-        const PosterViewer = (function() {
-            let scale = 1;
-            let isDragging = false;
-            let startX, startY, translateX = 0, translateY = 0;
-            let initialScale = 1;
-            let lastCenterX = 0, lastCenterY = 0;
-            
-            function initPosterSize() {
-                const container = document.getElementById('poster-container');
-                const img = document.getElementById('poster-image');
-                
-                if (!img.complete || !img.naturalWidth) {
-                    setTimeout(initPosterSize, 100);
-                    return;
-                }
-                
-                // Calculate scale to fit the image within the container while maintaining aspect ratio
-                const containerAspect = container.offsetWidth / container.offsetHeight;
-                const imageAspect = img.naturalWidth / img.naturalHeight;
-                
-                if (containerAspect > imageAspect) {
-                    // Container is wider than image aspect ratio
-                    initialScale = (container.offsetHeight / img.naturalHeight) * 1.5; // Increased initial zoom
-                } else {
-                    // Container is taller than image aspect ratio
-                    initialScale = (container.offsetWidth / img.naturalWidth) * 1.5; // Increased initial zoom
-                }
-                
-                scale = initialScale;
-                
-                // Calculate initial Y translation to show the top of the image
-                const scaledHeight = img.naturalHeight * scale;
-                const containerHeight = container.offsetHeight;
-                translateY = (scaledHeight - containerHeight) / 2;
-                translateX = 0;
-                
-                updatePosterTransform();
-                updateCursorStyle();
-            }
-
-            function isDraggable() {
-                const container = document.getElementById('poster-container');
-                const img = document.getElementById('poster-image');
-                if (!container || !img) return false;
-
-                const containerRect = container.getBoundingClientRect();
-                const scaledWidth = img.naturalWidth * scale;
-                const scaledHeight = img.naturalHeight * scale;
-
-                return scaledWidth > containerRect.width || scaledHeight > containerRect.height;
-            }
-            
-            function startDragging(e) {
-                if (!isDraggable()) return;
-                
-                isDragging = true;
-                if (e.type === 'mousedown') {
-                    startX = e.clientX - translateX;
-                    startY = e.clientY - translateY;
-                } else {
-                    const touch = e.touches[0];
-                    startX = touch.clientX - translateX;
-                    startY = touch.clientY - translateY;
-                }
-                container.style.cursor = 'grabbing';
-            }
-
-            // Update cursor style based on draggability
-            function updateCursorStyle() {
-                const container = document.getElementById('poster-container');
-                if (!container) return;
-                
-                container.style.cursor = isDraggable() ? 'grab' : 'default';
-            }
-
-            function zoomPoster(factor) {
-                const container = document.getElementById('poster-container');
-                const img = document.getElementById('poster-image');
-                
-                // Store old scale for ratio calculation
-                const oldScale = scale;
-                
-                // If trying to zoom out
-                if (factor < 1) {
-                    // Calculate what the new scale would be
-                    const nextScale = scale * factor;
-                    
-                    // If the next scale would be less than or equal to initial scale, reset
-                    if (nextScale <= initialScale) {
-                        resetPoster();
-                        return;
-                    }
-                }
-                
-                // Update scale with bounds
-                scale *= factor;
-                scale = Math.min(scale, initialScale * 3);
-                
-                // Calculate the scale ratio
-                const scaleRatio = scale / oldScale;
-                
-                // Adjust translation to zoom around the center point
-                translateX = translateX * scaleRatio;
-                translateY = translateY * scaleRatio;
-                
-                updatePosterTransform();
-                updateCursorStyle();
-            }
-
-            function resetPoster() {
-                scale = initialScale;
-                // Reset to top position
-                const container = document.getElementById('poster-container');
-                const img = document.getElementById('poster-image');
-                const scaledHeight = img.naturalHeight * scale;
-                const containerHeight = container.offsetHeight;
-                translateY = (scaledHeight - containerHeight) / 2;
-                translateX = 0;
-                updatePosterTransform();
-                updateCursorStyle();
-            }
-
-            function updatePosterTransform() {
-                const img = document.getElementById('poster-image');
-                img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-            }
-
-            function closeModal(modalId) {
-                document.getElementById(modalId).style.display = "none";
-                resetPoster();
-            }
-            
-            function openModal(modalId) {
-                const modal = document.getElementById(modalId);
-                modal.style.display = "block";
-                
-                const img = document.getElementById('poster-image');
-                if (img.complete) {
-                    initPosterSize();
-                } else {
-                    img.onload = initPosterSize;
-                }
-            }
-
-            // Add drag functionality
-            document.addEventListener('DOMContentLoaded', function() {
-                const container = document.getElementById('poster-container');
-                const img = document.getElementById('poster-image');
-                
-                if (!container || !img) return;
-
-                container.addEventListener('mousedown', startDragging);
-                container.addEventListener('mousemove', drag);
-                container.addEventListener('mouseup', stopDragging);
-                container.addEventListener('mouseleave', stopDragging);
-                container.addEventListener('touchstart', handleTouchStart, { passive: false });
-                container.addEventListener('touchmove', handleTouchMove, { passive: false });
-                container.addEventListener('touchend', stopDragging);
-                
-                function drag(e) {
-                    if (!isDragging || !isDraggable()) return;
-                    e.preventDefault();
-                    
-                    let clientX, clientY;
-                    if (e.type === 'mousemove') {
-                        clientX = e.clientX;
-                        clientY = e.clientY;
-                    } else {
-                        const touch = e.touches[0];
-                        clientX = touch.clientX;
-                        clientY = touch.clientY;
-                    }
-                    
-                    translateX = clientX - startX;
-                    translateY = clientY - startY;
-                    
-                    // Add bounds to prevent dragging too far
-                    const containerRect = container.getBoundingClientRect();
-                    const scaledWidth = img.naturalWidth * scale;
-                    const scaledHeight = img.naturalHeight * scale;
-                    
-                    const maxTranslateX = Math.max(0, (scaledWidth - containerRect.width) / 2);
-                    const maxTranslateY = Math.max(0, (scaledHeight - containerRect.height) / 2);
-                    
-                    translateX = Math.max(Math.min(translateX, maxTranslateX), -maxTranslateX);
-                    translateY = Math.max(Math.min(translateY, maxTranslateY), -maxTranslateY);
-                    
-                    updatePosterTransform();
-                }
-                
-                function stopDragging() {
-                    isDragging = false;
-                    updateCursorStyle();
-                }
-                
-                function handleTouchStart(e) {
-                    if (!isDraggable()) return;
-                    e.preventDefault();
-                    startDragging(e);
-                }
-                
-                function handleTouchMove(e) {
-                    if (!isDraggable()) return;
-                    e.preventDefault();
-                    drag(e);
-                }
-
-                // Update cursor style when image is loaded
-                if (img.complete) {
-                    updateCursorStyle();
-                } else {
-                    img.onload = updateCursorStyle;
-                }
-            });
-
-            // Public API
-            return {
-                openModal,
-                closeModal,
-                zoomPoster,
-                resetPoster
-            };
-        })();
-
-        // Update the onclick handler
-        function openPosterModal(modalId) {
-            PosterViewer.openModal(modalId);
-        }
-    </script>
-    <script src="js/particles.js"></script>
-    <script>
-        // Navbar color change on scroll
-        const navbar = document.querySelector('.navbar');
-        const hero = document.querySelector('.hero');
-        
-        function updateNavbarStyle() {
-            const heroBottom = hero.offsetTop + hero.offsetHeight;
-            const scrollPosition = window.scrollY;
-            
-            if (scrollPosition < heroBottom - navbar.offsetHeight) {
-                navbar.classList.remove('light-mode');
-                navbar.classList.add('dark-mode');
-            } else {
-                navbar.classList.remove('dark-mode');
-                navbar.classList.add('light-mode');
-            }
-        }
-        
-        // Initial check
-        updateNavbarStyle();
-        
-        // Update on scroll
-        window.addEventListener('scroll', updateNavbarStyle);
-        
-        // Update on window resize (in case hero section height changes)
-        window.addEventListener('resize', updateNavbarStyle);
-
-        // Initialize timeline
-        document.addEventListener('DOMContentLoaded', function() {
-            // ... rest of your existing script ...
-        });
-    </script>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Create vision grid
-        const visionGrid = document.querySelector('.vision-grid');
-        for (let i = 0; i < 1600; i++) {
-            const cell = document.createElement('div');
-            cell.className = 'grid-cell';
-            visionGrid.appendChild(cell);
-        }
-
-        // Create circuit pattern
-        const circuitContainer = document.querySelector('.circuit-container');
-        const numNodes = 30;
-        const nodes = [];
-
-        // Create nodes
-        for (let i = 0; i < numNodes; i++) {
-            const node = document.createElement('div');
-            node.className = 'circuit-node';
-            node.style.left = `${Math.random() * 100}%`;
-            node.style.top = `${Math.random() * 100}%`;
-            circuitContainer.appendChild(node);
-            nodes.push(node);
-        }
-
-        // Create lines between nodes
-        for (let i = 0; i < nodes.length; i++) {
-            for (let j = i + 1; j < nodes.length; j++) {
-                if (Math.random() < 0.3) { // 30% chance to create a line
-                    const line = document.createElement('div');
-                    line.className = 'circuit-line';
-                    circuitContainer.appendChild(line);
-                    
-                    // Position and rotate line to connect nodes
-                    const updateLine = () => {
-                        const rect1 = nodes[i].getBoundingClientRect();
-                        const rect2 = nodes[j].getBoundingClientRect();
-                        
-                        const x1 = rect1.left + rect1.width / 2;
-                        const y1 = rect1.top + rect1.height / 2;
-                        const x2 = rect2.left + rect2.width / 2;
-                        const y2 = rect2.top + rect2.height / 2;
-                        
-                        const length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-                        const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
-                        
-                        line.style.width = `${length}px`;
-                        line.style.left = `${x1}px`;
-                        line.style.top = `${y1}px`;
-                        line.style.transform = `rotate(${angle}deg)`;
-                        line.style.height = '1px';
-                    };
-                    
-                    updateLine();
-                    window.addEventListener('resize', updateLine);
-                }
-            }
-        }
-
-        // Scanner effect
-        const scanner = document.querySelector('.scanner');
-        let isScanning = false;
-
-        document.addEventListener('mousemove', (e) => {
-            const hero = document.querySelector('.hero');
-            const rect = hero.getBoundingClientRect();
-            
-            // Only show scanner in hero section
-            if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
-                if (!isScanning) {
-                    scanner.style.opacity = '1';
-                    isScanning = true;
-                }
-                scanner.style.left = `${e.clientX}px`;
-                scanner.style.top = `${e.clientY}px`;
-
-                // Highlight nearby grid cells
-                const cells = document.querySelectorAll('.grid-cell');
-                cells.forEach(cell => {
-                    const cellRect = cell.getBoundingClientRect();
-                    const distance = Math.sqrt(
-                        Math.pow(e.clientX - (cellRect.left + cellRect.width/2), 2) +
-                        Math.pow(e.clientY - (cellRect.top + cellRect.height/2), 2)
-                    );
-                    
-                    if (distance < 100) {
-                        cell.style.borderColor = `rgba(0, 255, 255, ${0.3 * (1 - distance/100)})`;
-                    } else {
-                        cell.style.borderColor = 'rgba(0, 255, 255, 0.1)';
-                    }
-                });
-
-                // Highlight nearby circuit nodes
-                nodes.forEach(node => {
-                    const nodeRect = node.getBoundingClientRect();
-                    const distance = Math.sqrt(
-                        Math.pow(e.clientX - (nodeRect.left + nodeRect.width/2), 2) +
-                        Math.pow(e.clientY - (nodeRect.top + nodeRect.height/2), 2)
-                    );
-                    
-                    if (distance < 150) {
-                        node.style.transform = 'scale(1.5)';
-                        node.style.background = 'rgba(0, 255, 255, 0.6)';
-                    } else {
-                        node.style.transform = 'scale(1)';
-                        node.style.background = 'rgba(0, 255, 255, 0.3)';
-                    }
-                });
-            } else {
-                if (isScanning) {
-                    scanner.style.opacity = '0';
-                    isScanning = false;
-                }
-            }
-        });
-    });
-    </script>
+    <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>
