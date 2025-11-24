@@ -1093,18 +1093,26 @@ footer {
         display: block;
     }
 
+    .hero {
+        padding-top: 60px;
+        height: auto;
+        min-height: 100vh;
+    }
+
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
-        padding-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
 
     .hero-text {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     .hero-buttons {
         justify-content: center;
+        margin-bottom: 1.5rem;
     }
 
     .social-links {
@@ -1112,12 +1120,23 @@ footer {
     }
 
     .image-wrapper {
-        width: 280px;
-        height: 280px;
+        width: 200px;
+        height: 200px;
     }
 
     .name {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
     }
 
     .about-content {
