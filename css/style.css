@@ -252,7 +252,7 @@ ul {
 .btn-primary {
     background: var(--accent-gradient);
     color: white;
-    border: none;
+    border: 1px solid transparent;
 }
 
 .btn-primary:hover {
